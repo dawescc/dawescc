@@ -14,8 +14,3 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
-
-<a href="https://github.com/dtech-auto/porpo">
-  <img width="49.5%" src="https://camo.githubusercontent.com/5874c0691ca3ea4c8bd086af1f6b53f4d0c7a6d7222a01ae17e16a60ef6cd096/68747470733a2f2f6769746875622d726561646d652d73746174732e76657263656c2e6170702f6170693f757365726e616d653d6c73636869726d6272616e642673686f775f69636f6e733d74727565267468656d653d64726163756c6126686964655f626f726465723d66616c7365" data-canonical-src="https://github-readme-stats.vercel.app/api?username=dtech-auto&amp;show_icons=true&amp;theme=dracula&amp;hide_border=false" style="max-width: 100%;">
-    <img width="49.5%" src="https://camo.githubusercontent.com/18137e7fa191f7a405e9979e1adc28bd25034e79e79092eccbff28c81f693f8e/68747470733a2f2f6769746875622d726561646d652d73747265616b2d73746174732e6865726f6b756170702e636f6d2f3f757365723d6c73636869726d6272616e64267468656d653d64726163756c6126686964655f626f726465723d66616c7365" data-canonical-src="https://github-readme-streak-stats.herokuapp.com/?user=dtech-auto&amp;theme=dracula&amp;hide_border=false" style="max-width: 100%;">
-  </a>
