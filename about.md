@@ -8,7 +8,7 @@ Hello, there!
 
 I'm Ryan, a backend developer working on fully going fullstack.
 
-<b>Education:</b> Bachelor's Degree from Florida Atlantic University in Research and Data Analytics.
+<b>Education:</b> Bachelor's Degree in Research and Data Analytics.
 
 I am proficient with an array of design and development tools:
 
