@@ -20,7 +20,7 @@ I am comfortable, and have <b>experience</b> using, the latest design tools:
 ![Adobe Photoshop](https://img.shields.io/badge/adobe%20photoshop-%2331A8FF.svg?style=for-the-badge&logo=adobe%20photoshop&logoColor=white)
 
 
-<i>As well as</i> the latest developer tools:
+<i>As well as</i> the <u>latest developer tools</u>:
 
 ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 ![PyCharm](https://img.shields.io/badge/pycharm-143?style=for-the-badge&logo=pycharm&logoColor=black&color=black&labelColor=green)
@@ -28,7 +28,7 @@ I am comfortable, and have <b>experience</b> using, the latest design tools:
 <br>
     <br>
 
-<i>And</i> a variety of the most popular development languages:
+<i>And</i> a variety of the <u>most popular development languages</u>:
 
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
