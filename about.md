@@ -8,7 +8,7 @@ Hello, there!
 
 I'm Ryan, a backend developer working on fully going fullstack.
 
-<b>Education:</b> Bachelor's Degree in Research and Data Analytics.
+<b>Education:</b> Bachelor's Degree in Research and Data Analytics. </br>
 
 I am comfortable, and have experience using, the latest design tools:
 ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
@@ -17,7 +17,7 @@ I am comfortable, and have experience using, the latest design tools:
 ![Adobe Illustrator](https://img.shields.io/badge/adobe%20illustrator-%23FF9A00.svg?style=for-the-badge&logo=adobe%20illustrator&logoColor=white)
 ![Adobe Photoshop](https://img.shields.io/badge/adobe%20photoshop-%2331A8FF.svg?style=for-the-badge&logo=adobe%20photoshop&logoColor=white)
 ![Affinity Designer](https://img.shields.io/badge/affinity%20desginer-%231B72BE.svg?style=for-the-badge&logo=affinity-designer&logoColor=white)
-<b/r>
+</br>
 
-<b>As well as</b> the latest developer tools:
+<b>As well as</b> the latest developer tools:</br>
 ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
