@@ -6,4 +6,4 @@ categories: jekyll update
 ---
 Hello 👋🏻 
 
-[🠐  Go Home](https://dawes.cc)
+[&larr; Go Home](https://dawes.cc)
