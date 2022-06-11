@@ -41,7 +41,7 @@ Currently, I am working on a web app version of Porpo, to be contained in a Dock
 
 To achieve this, I am learning more about JavaScript and how to use it in both the front and the back ends, as well as the application of different front end frameworks like React and Vue. For the backend, I'm exploring and using frameworks and tools like Node.js, FastAPI, and RubyOnRails.
 
-<b>For now,</b> that's all!
+<b>For now</b>, that's all!
 
 Stay healthy, and stay safe.
 Have a wonderful weekend.
