@@ -23,7 +23,7 @@ I am comfortable usinh the latest <b>design tools<\b>:
 <br>
     <br>
 
-<i>As well as</i> the latest <b>developer tools:<\b>
+<i>As well as</i> the latest <b>developer tools:</b>
 
 ![PyCharm](https://img.shields.io/badge/pycharm-143?style=for-the-badge&logo=pycharm&logoColor=black&color=black&labelColor=green)
 ![Jupyter Notebook](https://img.shields.io/badge/jupyter-%23FA0F00.svg?style=for-the-badge&logo=jupyter&logoColor=white)<br>
@@ -32,7 +32,7 @@ I am comfortable usinh the latest <b>design tools<\b>:
 <br>
     <br>
 
-<i>And</i> a variety of the most popular development <b>languages:<\b>
+<i>And</i> a variety of the most popular development <b>languages:</b>
 
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
