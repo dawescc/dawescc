@@ -3,14 +3,13 @@ layout: page
 title: about me
 permalink: /about/
 ---
+<img src="/src/about-img-trans.png"
+    style="max-height: 10em;" 
+    align="right">
 
 Hello, there!
 
 I'm Ryan, a backend developer working on going fullstack.
-
-<img src="/src/about-img-trans.png"
-    style="max-height: 10em;" 
-    align="right">
 
 <u>Education</u>: <b>Bachelor's Degree</b> in Research and Data Analytics.
 
