@@ -1,3 +1,44 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-06-11T12:13:35-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">ryan dawes</title><subtitle>developer/designer</subtitle><entry><title type="html">First Post ☕️</title><link href="http://localhost:4000/jekyll/update/2022/06/10/first-post.html" rel="alternate" type="text/html" title="First Post ☕️" /><published>2022-06-10T14:37:37-04:00</published><updated>2022-06-10T14:37:37-04:00</updated><id>http://localhost:4000/jekyll/update/2022/06/10/first-post</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2022/06/10/first-post.html">&lt;p&gt;Hello 👋🏻&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-06-11T13:44:55-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">ryan dawes</title><subtitle>developer/designer</subtitle><entry><title type="html">First Post ☕️</title><link href="http://localhost:4000/jekyll/update/2022/06/10/first-post.html" rel="alternate" type="text/html" title="First Post ☕️" /><published>2022-06-10T12:20:07-04:00</published><updated>2022-06-10T12:20:07-04:00</updated><id>http://localhost:4000/jekyll/update/2022/06/10/first-post</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2022/06/10/first-post.html">&lt;p&gt;Hello 👋🏻&lt;/p&gt;
+
+&lt;p&gt;Thank you for taking the time to not only explore this site I’ve put together, but also
+for exploring my posts and seeing what I’ve been working on.&lt;/p&gt;
+
+&lt;p&gt;This post won’t have much by way of material project content, but it should contain enough
+information about me and my background that future posts will make a lot more sense.&lt;/p&gt;
+
+&lt;h3 id=&quot;education&quot;&gt;Education&lt;/h3&gt;
+
+&lt;p&gt;Before heading to college in 2015, I had already begun freelance design work: generating graphics for friends, family, and clients on a small scale.&lt;/p&gt;
+
+&lt;p&gt;I graduated in 2019 with a Bachelor’s Degree in Research and Data Analytics.
+&lt;i&gt;Psst..&lt;/i&gt; Really, its a Political Science degree, but I added the Research and Data Analytics specialization to my degree when I found out (the hard way) that I didn’t want to work in the political scene.&lt;/p&gt;
+
+&lt;p&gt;During my studies I got experience using R, C#, and just a bit of Java, as well as working with algorithms and databases.&lt;/p&gt;
+
+&lt;p&gt;After graduating, I participated in a course provided by Coursera and recieved a certificate for UX Design from Google.&lt;/p&gt;
+
+&lt;h3 id=&quot;experience&quot;&gt;Experience&lt;/h3&gt;
+
+&lt;p&gt;While in school, I worked as a Laboratory and I.T. Technician for a pharmacuetical manufacturer. During this time, I gained experience using SQL queries and databases, as well as doing data aggregation and analysis.&lt;/p&gt;
+
+&lt;p&gt;At the same company, I officially started my career as a developer. I started by building a simple HTML website (HTML4 at the time!), and added in CSS and JavaScript to achieve the business owner’s desired result.&lt;/p&gt;
+
+&lt;p&gt;As a freelancer, I’ve furthered my skills in Design by completeing numerous projects for an array of clients; including race teams and athletes, pharmacuetical products, companies, and events. One of the products I designed the branding for is now being sold in grocery stores across FL, GA, and AL - That’s &lt;i&gt;CRAZY!&lt;/i&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;goals&quot;&gt;Goals&lt;/h3&gt;
+
+&lt;p&gt;After falling in love with Python, I decided it was time to combine my education and experience to spend the rest of my life solving problems and making things that people love to use. &lt;b&gt;I want to be a fullstack developer&lt;/b&gt;.
+At the time of writing, my first project, &lt;a href=&quot;https://github.com/dawesry/porpo&quot;&gt;Porpo&lt;/a&gt;, has gained over 750k organic views, and has over 600 active users. &lt;i&gt;A full write-up on Porpo will be available here soon!&lt;/i&gt;&lt;/p&gt;
+
+&lt;p&gt;My goal is to learn more about frontend and backend development, and how the two tie together. The interactions between the front and back ends are an integral part of the user experience, so nailing the fundamentals of this relationship is key to being a succesful fullstack developer.&lt;/p&gt;
+
+&lt;p&gt;Currently, I am working on a web app version of Porpo, to be contained in a Docker image, and easily accesible from the browser, without the need for developer tools.&lt;/p&gt;
+
+&lt;p&gt;To achieve this, I am learning more about JavaScript and how to use it in both the front and the back ends, as well as the application of different front end frameworks like React and Vue. For the backend, I’m exploring and using frameworks and tools like Node.js, FastAPI, and RubyOnRails.&lt;/p&gt;
+
+&lt;h3 id=&quot;thats-all-for-now&quot;&gt;That’s all, for now!&lt;/h3&gt;
+
+&lt;p&gt;Stay healthy, and stay safe.
+Have a wonderful weekend.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://dawes.cc&quot;&gt;← Go Home&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html">Hello 👋🏻</summary></entry></feed>
