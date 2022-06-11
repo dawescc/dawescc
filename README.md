@@ -1,7 +1,7 @@
 # Ryan Dawes
 
 <img src="/src/about-img.png"
-    style="width: 25em;" 
+    style="width: 20em;" 
     align="right">
 
 
