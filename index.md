@@ -3,16 +3,15 @@ layout: home
 ---
 <a href="https://twitter.com/dawesinho">
     <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png"
-        style="max-width: 2rem; min-width: none; padding: .5rem; margin: 1rem;" 
+        style="max-width: 1.5rem; min-width: .25rem; padding: .5rem; margin: .25rem;" 
         align="right">
 </a>
 
 <a href="https://github.com/dawesry">
     <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png"
-        style="max-width: 2rem; min-width: none;padding: .5rem; margin: 1rem;" 
+        style="max-width: 1.5rem; min-width: .25rem; padding: .5rem; margin: .25rem;" 
         align="right">
 </a>
-<br>
 
 <h1>hello world!</h1>
 
