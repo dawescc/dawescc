@@ -4,7 +4,7 @@
 
 layout: home
 ---
-<h1>hello world</h1>
+<h1>hello world!</h1>
 
 <center>
 <img src="src/23816562-B729-409E-AB7B-E3955AF03905.jpeg" width="50%">
