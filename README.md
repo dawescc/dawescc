@@ -6,7 +6,7 @@
 
 ### Projects
 
-[GitHub](https://www.github.com/dawesry/repositories/)
+[GitHub](https://github.com/dawesry?tab=repositories)
 
 ### Support or Contact
 
