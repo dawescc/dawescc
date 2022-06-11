@@ -12,9 +12,8 @@ Hello, there!
 I'm Ryan, a backend developer working on going fullstack.
 
 <u>Education</u>: <b>Bachelor's Degree</b> in Research and Data Analytics.
-
 ---
-### Experience 
+### Experience
 I am comfortable using the latest <b>design tools</b>:
 
 ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
