@@ -75,7 +75,7 @@ hr { margin-top: 30px; margin-bottom: 30px; }
 main { display: block; /* Default value of `display` of `main` element is 'inline' in IE 11. */ }
 
 /** Images */
-img { max-width: 100%; vertical-align: middle; max-height: 25em;}
+img { max-width: 100%; vertical-align: middle; }
 
 /** Figures */
 figure > img { display: block; }

@@ -8,7 +8,9 @@ Hello, there!
 
 I'm Ryan, a backend developer working on going fullstack.
 
-<img align="right" max-width="50em" src="src/about-img.png">
+<img src="/src/about-img-trans.png"
+    style="max-height: 10em;" 
+    align="right">
 
 <u>Education</u>: <b>Bachelor's Degree</b> in Research and Data Analytics.
 
