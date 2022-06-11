@@ -1,15 +1,17 @@
 ---
 layout: home
 ---
-<img src="https://cdn-icons-png.flaticon.com/512/733/733579.png"
-    style="max-height: 2em; padding: 3px;" 
-    align="right"
-    href="https://twitter.com/dawesinho">
+<a href="https://twitter.com/dawesinho">
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png"
+        style="max-width: 2rem; min-width: none; padding: .5rem; margin: 1rem;" 
+        align="right">
+</a>
 
-<img src="https://cdn-icons-png.flaticon.com/512/733/733553.png"
-    style="max-height: 2em; padding: 3px;" 
-    align="right"
-    href="https://github.com/dawesry">
+<a href="https://github.com/dawesry">
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png"
+        style="max-width: 2rem; min-width: none;padding: .5rem; margin: 1rem;" 
+        align="right">
+</a>
 <br>
 
 <h1>hello world!</h1>
