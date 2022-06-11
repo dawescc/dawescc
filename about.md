@@ -13,6 +13,8 @@ I'm Ryan, a backend developer working on going fullstack.
 
 <u>Education</u>: <b>Bachelor's Degree</b> in Research and Data Analytics.
 
+---
+
 <u>Experience</u>: I am comfortable using the latest <b>design tools</b>:
 
 ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
@@ -43,8 +45,8 @@ I'm Ryan, a backend developer working on going fullstack.
 ![C#](https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=c-sharp&logoColor=white)
 <br>
     <br>
-    
-Plus, I'm always <b>learning</b> and adding to my toolbox:
+---   
+On top of all that, I'm always <b>learning</b> and adding to my toolbox:
 
 ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
