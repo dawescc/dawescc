@@ -4,3 +4,5 @@
 
 layout: home
 ---
+
+Take a look at my projects, case studies, and blog posts:
