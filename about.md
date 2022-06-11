@@ -11,7 +11,8 @@ Hello, there!
 
 I'm Ryan, a backend developer working on going fullstack.
 
-<u>Education</u>: <b>Bachelor's Degree</b> in Research and Data Analytics.  
+<u>Education</u>: <b>Bachelor's Degree</b> in Research and Data Analytics.
+
 ---
 ### Experience
 I am comfortable using the latest <b>design tools</b>:
