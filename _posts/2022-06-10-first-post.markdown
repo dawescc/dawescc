@@ -42,9 +42,8 @@ My goal is to learn more about frontend and backend development, and how the two
 Currently, I am working on a web app version of Porpo, to be contained in a Docker image, and easily accesible from the browser, without the need for developer tools.
 
 To achieve this, I am learning more about JavaScript and how to use it in both the front and the back ends, as well as the application of different front end frameworks like React and Vue. For the backend, I'm exploring and using frameworks and tools like Node.js, FastAPI, and RubyOnRails.
-<br>
-    <br>
-<b>For now</b>, that's all!
+
+### That's all, for now!
 
 Stay healthy, and stay safe.
 Have a wonderful weekend.
