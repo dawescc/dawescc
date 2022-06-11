@@ -12,7 +12,7 @@ I'm Ryan, a backend developer working on going fullstack.
 
 <b>Experience:</b>
 
-I am comfortable usinh the latest <b>design tools<\b>:
+I am comfortable usinh the latest <b>design tools</b>:
 
 ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
 ![Sketch](https://img.shields.io/badge/Sketch-FFB387?style=for-the-badge&logo=sketch&logoColor=black)
