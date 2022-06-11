@@ -6,7 +6,7 @@ permalink: /about/
 
 Hello, there!
 
-I'm Ryan, a backend developer working on fully going fullstack.
+I'm Ryan, a backend developer working on going fullstack.
 
 <b>Education:</b> Bachelor's Degree in Research and Data Analytics.
 
