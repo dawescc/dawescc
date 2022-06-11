@@ -1,7 +1,6 @@
 # Ryan Dawes
 
 [Website](https://www.dawes.cc)
----
 
 ### Projects
 
