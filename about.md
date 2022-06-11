@@ -46,6 +46,7 @@ I'm Ryan, a backend developer working on going fullstack.
 <br>
     <br>
 < hr color="#c7c34c" size="2" width="50%" >
+
 On top of all that, I'm always <b>learning</b> and adding to my toolbox:
 
 ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white)
