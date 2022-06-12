@@ -1,0 +1,11 @@
+docs_list_title: dawes.cc
+docs:
+
+- title: blog
+  url: blog.html
+
+- title: projects
+  url: configuration.html
+
+- title: about
+  url: about.html
