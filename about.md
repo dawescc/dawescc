@@ -3,21 +3,16 @@ layout: page
 title: about me
 permalink: /about/
 ---
-<style>
+<style> 
+#rcorn { border-radius: 2em;
+        border: 2px solid #FDDDDD;
+        padding: .5rem;
+        text-align: center;
+        max-width: 95%;
+        margin: auto }
 
-#rcorn {
-  border-radius: 2em;
-  border: 2px solid #FDDDDD;
-  padding: .5rem;
-  text-align: center;
-  max-width: 95%;
-  margin: auto
-}
-
-#badge {
-    margin: .25em;
-    padding: .35rem;
-}
+#badge { margin: .25em;
+        padding: .35rem; }
 
 </style>
 
