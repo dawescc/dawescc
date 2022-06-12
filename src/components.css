@@ -5,5 +5,12 @@
         max-width: 95%;
         margin: auto }
 
+#smrcorn { border-radius: 2em;
+        border: 2px solid #FDDDDD;
+        min-width: 60%;
+        max-width: 70%;
+        max-height: auto;
+        margin: auto }
+
 #badge { margin: .25em;
         padding: .35rem; }
