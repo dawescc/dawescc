@@ -1,7 +1,6 @@
 ---
 layout: home
 ---
-<link rel="stylesheet" href="components.css"><link type="application/atom+xml"/>
 <a href="https://twitter.com/dawesinho">
     <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png"
         style="max-width: 1.5rem; min-width: .25rem; padding: .5rem; margin: .25rem;" 
