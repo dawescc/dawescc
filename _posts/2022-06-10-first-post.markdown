@@ -39,7 +39,7 @@ At the time of writing, my first project, [Porpo](https://github.com/dawesry/por
 My goal is to learn more about frontend and backend development, and how the two tie together. The interactions between the front and back ends are an integral part of the user experience, so nailing the fundamentals of this relationship is key to being a succesful fullstack developer.
 
 
-Currently, I am working on a web app version of Porpo, to be contained in a Docker image, and easily accesible from the browser, without the need for developer tools.
+Currently, I am working on a web app version of Porpo, to be contained in a Docker image, and easily accessible from the browser, without the need for developer tools.
 
 To achieve this, I am learning more about JavaScript and how to use it in both the front and the back ends, as well as the application of different front end frameworks like React and Vue. For the backend, I'm exploring and using frameworks and tools like Node.js, FastAPI, and RubyOnRails.
 
