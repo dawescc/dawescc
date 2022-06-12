@@ -3,7 +3,6 @@ layout: page
 title: about me
 permalink: /about/
 ---
-<link rel="stylesheet" href="/src/components.css">
 <img src="/src/about-img-trans.png"
     style="max-width: 22%; height: auto;" 
     align="right">
