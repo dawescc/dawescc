@@ -1,7 +1,7 @@
 ---
 layout: portfolio
-title: about me
-permalink: /about/
+title: projects
+permalink: /portfolio/
 ---
 <img src="/src/about-img-trans.png"
     style="max-width: 22%; height: auto;" 
