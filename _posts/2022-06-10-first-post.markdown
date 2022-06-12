@@ -2,7 +2,7 @@
 layout: post
 title:  "First Post ☕️"
 date:   2022-06-10 12:20:07 -0400
-categories: jekyll update
+categories: blog post
 ---
 Hello 👋🏻 
 
