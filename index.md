@@ -13,10 +13,11 @@ layout: home
         align="right">
 </a>
 
-<h1>hello world!</h1>
-
-<img style="max-height: fit-content; padding:5px;" src="src/illustration-A7PK3R5BNE.png">
+<img style="width: 100%; height: auto; padding:5px;" src="src/illustration-A7PK3R5BNE.png">
 <br>
+
 ---
 
-Take a look at my projects, case studies, and blog posts:
+<center>
+<p>Take a look at my projects, case studies, and blog posts:</p>
+<p>* * *</p></center>
