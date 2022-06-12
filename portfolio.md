@@ -4,7 +4,7 @@ title: projects
 permalink: /portfolio/
 ---
 
-<div id="smrcorn" style="float:left">
+<div id="smrcorn" style="">
     <img src = "/src/porpo.png"
         style = "
         width: auto;
@@ -15,7 +15,7 @@ permalink: /portfolio/
 </div>
 
 
-<div id="smrcorn" style="float:right">
+<div id="smrcorn" style="">
     <img src = "/src/porpo-docker.png"
         style = "
         width: auto;
