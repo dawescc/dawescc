@@ -14,7 +14,7 @@ permalink: /portfolio/
     </div>
     <br>
     <div id="smrcorn" style="max-width: auto;">
-        <img src = "/src/porpo.png"
+        <img src = "/src/porpo-docker.png"
             style = "
             max-width: 35%;
             height: auto;">
