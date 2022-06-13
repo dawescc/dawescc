@@ -1,4 +1,4 @@
-#rcorn {border-radius: 2em;
+#rcorn {border-radius: 10px;
         border: 2px solid #FDDDDD;
         padding: .5rem;
         text-align: center;
@@ -6,7 +6,7 @@
         margin: auto;}
 
 #smrcorn {border-radius: 7px;
-        border: .5px solid rgb(15, 15, 15);
+        border: .5px solid rgb(18, 18, 18);
         width: 100%;
         max-height: auto;
         background-color: rgb(22, 22, 22);
@@ -14,6 +14,8 @@
 
 #badge { margin: .25em;
         padding: .35rem; }
+
+#badge:hover {transform: scale(1.1);}
 
 #repo {
         opacity: 0.35;
