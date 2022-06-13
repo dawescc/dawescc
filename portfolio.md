@@ -3,26 +3,28 @@ layout: page
 title: projects
 permalink: /portfolio/
 ---
-<div id="smrcorn" style="">
+<div id="smrcorn" style="position: relative">
     <img src = "/src/porpo.png"
         style = "
         width: auto;
         height: auto;
         margin: 2px;">
     <br>
-    <img id="badge" src="https://img.shields.io/badge/Git-Available-purple" style="position: relative;">
-    <img id="badge" src="https://img.shields.io/badge/Case%20Study-Coming%20Soon-blue" style="position: relative;;">
+    <a href = "https://github.com/dawesry/porpo" target="_blank">
+    <img id="repo" src="https://cdn-icons-png.flaticon.com/512/214/214513.png "
+              style="width: 1.75rem; height:auto; padding: .5rem; margin: .25rem; position: absolute; top: 2%; right: 2.5%;"></a>
+    <img id="badge" src="https://img.shields.io/badge/Case%20Study-Coming%20Soon-blue" style="margin: auto; padding: 1em;">
 </div>
 <br>
-<div id="smrcorn" style="">
+<div id="smrcorn" style="position: relative;">
     <img src = "/src/porpo-docker.png"
         style = "Hello world
         width: auto;
         height: auto;
         margin: 2px;">
     <br>
-    <img id="badge" src="https://img.shields.io/badge/%20-New-green" style="position: relative;">
-    <img id="badge" src="https://img.shields.io/badge/Project-Coming%20Soon-blue" style="position: relative;">
-    
+    <img id="grow" src="https://img.shields.io/badge/%20-New-green"
+              style="width: 2.2rem; height:auto; padding: .5rem; margin: .25rem; position: absolute; top: 2%; right: 2.5%;">
+    <img id="badge" src="https://img.shields.io/badge/Project-Coming%20Soon-blue" style="margin: auto; padding: 1em;">
 </div>
 

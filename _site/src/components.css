@@ -5,12 +5,32 @@
         max-width: 95%;
         margin: auto }
 
-#smrcorn { border-radius: 2em;
-        border: 1.5px solid #FDDDDD;
+#smrcorn {border-left: 4px solid #a51f9e;
         width: 45%;
         max-height: auto;
         margin: auto;
+        padding-left: 10px;
         text-align: center;}
+#smcorn:hover {
+        transform: scale(1.1);
+        }
 
 #badge { margin: .25em;
         padding: .35rem; }
+
+#repo {
+        opacity: 0.35;
+      }
+      
+#repo:hover {
+        opacity: .85;
+        transform: scale(1.1);
+        }
+
+#grow {
+        transform: scale(1)
+        }
+        
+#grow:hover {
+        transform: scale(1.1);
+        }
