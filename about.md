@@ -8,7 +8,7 @@ permalink: /about/
 
 <h4>Hello, there!</h4>
 
-<h5>I'm Ryan, a junior developer working on going fullstack.</h5>
+<h5>I'm Ryan, a junior developer working on writing better code, and going fullstack.</h5>
 
 <h5>Education: <b>Bachelor's Degree</b> in Research and Data Analytics.</h5>
 
