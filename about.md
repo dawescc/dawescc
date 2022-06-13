@@ -4,7 +4,7 @@ title: about me
 permalink: /about/
 ---
 <img src="/src/about-img2.svg"
-    style="width: 5.5rem; height: auto; float: left; position: static; padding-right: 1.5em;">
+    style="max-width: 5.65rem; height: auto; float: left; position: static; padding-right: 1.5em;">
 
 <h4>Hello, there!</h4>
 
