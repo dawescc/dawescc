@@ -38,6 +38,7 @@ permalink: /about/
 
 <img id="badge" src="https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white">
 
+<img id="badge" src="https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white">
 </div>
 
 <h4>and a variety of the most popular development <b>languages:</b> </h4>
