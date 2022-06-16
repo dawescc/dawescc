@@ -25,9 +25,10 @@ permalink: /portfolio/
         display: block;
         margin: auto;">
     <br>
-    <img id="grow" src="https://img.shields.io/badge/%20-New-green"
+    <img id="grow" src="https://img.shields.io/badge/-New-green"
               style="width: 2.2rem; height:auto; padding: .5rem; margin: .25rem; position: absolute; top: 2%; right: 2.5%;">
-    <img id="badge" src="https://img.shields.io/badge/Project-Coming%20Soon-blue" style="margin: auto; padding: 1em;">
+    <a href = "/blog/post/2022/06/16/porpo-docker-delayed">
+    <img id="badge" src="https://img.shields.io/badge/Project-Delayed-critical" style="margin: auto; padding: 1em;"></a>
     
 </div>
 

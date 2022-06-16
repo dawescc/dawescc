@@ -48,4 +48,4 @@ To achieve this, I am learning more about JavaScript and how to use it in both t
 Stay healthy, and stay safe.
 Have a wonderful weekend.
 
-[&larr; Go Home](https://dawes.cc)
+[&larr; Go Home](/)

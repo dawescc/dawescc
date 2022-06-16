@@ -1,4 +1,16 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-06-13T01:23:23-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">ryan dawes</title><subtitle>developer/designer</subtitle><entry><title type="html">First Post ☕️</title><link href="http://localhost:4000/blog/post/2022/06/10/first-post.html" rel="alternate" type="text/html" title="First Post ☕️" /><published>2022-06-10T12:20:07-04:00</published><updated>2022-06-10T12:20:07-04:00</updated><id>http://localhost:4000/blog/post/2022/06/10/first-post</id><content type="html" xml:base="http://localhost:4000/blog/post/2022/06/10/first-post.html">&lt;p&gt;Hello 👋🏻&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-06-16T12:36:38-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">ryan dawes</title><subtitle>developer/designer</subtitle><entry><title type="html">Porpo for Docker is Delayed</title><link href="http://localhost:4000/blog/post/2022/06/16/porpo-docker-delayed.html" rel="alternate" type="text/html" title="Porpo for Docker is Delayed" /><published>2022-06-16T12:27:07-04:00</published><updated>2022-06-16T12:27:07-04:00</updated><id>http://localhost:4000/blog/post/2022/06/16/porpo-docker-delayed</id><content type="html" xml:base="http://localhost:4000/blog/post/2022/06/16/porpo-docker-delayed.html">&lt;p&gt;Unfortunately, &lt;a href=&quot;/portfolio/&quot;&gt;Porpo for Docker&lt;/a&gt; has been delayed.&lt;/p&gt;
+
+&lt;p&gt;I simply do not know enough yet to produce a web app I am proud of, and must continue working to change that fact.&lt;/p&gt;
+
+&lt;p&gt;Thank you to all who are waiting - your patience and support is incredible.&lt;/p&gt;
+
+&lt;p&gt;There is no current timetable on the delay, but expect a further update in the next few days.&lt;/p&gt;
+
+&lt;h3 id=&quot;thats-all-for-now&quot;&gt;That’s all, for now!&lt;/h3&gt;
+
+&lt;p&gt;Stay healthy, and stay safe.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/&quot;&gt;← Go Home&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="blog" /><category term="post" /><summary type="html">Unfortunately, Porpo for Docker has been delayed.</summary></entry><entry><title type="html">First Post ☕️</title><link href="http://localhost:4000/blog/post/2022/06/10/first-post.html" rel="alternate" type="text/html" title="First Post ☕️" /><published>2022-06-10T12:20:07-04:00</published><updated>2022-06-10T12:20:07-04:00</updated><id>http://localhost:4000/blog/post/2022/06/10/first-post</id><content type="html" xml:base="http://localhost:4000/blog/post/2022/06/10/first-post.html">&lt;p&gt;Hello 👋🏻&lt;/p&gt;
 
 &lt;p&gt;Thank you for taking the time to not only explore this site I’ve put together, but also
 for exploring my posts and seeing what I’ve been working on.&lt;/p&gt;
@@ -41,4 +53,4 @@ At the time of writing, my first project, &lt;a href=&quot;https://github.com/da
 &lt;p&gt;Stay healthy, and stay safe.
 Have a wonderful weekend.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://dawes.cc&quot;&gt;← Go Home&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="blog" /><category term="post" /><summary type="html">Hello 👋🏻</summary></entry></feed>
+&lt;p&gt;&lt;a href=&quot;/&quot;&gt;← Go Home&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="blog" /><category term="post" /><summary type="html">Hello 👋🏻</summary></entry></feed>
