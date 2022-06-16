@@ -1,10 +1,14 @@
 ---
 layout: post
-title:  "Porpo for Docker is Delayed"
+title:  "Porpo for Docker Delayed"
 date:   2022-06-16 12:27:07 -0400
 categories: blog post
 ---
-Unfortunately, [Porpo for Docker](/portfolio/) has been delayed.
+<div id="smrcorn" style="text-align:center; margin: auto;">
+    <img src="/src/porpo-docker.png" style="padding: .2em; max-width: 45%">
+</div>
+
+#### Unfortunately, [Porpo for Docker](/portfolio/) has been delayed.
 
 I simply do not know enough yet to produce a web app I am proud of, and must continue working to change that fact.
 
