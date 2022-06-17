@@ -5,10 +5,12 @@ date:   2022-06-16 12:27:07 -0400
 categories: blog post
 ---
 <div id="smrcorn" style="text-align:center; margin: auto;">
-    <img src="/src/porpo-docker.png" style="padding: .2em; max-width: 45%">
+
+<img src="/src/porpo-docker.png" style="padding: .15em; max-width: 45%">
+
 </div>
 
-#### Unfortunately, [Porpo for Docker](/portfolio/) has been delayed.
+<h4>Unfortunately, <a href = "/porfolio">Porpo for Docker</a> has been delayed.</h4>
 
 I simply do not know enough yet to produce a web app I am proud of, and must continue working to change that fact.
 

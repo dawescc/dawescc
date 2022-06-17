@@ -1,8 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-06-16T12:52:41-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">ryan dawes</title><subtitle>developer/designer</subtitle><entry><title type="html">Porpo for Docker Delayed</title><link href="http://localhost:4000/blog/post/2022/06/16/porpo-docker-delayed.html" rel="alternate" type="text/html" title="Porpo for Docker Delayed" /><published>2022-06-16T12:27:07-04:00</published><updated>2022-06-16T12:27:07-04:00</updated><id>http://localhost:4000/blog/post/2022/06/16/porpo-docker-delayed</id><content type="html" xml:base="http://localhost:4000/blog/post/2022/06/16/porpo-docker-delayed.html">&lt;div id=&quot;smrcorn&quot; style=&quot;text-align:center; margin: auto;&quot;&gt;
-    &lt;img src=&quot;/src/porpo-docker.png&quot; style=&quot;padding: .2em; max-width: 45%&quot; /&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-06-17T01:53:33-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">ryan dawes</title><subtitle>developer/designer</subtitle><entry><title type="html">Porpo for Docker Delayed</title><link href="http://localhost:4000/blog/post/2022/06/16/porpo-docker-delayed.html" rel="alternate" type="text/html" title="Porpo for Docker Delayed" /><published>2022-06-16T12:27:07-04:00</published><updated>2022-06-16T12:27:07-04:00</updated><id>http://localhost:4000/blog/post/2022/06/16/porpo-docker-delayed</id><content type="html" xml:base="http://localhost:4000/blog/post/2022/06/16/porpo-docker-delayed.html">&lt;div id=&quot;smrcorn&quot; style=&quot;text-align:center; margin: auto;&quot;&gt;
+
+&lt;img src=&quot;/src/porpo-docker.png&quot; style=&quot;padding: .15em; max-width: 45%&quot; /&gt;
+
 &lt;/div&gt;
 
-&lt;h4 id=&quot;unfortunately-porpo-for-docker-has-been-delayed&quot;&gt;Unfortunately, &lt;a href=&quot;/portfolio/&quot;&gt;Porpo for Docker&lt;/a&gt; has been delayed.&lt;/h4&gt;
+&lt;h4&gt;Unfortunately, &lt;a href=&quot;/porfolio&quot;&gt;Porpo for Docker&lt;/a&gt; has been delayed.&lt;/h4&gt;
 
 &lt;p&gt;I simply do not know enough yet to produce a web app I am proud of, and must continue working to change that fact.&lt;/p&gt;
 
