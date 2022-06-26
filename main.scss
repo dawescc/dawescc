@@ -24,7 +24,7 @@ body {
   width: 100%;
   display: grid;
   grid-template-columns: 2rem repeat(6, 1fr) 2rem;
-  grid-template-rows: 3rem repeat(6, 1fr) 3rem;
+  grid-template-rows: 3rem 5rem repeat(4, 1fr) 5rem 3rem;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
 }
@@ -67,41 +67,23 @@ body {
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(6, 1fr);
   width: 95%;
-  max-height: 100%;
+  height: 100%;
   margin: auto;
   overflow: auto;
 }
 
 #box-title {
-  grid-area: 1/1/2/7;
+  grid-area: 1/1/2/span 6;
   font-weight: 900;
+  margin: .5rem;
 }
 
-#box-img {
-  grid-column: 1;
-  grid-row-end: 6;
-  width: 100%;
-  max-height: 100%; 
-}
-
-#text-box {
-  grid-area: 2/2/6/6;
+#box-text {
+  grid-area: 2/1/7/7;
   color: white;
   font-weight: 900;
   margin: 1rem;
   text-align: justify;
-}
-
-@media only screen and (max-width: 650px) {
-  #box {
-    grid-area: 2/2/8/8;
-  }
-}
-
-@media only screen and (max-height: 500px) {
-  #box {
-    grid-area: 2/2/8/8;
-  }
 }
 
 #badge {
