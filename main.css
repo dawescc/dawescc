@@ -10,7 +10,6 @@ body {
   min-height: 95vh;
   font-family: "Poppins";
   color: #fff;
-  font-size: large;
 }
 
 footer {
@@ -68,7 +67,7 @@ footer {
 
 #box-content {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 25% 25% 25% 25%;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   width: 95%;
   max-height: 100%;
@@ -77,18 +76,10 @@ footer {
 }
 
 #box-title {
-  grid-column: 1;
+  grid-column: 1/5;
   grid-row: 1;
-  right: 50%;
-}
-
-#box-button {
-  grid-column: 4;
-  grid-row: 4;
-  padding: 1rem;
-  display: grid;
-  align-content: center;
-  justify-content: center;
+  font-weight: 900;
+  font-size: x-large;
 }
 
 #box-img {
@@ -102,14 +93,29 @@ footer {
   grid-column: 2/4;
   grid-row: 2/5;
   color: white;
-  text-align: justify;
   font-weight: 900;
   margin: 1rem;
+  text-align: justify;
 }
 
+@media only screen and (max-width: 650px) {
+  #box-img {
+    grid-column: 4;
+    grid-row: auto/2;
+    z-index: -1;
+    height: 100%;
+    max-width: 100%;
+  }
+
+  #text-box {
+    grid-column: 1/5;
+  }
+}
 #badge {
   margin: 0.25em;
   padding: 0.35rem;
+  max-width: 100%;
+  height: auto;
 }
 
 #badge:hover {
