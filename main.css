@@ -41,6 +41,7 @@ body {
   text-align: center;
   color: #fff;
   z-index: 1;
+  margin: 0.25rem;
 }
 
 #social {
@@ -123,13 +124,13 @@ body {
 
 @media only screen and (max-width: 700px) {
   #standing {
-    left: -4.5rem;
+    left: -5.5rem;
     bottom: -8rem;
   }
 }
 @media only screen and (max-height: 700px) {
   #standing {
-    left: -1.5rem;
+    left: 0.5rem;
     bottom: -4rem;
   }
 }/*# sourceMappingURL=main.css.map */
