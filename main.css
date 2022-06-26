@@ -2,6 +2,7 @@
 body {
   background-image: url(assets/img/bg.jpg);
   background-size: cover;
+  background-position: center;
   background-color: black;
 }
 
@@ -10,17 +11,22 @@ body {
   min-height: 95vh;
   font-family: "Poppins";
   color: #fff;
-}
-
-footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 3rem;
   margin: auto;
 }
 
+#content-wrapper {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2rem repeat(6, 1fr) 2rem;
+  grid-template-rows: 3rem repeat(6, 1fr) 3rem;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
 #footer {
+  grid-area: 8/1/9/9;
   text-align: center;
   color: #fff;
 }
@@ -38,33 +44,16 @@ footer {
 
 #box {
   background: rgba(0, 0, 0, 0.55);
-  width: 75%;
-  aspect-ratio: 1/0.75;
-  max-height: 75%;
-  position: absolute;
-  inset: 0rem;
-  margin: auto;
+  grid-area: 3/3/7/7;
   transition: 0.3s;
   border-radius: 5px;
   /* 5px rounded corners */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  padding: 1em;
+  padding: 1rem;
 }
 
-@media only screen and (max-width: 650px) {
-  #box {
-    height: 95%;
-    aspect-ratio: 1/1.5;
-  }
-}
-@media only screen and (max-height: 500px) {
-  #box {
-    height: 65%;
-    aspect-ratio: 1.5/1;
-  }
-}
 #box:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
   -webkit-backdrop-filter: blur(25px);
@@ -73,8 +62,8 @@ footer {
 
 #box-content {
   display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
   width: 95%;
   max-height: 100%;
   margin: auto;
@@ -82,22 +71,19 @@ footer {
 }
 
 #box-title {
-  grid-column: 1/5;
-  grid-row: 1;
+  grid-area: 1/1/2/7;
   font-weight: 900;
-  font-size: x-large;
 }
 
 #box-img {
   grid-column: 1;
-  grid-row: 2/5;
+  grid-row-end: 6;
   width: 100%;
   max-height: 100%;
 }
 
 #text-box {
-  grid-column: 2/4;
-  grid-row: 2/5;
+  grid-area: 2/2/6/6;
   color: white;
   font-weight: 900;
   margin: 1rem;
@@ -105,16 +91,13 @@ footer {
 }
 
 @media only screen and (max-width: 650px) {
-  #box-img {
-    grid-column: 4;
-    grid-row: auto/2;
-    z-index: -1;
-    height: 100%;
-    max-width: 100%;
+  #box {
+    grid-area: 2/2/8/8;
   }
-
-  #text-box {
-    grid-column: 1/5;
+}
+@media only screen and (max-height: 500px) {
+  #box {
+    grid-area: 2/2/8/8;
   }
 }
 #badge {
