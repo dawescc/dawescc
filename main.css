@@ -89,6 +89,11 @@ body {
     grid-area: 2/2/8/8;
   }
 }
+@media only screen and (max-height: 400px) {
+  #box {
+    grid-area: 2/2/8/8;
+  }
+}
 #badge {
   margin: 0.25em;
   padding: 0.35rem;
