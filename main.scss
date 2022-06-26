@@ -79,7 +79,7 @@ body {
 }
 
 #box-text {
-  grid-area: 2/1/7/7;
+  grid-area: 2/1/span 5/span 6;
   color: white;
   font-weight: 900;
   margin: 1rem;
