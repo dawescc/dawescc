@@ -84,12 +84,12 @@ body {
   text-align: justify;
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 700px) {
   #box {
     grid-area: 2/2/8/8;
   }
 }
-@media only screen and (max-height: 400px) {
+@media only screen and (max-height: 700px) {
   #box {
     grid-area: 2/2/8/8;
   }
