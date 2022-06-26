@@ -63,6 +63,13 @@ footer {
   }
 }
 
+@media only screen and (max-height: 500px) {
+  #box {
+    height: 65%;
+    aspect-ratio: 1.5/1;
+  }
+}
+
 #box:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(25px);
