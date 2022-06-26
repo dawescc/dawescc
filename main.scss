@@ -16,6 +16,7 @@ body {
   font-family: $home-font;
   color: #fff;
   margin: auto;
+  overflow: hidden;
 }
 
 #content-wrapper {
@@ -29,10 +30,23 @@ body {
   grid-row-gap: 0px;
 }
 
+@media only screen and (max-width: 700px) {
+  #content-wrapper {
+    grid-template-columns: 1.5rem repeat(6, 1fr) 1.5rem;
+  }
+}
+
+@media only screen and (max-height: 700px) {
+  #content-wrapper {
+    grid-template-rows: 1.5rem 5rem repeat(5, 1fr) 3rem;
+  }
+}
+
 #footer {
   grid-area: 8/1/9/9;
   text-align: center;
   color: #fff;
+  z-index: 1;
 }
 
 #social {
@@ -103,4 +117,26 @@ body {
   padding: 0.35rem;
   max-width: 90%;
   height: auto;
+}
+
+#standing {
+  z-index: 0;
+  max-height: 55vh;
+  position: fixed;
+  left: 2rem;
+  bottom: -7rem;
+}
+
+@media only screen and (max-width: 700px) {
+  #standing {
+    left: -4.5rem;
+    bottom: -8rem;
+  }
+}
+
+@media only screen and (max-height: 700px) {
+  #standing {
+    left: -1.5rem;
+    bottom: -4rem;
+  }
 }
