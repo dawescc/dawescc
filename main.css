@@ -112,25 +112,4 @@ body {
   padding: 0.35rem;
   max-width: 90%;
   height: auto;
-}
-
-#standing {
-  z-index: 0;
-  max-height: 55vh;
-  position: fixed;
-  left: 2rem;
-  bottom: -7rem;
-}
-
-@media only screen and (max-width: 700px) {
-  #standing {
-    left: -5.5rem;
-    bottom: -8rem;
-  }
-}
-@media only screen and (max-height: 700px) {
-  #standing {
-    left: 0.5rem;
-    bottom: -4rem;
-  }
 }/*# sourceMappingURL=main.css.map */
