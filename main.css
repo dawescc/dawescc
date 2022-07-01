@@ -1,9 +1,9 @@
 @import "https://fonts.googleapis.com/css?family=Poppins";
 body {
-  background-image: url(assets/img/bg.jpg);
+  /* background-image: url(assets/img/bg.jpg); */
   background-size: cover;
   background-position: center;
-  background-color: black;
+  background-color: rgb(162, 210, 255);
 }
 
 .page-container {
@@ -26,16 +26,6 @@ body {
   grid-row-gap: 0px;
 }
 
-@media only screen and (max-width: 700px) {
-  #content-wrapper {
-    grid-template-columns: 1.5rem repeat(6, 1fr) 1.5rem;
-  }
-}
-@media only screen and (max-height: 700px) {
-  #content-wrapper {
-    grid-template-rows: 1.5rem 5rem repeat(5, 1fr) 3rem;
-  }
-}
 #footer {
   grid-area: 8/1/9/9;
   text-align: center;
@@ -56,7 +46,7 @@ body {
 }
 
 #box {
-  background: rgba(0, 0, 0, 0.55);
+  background: rgb(255, 175, 204);
   grid-area: 3/3/7/7;
   transition: 0.3s;
   border-radius: 5px;
@@ -91,12 +81,28 @@ body {
 
 #box-text {
   grid-area: 2/1/span 5/span 6;
-  color: white;
   font-weight: 900;
   margin: 1rem;
   text-align: justify;
 }
 
+#badge {
+  margin: 0.25em;
+  padding: 0.35rem;
+  max-width: 90%;
+  height: auto;
+}
+
+@media only screen and (max-width: 700px) {
+  #content-wrapper {
+    grid-template-columns: 1.5rem repeat(6, 1fr) 1.5rem;
+  }
+}
+@media only screen and (max-height: 700px) {
+  #content-wrapper {
+    grid-template-rows: 1.5rem 5rem repeat(5, 1fr) 3rem;
+  }
+}
 @media only screen and (max-width: 700px) {
   #box {
     grid-area: 2/2/8/8;
@@ -107,9 +113,29 @@ body {
     grid-area: 2/2/8/8;
   }
 }
-#badge {
-  margin: 0.25em;
-  padding: 0.35rem;
-  max-width: 90%;
-  height: auto;
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: rgb(43, 45, 66);
+  }
+
+  #box {
+    background: rgb(64, 66, 87);
+  }
+
+  .page-container {
+    color: #fff;
+  }
+}
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: rgb(255, 251, 252);
+  }
+
+  #box {
+    background: rgb(247, 206, 213);
+  }
+
+  .page-container {
+    color: rgb(0, 0, 0);
+  }
 }/*# sourceMappingURL=main.css.map */
