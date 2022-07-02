@@ -126,11 +126,15 @@ body {
   }
 
   #box {
-    background: rgb(33, 36, 50);
+    background: rgba(255, 255, 255, 0.12);
   }
 
   .page-container {
     color: #fff;
+  }
+
+  h1 {
+    color:rgb(255, 175, 204)
   }
 }
 
@@ -145,5 +149,9 @@ body {
 
   .page-container {
     color: rgb(0, 0, 0);
+  }
+
+  h1 {
+    color:rgb(18, 18, 18)
   }
 }
