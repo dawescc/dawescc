@@ -1,10 +1,18 @@
+/* IMPORTS */
+
 @import "https://fonts.googleapis.com/css?family=Poppins";
 
-$primary-color: rgb(231, 71, 31);
+/* CUSTOM VARS */
+
+$primary-color: rgb(255, 175, 204);
+$secondary-color: rgb(18, 18, 18);
+$dark-bg: rgb(18, 18, 18);
+$light-bg: rgb(255, 251, 252);
 $home-font: "Poppins";
 
+/*CONTENT PROPERTIES*/
+
 body {
-  /* background-image: url(assets/img/bg.jpg); */
   background-size: cover;
   background-position: center;
   background-color: rgb(162, 210, 255);
@@ -49,8 +57,17 @@ body {
   opacity: 100%;
 }
 
+#badge {
+  margin: 0.25em;
+  padding: 0.35rem;
+  max-width: 90%;
+  height: auto;
+}
+
+/* BOX PROPERTIES */
+
 #box {
-  background: rgb(255, 175, 204);
+  background: $primary-color;
   grid-area: 3/3/7/7;
   transition: 0.3s;
   border-radius: 5px; /* 5px rounded corners */
@@ -64,6 +81,8 @@ body {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(25px);
 }
+
+/* BOX CONTENT PROPERTIES*/
 
 #box-content {
   display: grid;
@@ -88,41 +107,35 @@ body {
   text-align: justify;
 }
 
-#badge {
-  margin: 0.25em;
-  padding: 0.35rem;
-  max-width: 90%;
-  height: auto;
-}
+/* PORTRAIT ORENTATION*/
 
 @media only screen and (max-width: 700px) {
   #content-wrapper {
     grid-template-columns: 1.5rem repeat(6, 1fr) 1.5rem;
   }
+
+  #box {
+    grid-area: 2/2/8/8;
+  }
 }
+
+/* LANDSCAPE ORENTATION*/
 
 @media only screen and (max-height: 700px) {
   #content-wrapper {
     grid-template-rows: 1.5rem 5rem repeat(5, 1fr) 3rem;
   }
-}
-
-
-@media only screen and (max-width: 700px) {
+  
   #box {
     grid-area: 2/2/8/8;
   }
 }
 
-@media only screen and (max-height: 700px) {
-  #box {
-    grid-area: 2/2/8/8;
-  }
-}
+/* DARK MODE */
 
 @media (prefers-color-scheme: dark) {
   body {
-    background-color: rgb(18, 18, 18);
+    background-color: $dark-bg;
   }
 
   #box {
@@ -134,24 +147,26 @@ body {
   }
 
   h1 {
-    color:rgb(255, 175, 204)
+    color: $primary-color;
   }
 }
 
+/* LIGHT MODE */
+
 @media (prefers-color-scheme: light) {
   body {
-    background-color: rgb(255, 251, 252);
+    background-color: $light-bg;
   }
 
   #box {
-    background: rgb(247, 206, 213);
+    background: $primary-color;
   }
 
   .page-container {
-    color: rgb(0, 0, 0);
+    color: $secondary-color;
   }
 
   h1 {
-    color:rgb(18, 18, 18)
+    color:$secondary-color;
   }
 }

@@ -1,6 +1,8 @@
+/* IMPORTS */
 @import "https://fonts.googleapis.com/css?family=Poppins";
+/* CUSTOM VARS */
+/*CONTENT PROPERTIES*/
 body {
-  /* background-image: url(assets/img/bg.jpg); */
   background-size: cover;
   background-position: center;
   background-color: rgb(162, 210, 255);
@@ -45,6 +47,14 @@ body {
   opacity: 100%;
 }
 
+#badge {
+  margin: 0.25em;
+  padding: 0.35rem;
+  max-width: 90%;
+  height: auto;
+}
+
+/* BOX PROPERTIES */
 #box {
   background: rgb(255, 175, 204);
   grid-area: 3/3/7/7;
@@ -63,6 +73,7 @@ body {
           backdrop-filter: blur(25px);
 }
 
+/* BOX CONTENT PROPERTIES*/
 #box-content {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -86,33 +97,27 @@ body {
   text-align: justify;
 }
 
-#badge {
-  margin: 0.25em;
-  padding: 0.35rem;
-  max-width: 90%;
-  height: auto;
-}
-
+/* PORTRAIT ORENTATION*/
 @media only screen and (max-width: 700px) {
   #content-wrapper {
     grid-template-columns: 1.5rem repeat(6, 1fr) 1.5rem;
   }
+
+  #box {
+    grid-area: 2/2/8/8;
+  }
 }
+/* LANDSCAPE ORENTATION*/
 @media only screen and (max-height: 700px) {
   #content-wrapper {
     grid-template-rows: 1.5rem 5rem repeat(5, 1fr) 3rem;
   }
-}
-@media only screen and (max-width: 700px) {
+
   #box {
     grid-area: 2/2/8/8;
   }
 }
-@media only screen and (max-height: 700px) {
-  #box {
-    grid-area: 2/2/8/8;
-  }
-}
+/* DARK MODE */
 @media (prefers-color-scheme: dark) {
   body {
     background-color: rgb(18, 18, 18);
@@ -130,17 +135,18 @@ body {
     color: rgb(255, 175, 204);
   }
 }
+/* LIGHT MODE */
 @media (prefers-color-scheme: light) {
   body {
     background-color: rgb(255, 251, 252);
   }
 
   #box {
-    background: rgb(247, 206, 213);
+    background: rgb(255, 175, 204);
   }
 
   .page-container {
-    color: rgb(0, 0, 0);
+    color: rgb(18, 18, 18);
   }
 
   h1 {
