@@ -1,6 +1,6 @@
 /* IMPORTS */
 
-@import "https://fonts.googleapis.com/css?family=Poppins";
+@import "https://fonts.googleapis.com/css?family=Poppins&display=swap";
 
 /* CUSTOM VARIABLES */
 
@@ -9,16 +9,21 @@ $dark-text: rgb(18, 18, 18);
 $light-text: rgb(255, 251, 252);
 $dark-bg: rgb(18, 18, 18);
 $light-bg: rgb(255, 251, 252);
-$home-font: "Poppins";
+$home-font: 'Poppins', sans-serif;
 
-/*CONTENT STYLING*/
-  /*WRAPPERS*/
+/* CONTENT STYLING */
+
+body {
+  margin: .5rem;
+  font-family: $home-font;
+}
+
+/* WRAPPERS */
 
 .page-container {
   position: relative;
-  height: 95vh;
-  font-family: $home-font;
-  color: #fff;
+  min-height: 90vh;
+  max-height: 95vh;
   margin: auto;
   overflow: hidden;
 }
@@ -34,19 +39,18 @@ $home-font: "Poppins";
   grid-row-gap: 0px;
 }
 
-  /*WRAPPERS END*/
+/*WRAPPERS END */
 
 #footer {
   grid-area: 8/1/9/9;
   text-align: center;
-  color: #fff;
   z-index: 1;
-  margin: .25rem;
+  margin: 0.25rem;
 }
 
 #social {
   margin: 0 auto;
-  padding: .5rem;
+  padding: 0.5rem;
   opacity: 80%;
 }
 
@@ -68,14 +72,14 @@ $home-font: "Poppins";
   background: $primary-color;
   grid-area: 3/3/7/7;
   transition: 0.3s;
-  border-radius: 5px; /* 5px rounded corners */
+  border-radius: 5px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   padding: 1rem;
 }
 
-/* BOX CONTENT PROPERTIES*/
+/* BOX CONTENT PROPERTIES */
 
 #box-content {
   display: grid;
@@ -88,24 +92,24 @@ $home-font: "Poppins";
 }
 
 #box-title {
-  grid-area: 1/1/2/span 6;
+  grid-area: 1/1/2 / span 6;
+  margin: 0.5rem;
   font-weight: 900;
-  margin: .5rem;
 }
 
 #box-text {
-  grid-area: 2/1/span 5/span 6;
-  font-weight: 900;
+  grid-area: 2/1 / span 5 / span 6;
+  font-weight: 100;
   margin: 1rem;
-  text-align: justify;
+  text-align: center;
 }
 
 #stack {
   text-align: center;
-  margin: .25em;
+  margin: 0.25em;
 }
 
-/* PORTRAIT ORENTATION*/
+/* PORTRAIT ORENTATION */
 
 @media only screen and (max-width: 700px) {
   #content-wrapper {
@@ -117,13 +121,13 @@ $home-font: "Poppins";
   }
 }
 
-/* LANDSCAPE ORENTATION*/
+/* LANDSCAPE ORENTATION */
 
 @media only screen and (max-height: 700px) {
   #content-wrapper {
     grid-template-rows: 1.5rem 5rem repeat(5, 1fr) 3rem;
   }
-  
+
   #box {
     grid-area: 2/2/8/8;
   }
@@ -165,6 +169,6 @@ $home-font: "Poppins";
   }
 
   h1 {
-    color:$dark-text;
+    color: $dark-text;
   }
 }
