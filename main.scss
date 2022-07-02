@@ -2,10 +2,12 @@
 
 @import "https://fonts.googleapis.com/css?family=Poppins";
 
-/* CUSTOM VARS */
+/* CUSTOM VARIABLES */
 
 $primary-color: rgb(255, 175, 204);
 $secondary-color: rgb(162, 210, 255);
+$dark-text: rgb(18, 18, 18);
+$light-text: rgb(255, 251, 252);
 $dark-bg: rgb(18, 18, 18);
 $light-bg: rgb(255, 251, 252);
 $home-font: "Poppins";
@@ -74,11 +76,6 @@ $home-font: "Poppins";
   padding: 1rem;
 }
 
-#box:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
-  backdrop-filter: blur(25px);
-}
-
 /* BOX CONTENT PROPERTIES*/
 
 #box-content {
@@ -102,6 +99,11 @@ $home-font: "Poppins";
   font-weight: 900;
   margin: 1rem;
   text-align: justify;
+}
+
+#stack {
+  text-align: center;
+  margin: .25em;
 }
 
 /* PORTRAIT ORENTATION*/
@@ -136,11 +138,11 @@ $home-font: "Poppins";
   }
 
   #box {
-    background: rgba(255, 255, 255, 0.12);
+    background: rgba($light-bg, 0.05);
   }
 
   .page-container {
-    color: #fff;
+    color: $light-text;
   }
 
   h1 {
@@ -160,10 +162,10 @@ $home-font: "Poppins";
   }
 
   .page-container {
-    color: $secondary-color;
+    color: $dark-text;
   }
 
   h1 {
-    color:$secondary-color;
+    color:$dark-text;
   }
 }
