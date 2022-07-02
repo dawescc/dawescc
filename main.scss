@@ -5,18 +5,13 @@
 /* CUSTOM VARS */
 
 $primary-color: rgb(255, 175, 204);
-$secondary-color: rgb(18, 18, 18);
+$secondary-color: rgb(162, 210, 255);
 $dark-bg: rgb(18, 18, 18);
 $light-bg: rgb(255, 251, 252);
 $home-font: "Poppins";
 
-/*CONTENT PROPERTIES*/
-
-body {
-  background-size: cover;
-  background-position: center;
-  background-color: rgb(162, 210, 255);
-}
+/*CONTENT STYLING*/
+  /*WRAPPERS*/
 
 .page-container {
   position: relative;
@@ -37,6 +32,8 @@ body {
   grid-column-gap: 0px;
   grid-row-gap: 0px;
 }
+
+  /*WRAPPERS END*/
 
 #footer {
   grid-area: 8/1/9/9;

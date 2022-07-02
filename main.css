@@ -1,13 +1,8 @@
 /* IMPORTS */
 @import "https://fonts.googleapis.com/css?family=Poppins";
 /* CUSTOM VARS */
-/*CONTENT PROPERTIES*/
-body {
-  background-size: cover;
-  background-position: center;
-  background-color: rgb(162, 210, 255);
-}
-
+/*CONTENT STYLING*/
+/*WRAPPERS*/
 .page-container {
   position: relative;
   height: 95vh;
@@ -28,6 +23,7 @@ body {
   grid-row-gap: 0px;
 }
 
+/*WRAPPERS END*/
 #footer {
   grid-area: 8/1/9/9;
   text-align: center;
@@ -146,10 +142,10 @@ body {
   }
 
   .page-container {
-    color: rgb(18, 18, 18);
+    color: rgb(162, 210, 255);
   }
 
   h1 {
-    color: rgb(18, 18, 18);
+    color: rgb(162, 210, 255);
   }
 }/*# sourceMappingURL=main.css.map */
