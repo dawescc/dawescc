@@ -8,7 +8,7 @@ body {
 
 .page-container {
   position: relative;
-  min-height: 95vh;
+  height: 95vh;
   font-family: "Poppins";
   color: #fff;
   margin: auto;
@@ -115,11 +115,11 @@ body {
 }
 @media (prefers-color-scheme: dark) {
   body {
-    background-color: rgb(43, 45, 66);
+    background-color: rgb(18, 18, 18);
   }
 
   #box {
-    background: rgb(64, 66, 87);
+    background: rgb(33, 36, 50);
   }
 
   .page-container {
