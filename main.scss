@@ -53,6 +53,8 @@ $home-font: 'Poppins', sans-serif;
   max-height: 100%;
   margin: auto;
   overflow: auto;
+
+  *:first-line {}
 }
 
 #box-title {
@@ -65,7 +67,7 @@ $home-font: 'Poppins', sans-serif;
 #box-media {
   grid-area: 2/1 / span 5 / span 6;
   font-weight: 100;
-  margin: 1rem;
+  margin: .5rem;
   display: flex;
   flex-direction: column;
 }
@@ -95,11 +97,11 @@ highlight {
   margin: 0 auto;
   padding: 0.5rem;
   opacity: 80%;
-}
 
-.social:hover {
-  transform: scale(1.1);
-  opacity: 100%;
+  &:hover {
+    transform: scale(1.1);
+    opacity: 100%;
+  }
 }
 
 #cv-button {
