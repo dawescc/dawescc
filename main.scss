@@ -48,13 +48,13 @@ body {
   margin: 0.25rem;
 }
 
-#social {
+.social {
   margin: 0 auto;
   padding: 0.5rem;
   opacity: 80%;
 }
 
-#social:hover {
+.social:hover {
   transform: scale(1.1);
   opacity: 100%;
 }
@@ -109,6 +109,20 @@ body {
   margin: 0.25em;
 }
 
+#cv-button {
+  content: url("https://img.shields.io/badge/-Download%20CV-pink?style=for-the-badge");
+}
+
+#github {
+  content: url("assets/img/github.png");
+  height: 50%;
+}
+
+#twitter {
+  content: url("assets/img/twitter.png");
+  height: 50%;
+}
+
 /* PORTRAIT ORENTATION */
 
 @media only screen and (max-width: 700px) {
@@ -151,6 +165,10 @@ body {
   h1 {
     color: $primary-color;
   }
+
+  highlight {
+    color: $primary-color;
+  }
 }
 
 /* LIGHT MODE */
@@ -170,5 +188,9 @@ body {
 
   h1 {
     color: $dark-text;
+  }
+
+  highlight {
+    color: $light-text;
   }
 }
