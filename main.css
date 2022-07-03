@@ -1,12 +1,6 @@
 /* IMPORTS */
 @import "https://fonts.googleapis.com/css?family=Poppins&display=swap";
 /* CUSTOM VARIABLES */
-/* CONTENT STYLING */
-body {
-  margin: 0.5rem;
-  font-family: "Poppins", sans-serif;
-}
-
 /* WRAPPERS */
 .page-container {
   position: relative;
@@ -27,30 +21,16 @@ body {
   grid-row-gap: 0px;
 }
 
-/*WRAPPERS END */
 #footer {
   grid-area: 8/1/9/9;
   text-align: center;
   z-index: 1;
   margin: 0.25rem;
-}
-
-.social {
-  margin: 0 auto;
-  padding: 0.5rem;
-  opacity: 80%;
-}
-
-.social:hover {
-  transform: scale(1.1);
-  opacity: 100%;
-}
-
-#badge {
-  margin: 0.25em;
-  padding: 0.35rem;
-  max-width: 90%;
-  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 /* BOX PROPERTIES */
@@ -94,18 +74,50 @@ body {
   margin: 0.25em;
 }
 
+/* CONTENT STYLING */
+body {
+  margin: 0.5rem;
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  color: rgb(255, 175, 204);
+}
+
+highlight {
+  color: rgb(255, 175, 204);
+}
+
+.social {
+  margin: 0 auto;
+  padding: 0.5rem;
+  opacity: 80%;
+}
+
+.social:hover {
+  transform: scale(1.1);
+  opacity: 100%;
+}
+
 #cv-button {
-  content: url("https://img.shields.io/badge/-Download%20CV-pink?style=for-the-badge");
+  content: url("https://img.shields.io/badge/-Download%20CV-fffbfc?style=for-the-badge");
 }
 
 #github {
   content: url("assets/img/github.png");
-  height: 50%;
+  height: 1.5rem;
 }
 
 #twitter {
   content: url("assets/img/twitter.png");
-  height: 50%;
+  height: 1.5rem;
+}
+
+#badge {
+  margin: 0.25em;
+  padding: 0.35rem;
+  max-width: 90%;
+  height: auto;
 }
 
 /* PORTRAIT ORENTATION */
@@ -135,40 +147,28 @@ body {
   }
 
   #box {
-    background: rgba(255, 251, 252, 0.05);
+    background-color: rgb(37, 33, 34);
   }
 
   .page-container {
     color: rgb(255, 251, 252);
   }
 
-  h1 {
-    color: rgb(255, 175, 204);
-  }
-
-  highlight {
-    color: rgb(255, 175, 204);
+  #cv-button {
+    content: url("https://img.shields.io/badge/-Download%20CV-252122?style=for-the-badge");
   }
 }
 /* LIGHT MODE */
 @media (prefers-color-scheme: light) {
   body {
-    background-color: rgb(255, 251, 252);
+    background-color: rgb(236, 236, 236);
   }
 
   #box {
-    background: rgb(255, 175, 204);
+    background-color: rgb(255, 251, 252);
   }
 
   .page-container {
     color: rgb(18, 18, 18);
-  }
-
-  h1 {
-    color: rgb(18, 18, 18);
-  }
-
-  highlight {
-    color: rgb(255, 251, 252);
   }
 }/*# sourceMappingURL=main.css.map */

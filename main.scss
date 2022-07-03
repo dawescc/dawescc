@@ -8,15 +8,10 @@ $primary-color: rgb(255, 175, 204);
 $dark-text: rgb(18, 18, 18);
 $light-text: rgb(255, 251, 252);
 $dark-bg: rgb(18, 18, 18);
-$light-bg: rgb(255, 251, 252);
+$dark-box: rgb(37, 33, 34);
+$light-bg: rgb(236, 236, 236);
+$light-box: rgb(255, 251, 252);
 $home-font: 'Poppins', sans-serif;
-
-/* CONTENT STYLING */
-
-body {
-  margin: .5rem;
-  font-family: $home-font;
-}
 
 /* WRAPPERS */
 
@@ -39,31 +34,16 @@ body {
   grid-row-gap: 0px;
 }
 
-/*WRAPPERS END */
-
 #footer {
   grid-area: 8/1/9/9;
   text-align: center;
   z-index: 1;
   margin: 0.25rem;
-}
-
-.social {
-  margin: 0 auto;
-  padding: 0.5rem;
-  opacity: 80%;
-}
-
-.social:hover {
-  transform: scale(1.1);
-  opacity: 100%;
-}
-
-#badge {
-  margin: 0.25em;
-  padding: 0.35rem;
-  max-width: 90%;
-  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 /* BOX PROPERTIES */
@@ -109,18 +89,51 @@ body {
   margin: 0.25em;
 }
 
+/* CONTENT STYLING */
+
+body {
+  margin: .5rem;
+  font-family: $home-font;
+}
+
+h1 {
+  color: $primary-color;
+}
+
+highlight {
+  color: $primary-color;
+}
+
+.social {
+  margin: 0 auto;
+  padding: 0.5rem;
+  opacity: 80%;
+}
+
+.social:hover {
+  transform: scale(1.1);
+  opacity: 100%;
+}
+
 #cv-button {
-  content: url("https://img.shields.io/badge/-Download%20CV-pink?style=for-the-badge");
+  content: url("https://img.shields.io/badge/-Download%20CV-fffbfc?style=for-the-badge");
 }
 
 #github {
   content: url("assets/img/github.png");
-  height: 50%;
+  height: 1.5rem;
 }
 
 #twitter {
   content: url("assets/img/twitter.png");
-  height: 50%;
+  height: 1.5rem;
+}
+
+#badge {
+  margin: 0.25em;
+  padding: 0.35rem;
+  max-width: 90%;
+  height: auto;
 }
 
 /* PORTRAIT ORENTATION */
@@ -155,19 +168,15 @@ body {
   }
 
   #box {
-    background: rgba($light-bg, 0.05);
+    background-color: $dark-box;
   }
 
   .page-container {
     color: $light-text;
   }
 
-  h1 {
-    color: $primary-color;
-  }
-
-  highlight {
-    color: $primary-color;
+  #cv-button {
+    content: url("https://img.shields.io/badge/-Download%20CV-252122?style=for-the-badge");
   }
 }
 
@@ -179,18 +188,10 @@ body {
   }
 
   #box {
-    background: $primary-color;
+    background-color: $light-box;
   }
 
   .page-container {
     color: $dark-text;
-  }
-
-  h1 {
-    color: $dark-text;
-  }
-
-  highlight {
-    color: $light-text;
   }
 }
