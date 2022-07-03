@@ -58,7 +58,7 @@ body {
   margin: 0.5rem;
 }
 
-#stack {
+.stack {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -68,26 +68,26 @@ body {
   border-radius: 5px;
 }
 
-#badge {
+.badge {
   margin: 0.25em;
   padding: 0.35rem;
   max-width: 90%;
   height: auto;
 }
-#badge.html5 {
+.badge#html5 {
   content: url("https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white");
 }
-#badge.csscript {
+.badge#csscript {
   content: url("https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white");
 }
-#badge.tyscript {
-  content: url("https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white");
+.badge#jscript {
+  content: url("https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E");
 }
-#badge.python {
+.badge#python {
   content: url("https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54");
 }
-#badge.jscript {
-  content: url("https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E");
+.badge#reactjs {
+  content: url("https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB");
 }
 
 .title {
@@ -95,23 +95,23 @@ body {
   font-weight: 900;
 }
 
-#social-button {
+.social-button {
   margin: 0 auto;
   padding: 0.5rem;
   opacity: 80%;
 }
-#social-button:hover {
+.social-button:hover {
   transform: scale(1.1);
   opacity: 100%;
 }
-#social-button.cv {
+.social-button#cv {
   content: url("https://img.shields.io/badge/-Download%20CV-fffbfc?style=for-the-badge");
 }
-#social-button.github {
+.social-button#github {
   content: url("assets/img/github.png");
   height: 1.5rem;
 }
-#social-button.twitter {
+.social-button#twitter {
   content: url("assets/img/twitter.png");
   height: 1.5rem;
 }
@@ -134,11 +134,11 @@ highlight {
     background-color: rgb(36, 36, 36);
   }
 
-  #social-button.cv {
+  .social-button#cv {
     content: url("https://img.shields.io/badge/-Download%20CV-242424?style=for-the-badge");
   }
 
-  #stack {
+  .stack {
     background-color: rgba(18, 18, 18, 0.25);
     border: 0.05em solid rgb(18, 18, 18);
   }
@@ -154,7 +154,7 @@ highlight {
     background-color: rgb(255, 251, 252);
   }
 
-  #stack {
+  .stack {
     background-color: rgba(236, 236, 236, 0.25);
     border: 0.05em solid rgb(236, 236, 236);
   }

@@ -5,12 +5,16 @@
 /* CUSTOM VARIABLES */
 
 $primary-color: rgb(255, 175, 204);
+
 $dark-text: rgb(18, 18, 18);
 $light-text: rgb(255, 251, 252);
+
 $dark-bg: rgb(18, 18, 18);
 $dark-box: rgb(36, 36, 36);
+
 $light-bg: rgb(236, 236, 236);
 $light-box: rgb(255, 251, 252);
+
 $home-font: 'Poppins', sans-serif;
 
 /* WRAPPER */
@@ -72,7 +76,7 @@ body {
   margin: 0.5rem;
 }
 
-#stack {
+.stack {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -82,31 +86,31 @@ body {
   border-radius: 5px;
 }
 
-#badge {
+.badge {
   margin: 0.25em;
   padding: 0.35rem;
   max-width: 90%;
   height: auto;
 
-  &.html5 {
+  &#html5 {
     content: url("https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white");
   }
 
 
-  &.csscript {
+  &#csscript {
     content: url("https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white");
   }
 
-  &.tyscript {
-    content: url("https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white");
+  &#jscript {
+    content: url("https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E");
   }
 
-  &.python {
+  &#python {
     content: url("https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54");
   }
 
-  &.jscript {
-    content: url("https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E");
+  &#reactjs {
+    content: url("https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB");
   }
 }
 
@@ -115,7 +119,7 @@ body {
   font-weight: 900;
 }
 
-#social-button {
+.social-button {
   margin: 0 auto;
   padding: 0.5rem;
   opacity: 80%;
@@ -125,16 +129,16 @@ body {
     opacity: 100%;
   }
 
-  &.cv {
+  &#cv {
     content: url("https://img.shields.io/badge/-Download%20CV-fffbfc?style=for-the-badge");
   }
 
-  &.github {
+  &#github {
     content: url("assets/img/github.png");
     height: 1.5rem;
   }
 
-  &.twitter {
+  &#twitter {
     content: url("assets/img/twitter.png");
     height: 1.5rem;
   }
@@ -160,13 +164,13 @@ highlight {
     background-color: $dark-box;
   }
 
-  #social-button {
-    &.cv {
+  .social-button {
+    &#cv {
       content: url("https://img.shields.io/badge/-Download%20CV-242424?style=for-the-badge");
     }
   }
 
-  #stack {
+  .stack {
     background-color: rgba($dark-bg, .25);
     border: .05em solid $dark-bg;
   }
@@ -184,7 +188,7 @@ highlight {
     background-color: $light-box;
   }
 
-  #stack {
+  .stack {
     background-color: rgba($light-bg, .25);
     border: .05em solid $light-bg;
   }
