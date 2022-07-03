@@ -76,7 +76,10 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 0.25em;
+  margin: .25em .5em;
+  background-color: rgba($dark-bg, .2);
+  border: .05em solid rgba($dark-bg, .8);
+  border-radius: 5px;
 }
 
 #badge {
