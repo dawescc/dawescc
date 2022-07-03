@@ -56,16 +56,6 @@
   flex-direction: column;
 }
 
-.box-media-img {
-  height: 15rem;
-  display: flex;
-}
-
-#sitting-img {
-  content: url("assets/img/face.svg");
-  height: 100%;
-}
-
 #stack {
   text-align: center;
   margin: 0.25em;
