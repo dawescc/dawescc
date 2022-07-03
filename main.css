@@ -148,4 +148,10 @@ highlight {
   #box {
     background-color: rgb(255, 251, 252);
   }
+
+  #stack {
+    background-color: rgba(236, 236, 236, 0.2);
+    border: 0.05em solid rgba(236, 236, 236, 0.8);
+    border-radius: 5px;
+  }
 }/*# sourceMappingURL=main.css.map */
