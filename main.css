@@ -23,8 +23,8 @@
 /* BOX PROPERTIES */
 #box {
   background: rgb(255, 251, 252);
-  height: 75%;
-  width: 75%;
+  max-height: 7%;
+  max-width: 70%;
   border-radius: 5px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 1rem;
@@ -32,9 +32,8 @@
 
 /* BOX CONTENT PROPERTIES */
 #box-content {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(6, 1fr);
+  display: flex;
+  flex-direction: column;
   width: 95%;
   max-height: 100%;
   margin: auto;
