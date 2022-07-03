@@ -53,13 +53,15 @@
   grid-area: 1/1/2/span 6;
   margin: 0.5rem;
   font-weight: 900;
+  display: flex;
 }
 
-#box-text {
+#box-media {
   grid-area: 2/1/span 5/span 6;
   font-weight: 100;
   margin: 1rem;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 #stack {
