@@ -13,7 +13,7 @@ $light-bg: rgb(236, 236, 236);
 $light-box: rgb(255, 251, 252);
 $home-font: 'Poppins', sans-serif;
 
-/* WRAPPERS */
+/* WRAPPER */
 
 #content-flex-wrapper {
   width: 100%;
@@ -24,16 +24,12 @@ $home-font: 'Poppins', sans-serif;
   justify-content: space-around;
 }
 
-#box-content {
-  display: flex;
-  flex-direction: column;
-  width: 95%;
-  max-height: 100%;
-  margin: auto;
-  overflow: auto;
-}
+/* CONTENT STYLING */
 
-/* STYLE PROPERTIES */
+body {
+  font-family: $home-font;
+  color: $dark-text;
+}
 
 #footer {
   margin: 0.25rem;
@@ -53,6 +49,14 @@ $home-font: 'Poppins', sans-serif;
   padding: 1rem;
 }
 
+#box-content {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  max-height: 100%;
+  margin: auto;
+  overflow: auto;
+}
 
 .box-title {
   grid-area: 1/1/2 / span 6;
@@ -103,19 +107,7 @@ $home-font: 'Poppins', sans-serif;
   }
 }
 
-/* CONTENT STYLING */
-
-body {
-  font-family: $home-font;
-  color: $dark-text;
-}
-
-h1 {
-  color: $primary-color;
-  font-weight: 900;
-}
-
-highlight {
+.title {
   color: $primary-color;
   font-weight: 900;
 }
@@ -145,6 +137,14 @@ highlight {
   }
 }
 
+/* CUSTOM STYLE PROPERTIES */
+
+highlight {
+  color: $primary-color;
+  font-weight: 900;
+}
+
+/* MEDIA QUERIES */
 /* DARK MODE */
 
 @media (prefers-color-scheme: dark) {
@@ -157,8 +157,10 @@ highlight {
     background-color: $dark-box;
   }
 
-  #cv-button {
-    content: url("https://img.shields.io/badge/-Download%20CV-252122?style=for-the-badge");
+  #social-button {
+    &.cv {
+      content: url("https://img.shields.io/badge/-Download%20CV-252122?style=for-the-badge");
+    }
   }
 }
 

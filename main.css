@@ -1,7 +1,7 @@
 /* IMPORTS */
 @import "https://fonts.googleapis.com/css?family=Poppins&display=swap";
 /* CUSTOM VARIABLES */
-/* WRAPPERS */
+/* WRAPPER */
 #content-flex-wrapper {
   width: 100%;
   min-height: 100vh;
@@ -11,16 +11,12 @@
   justify-content: space-around;
 }
 
-#box-content {
-  display: flex;
-  flex-direction: column;
-  width: 95%;
-  max-height: 100%;
-  margin: auto;
-  overflow: auto;
+/* CONTENT STYLING */
+body {
+  font-family: "Poppins", sans-serif;
+  color: rgb(18, 18, 18);
 }
 
-/* STYLE PROPERTIES */
 #footer {
   margin: 0.25rem;
   display: flex;
@@ -37,6 +33,15 @@
   border-radius: 5px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 1rem;
+}
+
+#box-content {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  max-height: 100%;
+  margin: auto;
+  overflow: auto;
 }
 
 .box-title {
@@ -82,18 +87,7 @@
   content: url("https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E");
 }
 
-/* CONTENT STYLING */
-body {
-  font-family: "Poppins", sans-serif;
-  color: rgb(18, 18, 18);
-}
-
-h1 {
-  color: rgb(255, 175, 204);
-  font-weight: 900;
-}
-
-highlight {
+.title {
   color: rgb(255, 175, 204);
   font-weight: 900;
 }
@@ -119,6 +113,13 @@ highlight {
   height: 1.5rem;
 }
 
+/* CUSTOM STYLE PROPERTIES */
+highlight {
+  color: rgb(255, 175, 204);
+  font-weight: 900;
+}
+
+/* MEDIA QUERIES */
 /* DARK MODE */
 @media (prefers-color-scheme: dark) {
   body {
@@ -130,7 +131,7 @@ highlight {
     background-color: rgb(37, 33, 34);
   }
 
-  #cv-button {
+  #social-button.cv {
     content: url("https://img.shields.io/badge/-Download%20CV-252122?style=for-the-badge");
   }
 }
