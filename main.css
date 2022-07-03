@@ -39,19 +39,19 @@
   margin: auto;
   overflow: auto;
 }
+
 #box-title {
   grid-area: 1/1/2/span 6;
-  margin: 0.5rem;
-  font-weight: 900;
   display: flex;
+  margin: 0.5rem;
 }
 
 #box-media {
   grid-area: 2/1/span 5/span 6;
   font-weight: 100;
-  margin: 0.5rem;
   display: flex;
   flex-direction: column;
+  margin: 0.5rem;
 }
 
 #stack {
@@ -67,6 +67,7 @@ body {
 
 h1 {
   color: rgb(255, 175, 204);
+  font-weight: 900;
 }
 
 highlight {
