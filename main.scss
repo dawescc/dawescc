@@ -70,8 +70,38 @@ $home-font: 'Poppins', sans-serif;
 }
 
 #stack {
-  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   margin: 0.25em;
+}
+
+#badge {
+  margin: 0.25em;
+  padding: 0.35rem;
+  max-width: 90%;
+  height: auto;
+
+  &.html5 {
+    content: url("https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white");
+  }
+
+
+  &.csscript {
+    content: url("https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white");
+  }
+
+  &.tyscript {
+    content: url("https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white");
+  }
+
+  &.python {
+    content: url("https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54");
+  }
+
+  &.jscript {
+    content: url("https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E");
+  }
 }
 
 /* CONTENT STYLING */
@@ -91,7 +121,7 @@ highlight {
   font-weight: 900;
 }
 
-.social {
+#social-button {
   margin: 0 auto;
   padding: 0.5rem;
   opacity: 80%;
@@ -100,27 +130,20 @@ highlight {
     transform: scale(1.1);
     opacity: 100%;
   }
-}
 
-#cv-button {
-  content: url("https://img.shields.io/badge/-Download%20CV-fffbfc?style=for-the-badge");
-}
+  &.cv {
+    content: url("https://img.shields.io/badge/-Download%20CV-fffbfc?style=for-the-badge");
+  }
 
-#github {
-  content: url("assets/img/github.png");
-  height: 1.5rem;
-}
+  &.github {
+    content: url("assets/img/github.png");
+    height: 1.5rem;
+  }
 
-#twitter {
-  content: url("assets/img/twitter.png");
-  height: 1.5rem;
-}
-
-#badge {
-  margin: 0.25em;
-  padding: 0.35rem;
-  max-width: 90%;
-  height: auto;
+  &.twitter {
+    content: url("assets/img/twitter.png");
+    height: 1.5rem;
+  }
 }
 
 /* DARK MODE */
