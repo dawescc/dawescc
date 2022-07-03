@@ -27,7 +27,7 @@ body {
 }
 
 #box {
-  background: rgb(255, 251, 252);
+  background: rgb(36, 36, 36);
   max-height: 7%;
   max-width: 70%;
   border-radius: 5px;
@@ -63,8 +63,8 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   margin: 0.25em 0.5em;
-  background-color: rgba(18, 18, 18, 0.2);
-  border: 0.05em solid rgba(18, 18, 18, 0.8);
+  background-color: rgba(18, 18, 18, 0.25);
+  border: 0.05em solid rgb(18, 18, 18);
   border-radius: 5px;
 }
 
@@ -131,11 +131,16 @@ highlight {
   }
 
   #box {
-    background-color: rgb(37, 33, 34);
+    background-color: rgb(36, 36, 36);
   }
 
   #social-button.cv {
-    content: url("https://img.shields.io/badge/-Download%20CV-252122?style=for-the-badge");
+    content: url("https://img.shields.io/badge/-Download%20CV-242424?style=for-the-badge");
+  }
+
+  #stack {
+    background-color: rgba(18, 18, 18, 0.25);
+    border: 0.05em solid rgb(18, 18, 18);
   }
 }
 /* LIGHT MODE */
@@ -150,8 +155,7 @@ highlight {
   }
 
   #stack {
-    background-color: rgba(236, 236, 236, 0.2);
-    border: 0.05em solid rgba(236, 236, 236, 0.8);
-    border-radius: 5px;
+    background-color: rgba(236, 236, 236, 0.25);
+    border: 0.05em solid rgb(236, 236, 236);
   }
 }/*# sourceMappingURL=main.css.map */

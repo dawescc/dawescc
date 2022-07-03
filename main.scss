@@ -8,7 +8,7 @@ $primary-color: rgb(255, 175, 204);
 $dark-text: rgb(18, 18, 18);
 $light-text: rgb(255, 251, 252);
 $dark-bg: rgb(18, 18, 18);
-$dark-box: rgb(37, 33, 34);
+$dark-box: rgb(36, 36, 36);
 $light-bg: rgb(236, 236, 236);
 $light-box: rgb(255, 251, 252);
 $home-font: 'Poppins', sans-serif;
@@ -41,7 +41,7 @@ body {
 }
 
 #box {
-  background: $light-box;
+  background: $dark-box;
   max-height: 7%;
   max-width: 70%;
   border-radius: 5px;
@@ -77,8 +77,8 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   margin: .25em .5em;
-  background-color: rgba($dark-bg, .2);
-  border: .05em solid rgba($dark-bg, .8);
+  background-color: rgba($dark-bg, .25);
+  border: .05em solid $dark-bg;
   border-radius: 5px;
 }
 
@@ -162,8 +162,13 @@ highlight {
 
   #social-button {
     &.cv {
-      content: url("https://img.shields.io/badge/-Download%20CV-252122?style=for-the-badge");
+      content: url("https://img.shields.io/badge/-Download%20CV-242424?style=for-the-badge");
     }
+  }
+
+  #stack {
+    background-color: rgba($dark-bg, .25);
+    border: .05em solid $dark-bg;
   }
 }
 
@@ -180,8 +185,7 @@ highlight {
   }
 
   #stack {
-    background-color: rgba($light-bg, .2);
-    border: .05em solid rgba($light-bg, .8);
-    border-radius: 5px;
+    background-color: rgba($light-bg, .25);
+    border: .05em solid $light-bg;
   }
 }
