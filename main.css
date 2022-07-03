@@ -57,15 +57,42 @@ body {
   flex-direction: column;
   margin: 0.5rem;
 }
+.box-media a {
+  color: rgb(255, 175, 204);
+}
 
 .stack {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 0.25em 0.5em;
+  margin-top: 0.25em;
+  margin-right: 0.5em;
+  margin-bottom: 0em;
+  margin-left: 0.5em;
   background-color: rgba(18, 18, 18, 0.25);
   border: 0.05em solid rgb(18, 18, 18);
-  border-radius: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.comfort {
+  box-sizing: inherit;
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 0.8em;
+  margin-left: 0.8em;
+  padding: 0.2em;
+  padding-right: 0.5em;
+  background-color: rgb(36, 36, 36);
+  border: 0.05em solid rgb(18, 18, 18);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  font-size: x-small;
+  color: rgb(255, 251, 252);
+}
+.comfort hili {
+  color: rgb(255, 175, 204);
 }
 
 .badge {
@@ -117,7 +144,7 @@ body {
 }
 
 /* CUSTOM STYLE PROPERTIES */
-highlight {
+hili {
   color: rgb(255, 175, 204);
   font-weight: 900;
 }
@@ -136,11 +163,6 @@ highlight {
 
   .social-button#cv {
     content: url("https://img.shields.io/badge/-Download%20CV-242424?style=for-the-badge");
-  }
-
-  .stack {
-    background-color: rgba(18, 18, 18, 0.25);
-    border: 0.05em solid rgb(18, 18, 18);
   }
 }
 /* LIGHT MODE */

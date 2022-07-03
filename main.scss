@@ -74,16 +74,45 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0.5rem;
+
+  a {
+    color: $primary-color;
+  }
 }
 
 .stack {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: .25em .5em;
+  margin-top: 0.25em;
+  margin-right: 0.5em;
+  margin-bottom: 0em;
+  margin-left: 0.5em;
   background-color: rgba($dark-bg, .25);
   border: .05em solid $dark-bg;
-  border-radius: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.comfort {
+  box-sizing: inherit;
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: .8em;
+  margin-left: .8em;
+  padding: 0.2em;
+  padding-right: 0.5em;
+  background-color: $dark-box;
+  border: .05em solid $dark-bg;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  font-size: x-small;
+  color: $light-text;
+
+  & hili {
+    color: $primary-color;
+  }
 }
 
 .badge {
@@ -95,7 +124,6 @@ body {
   &#html5 {
     content: url("https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white");
   }
-
 
   &#csscript {
     content: url("https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white");
@@ -146,7 +174,7 @@ body {
 
 /* CUSTOM STYLE PROPERTIES */
 
-highlight {
+hili {
   color: $primary-color;
   font-weight: 900;
 }
@@ -168,11 +196,6 @@ highlight {
     &#cv {
       content: url("https://img.shields.io/badge/-Download%20CV-242424?style=for-the-badge");
     }
-  }
-
-  .stack {
-    background-color: rgba($dark-bg, .25);
-    border: .05em solid $dark-bg;
   }
 }
 
