@@ -1,6 +1,20 @@
 /* IMPORTS */
 @import "https://fonts.googleapis.com/css?family=Poppins&display=swap";
 /* CUSTOM VARIABLES */
+:root {
+  --primary-color: rgb(255, 175, 204);
+  --home-font: "Poppins", sans-serif;
+  --dark-text: rgb(18, 18, 18);
+  --dark-bg: rgb(18, 18, 18);
+  --dark-box: rgb(36, 36, 36);
+  --light-text: rgb(255, 251, 252);
+  --light-bg: rgb(236, 236, 236);
+  --light-box: rgb(255, 251, 252);
+  --text-color: var(--dark-text);
+  --bg-color: var(--light-bg);
+  --box-color: var(--light-box);
+}
+
 /* WRAPPER */
 #content-flex-wrapper {
   width: 100%;
@@ -13,8 +27,9 @@
 
 /* CONTENT STYLING */
 body {
-  font-family: "Poppins", sans-serif;
-  color: rgb(18, 18, 18);
+  font-family: var(--home-font);
+  color: var(--text-color);
+  background-color: var(--bg-color);
 }
 
 #footer {
@@ -27,7 +42,7 @@ body {
 }
 
 #box {
-  background: rgb(36, 36, 36);
+  background: var(--box-color);
   max-height: 7%;
   max-width: 70%;
   border-radius: 5px;
@@ -58,7 +73,7 @@ body {
   margin: 0.5rem;
 }
 .box-media a {
-  color: rgb(255, 175, 204);
+  color: var(--primary-color);
 }
 
 .stack {
@@ -69,8 +84,8 @@ body {
   margin-right: 0.5em;
   margin-bottom: 0em;
   margin-left: 0.5em;
-  background-color: rgba(18, 18, 18, 0.25);
-  border: 0.05em solid rgb(18, 18, 18);
+  background-color: rgba(var(--bg-color), 0.25);
+  border: 0.05em solid var(--bg-color);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
@@ -84,15 +99,16 @@ body {
   margin-left: 0.8em;
   padding: 0.2em;
   padding-right: 0.5em;
-  background-color: rgb(36, 36, 36);
-  border: 0.05em solid rgb(18, 18, 18);
+  background-color: var(--box-color);
+  border: 0.05em solid var(--bg-color);
+  border-top: none;
+  color: var(--text-color);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   font-size: x-small;
-  color: rgb(255, 251, 252);
 }
 .comfort hili {
-  color: rgb(255, 175, 204);
+  color: var(--primary-color);
 }
 
 .badge {
@@ -118,7 +134,7 @@ body {
 }
 
 .title {
-  color: rgb(255, 175, 204);
+  color: var(--primary-color);
   font-weight: 900;
 }
 
@@ -126,6 +142,7 @@ body {
   margin: 0 auto;
   padding: 0.5rem;
   opacity: 80%;
+  float: right;
 }
 .social-button:hover {
   transform: scale(1.1);
@@ -145,39 +162,20 @@ body {
 
 /* CUSTOM STYLE PROPERTIES */
 hili {
-  color: rgb(255, 175, 204);
+  color: var(--primary-color);
   font-weight: 900;
 }
 
 /* MEDIA QUERIES */
 /* DARK MODE */
 @media (prefers-color-scheme: dark) {
-  body {
-    background-color: rgb(18, 18, 18);
-    color: rgb(255, 251, 252);
-  }
-
-  #box {
-    background-color: rgb(36, 36, 36);
+  :root {
+    --text-color: var(--light-text);
+    --bg-color: var(--dark-bg);
+    --box-color: var(--dark-box);
   }
 
   .social-button#cv {
     content: url("https://img.shields.io/badge/-Download%20CV-242424?style=for-the-badge");
-  }
-}
-/* LIGHT MODE */
-@media (prefers-color-scheme: light) {
-  body {
-    background-color: rgb(236, 236, 236);
-    color: rgb(18, 18, 18);
-  }
-
-  #box {
-    background-color: rgb(255, 251, 252);
-  }
-
-  .stack {
-    background-color: rgba(236, 236, 236, 0.25);
-    border: 0.05em solid rgb(236, 236, 236);
   }
 }/*# sourceMappingURL=main.css.map */
