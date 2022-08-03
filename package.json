@@ -3,6 +3,7 @@
     "author": "Ryan Dawes",
     "dependencies": {
       "sass": "latest",
+      "@tailwindcss/aspect-ratio": "latest",
       "tailwindcss": "latest",
       "typescript": "latest"
     },
