@@ -32,7 +32,7 @@ export default function DropDown() {
           <Menu.Item>
               {({ active }) => (
                 <a
-                  href="https://github.com/dawesry/dawesry/blob/2adfc10c7a64eac81cd8eea4df2126fbfd39f1b7/src/assets/docs/Ryan-Dawes.pdf"
+                  href="https://github.com/dawesry/dawesry/blob/2adfc10c7a64eac81cd8eea4df2126fbfd39f1b7/src/assets/docs/Ryan-Dawes.pdf?raw=true"
                   target="_blank"
                   className={classNames(
                     active ? 'bg-dark text-white' : 'text-white',
