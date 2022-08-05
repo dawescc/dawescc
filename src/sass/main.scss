@@ -148,6 +148,18 @@ body {
   }
 }
 
+.parent {
+  position: relative;
+  display: inline-grid;
+  
+}
+
+.child {
+    position: absolute;
+    right: 0;
+    top: .75em;
+  }
+
 hili {
   color: $highlight;
 }
