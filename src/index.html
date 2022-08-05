@@ -9,42 +9,81 @@
     <link rel="stylesheet" href="sass/main.scss" />
   </head>
   <body>
-    <main id="content-flex-wrapper">
-      <div id="box" class="box-content">
-        <div class="box-title">
-          <h1 class="title">Hello, World!</h1>
-        </div>
-        <div class="box-media">
-          <p>
-            I'm <hili>Ryan</hili>, a Jr. Developer with a degree in
-            Data Analytics. I'm a lot like the classic mullet - all business in the frontend:
-          </p>
-          <div class="stack">
-            <img class="badge" id="html5" />
-            <img class="badge" id="csscript"/>
-            <img class="badge" id="jscript"/>
+    <nav class="bg-dark">
+      <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+        <div class="relative flex items-center justify-between h-16">
+          <div class="flex-1 flex items-center justify-end sm:items-stretch sm:justify-end">
+            <div class="flex-shrink-0 flex items-center">
+              <div id="dropdown"></div>
+            </div>
           </div>
-          <div class="comfort">Comfortability:&nbsp;<hili>Very High</hili></div>
-          <p>
-            and constantly adding to my party in the backend:
-          </p>
-          <div class="stack">
-            <img class="badge" id="python" />
-            <img class="badge" id="nodejs"/>
-          </div>
-          <div class="comfort">Comfortability:&nbsp;<hili>Moderate</hili></div>
-          <h3>Analyst, Certified Google UX Designer, and budding Developer.</h3> 
-          <a href="mailto: dev@dawes.cc">What else do you want to know?</a>
-          <a href="assets/docs/Ryan-Dawes.pdf" target="_blank"
-          ><img class="social-button" id="cv"/></a>
         </div>
       </div>
-      <footer id="footer">
-        <a href="https://github.com/dawesry/" target="_blank"
-          ><img class="social-button" id="github"/></a>
-        <a href="https://twitter.com/dawesinho/" target="_blank"
-          ><img class="social-button" id="twitter"/></a>
-      </footer>
+    </nav>
+
+    <main class="bg-dark" id="content-flex-wrapper">
+      <div class="flex flex-col px-2" id="hello-world" >
+          <p class="text-6xl my-3">I'm <hili>Ryan</hili>,</p>
+          <p class="text-sm mx-0.5">a Jr. Developer with a degree in
+            <alt-hili>Data Analytics
+            <svg class="h-5 w-5 inline-flex" viewBox="0 0 20 20" fill="currentColor">
+              <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z" />
+            </svg></alt-hili>
+          </p>
+          <img src="./assets/img/about-img2.svg" class="m-3 max-h-56" alt="Me">
+          <h1 class="text-xl my-3 mx-0.5">
+            <alt-hili>Analyst</alt-hili>, 
+            Certified Google <alt-hili-2>UX Designer</alt-hili-2>, 
+            and budding <hili>Developer</hili>.
+          </h1>
+      </div>
+
+      <div class="text-center" id="learning">
+        <h1 class="text-2xl m-2"><hili>Always learning.</hili></h1>
+        <p class="text-xs">visit my live</p>
+        <a href="https://testing.dawes.cc" target="_blank">
+          <span class="bg-gray-600 dark-text text-sm font-bold inline-flex items-center px-2.5 py-0.5 m-1 rounded">
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
+            </svg>
+            <p>TestingSpace</p>
+          </span>
+        </a>
+      </div>
+
+      <div id="full-stack">
+        <div class="stack">
+          <img class="badge" id="html5" />
+          <img class="badge" id="csscript"/>
+          <img class="badge" id="jscript"/>
+          <img class="badge" id="python" />
+          <img class="badge" id="nodejs"/>
+        </div>
+        <div class="comfort">Comfortability:&nbsp;<hili>High</hili></div>
+      </div>
     </main>
+    
+    <footer class="p-4 bg-dark-0 shadow md:px-6 md:py-8">
+      <div class="sm:flex sm:items-center sm:justify-between">
+          <a class="flex items-center mb-4 sm:mb-0">
+              <img src="./assets/img/face.svg" class="mr-3 h-16" alt="My Face">
+              </a>
+          <ul class="flex flex-wrap items-center mb-6 text-sm text-white sm:mb-0 dark:text-gray-400">
+              <li>
+                  <a href="./assets/docs/LICENSE.txt" class="mr-4 hover:underline md:mr-6 ">Licensing</a>
+              </li>
+              <li>
+                  <a href="mailto: dev@dawes.cc" class="hover:underline">Contact</a>
+              </li>
+          </ul>
+      </div>
+      <span class="block text-sm sm:text-center mt-3">
+        Crafted in 2022 by
+        <a href="https://twitter.com/dawesinho" class="hover:underline">
+        Ryan Dawes</a>
+      </span>
+    </footer>
+
+    <script type="module" src="ts/index.tsx"></script>
   </body>
 </html>
