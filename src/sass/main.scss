@@ -33,8 +33,12 @@ $font: 'Poppins', sans-serif;
 }
 
 .text-dark {
-  color:#282c34;
+  color:$bg;
 } 
+
+.text-light {
+  color: $text;
+}
 
 .bg-secondary {
   background-color: $highlight3;
