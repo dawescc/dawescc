@@ -99,6 +99,44 @@ body {
   }
 }
 
+.app-stack {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.25em;
+  margin-right: 0.5em;
+  margin-bottom: 0em;
+  margin-left: 0.5em;
+  background-color: $bg-1;
+  border: .05em solid $bg-0;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.app-build {
+  box-sizing: inherit;
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: .8em;
+  margin-left: .8em;
+  padding: 0.2em;
+  padding-right: 0.5em;
+  background-color: $bg;
+  border: .05em solid $bg-0;
+  border-top: none;
+  color: var(--text-color);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  font-size: x-small;
+
+  & hili {
+    color: $highlight;
+  }
+}
+
 .badge {
   margin: 0.25em;
   padding: 0.35rem;
@@ -162,6 +200,11 @@ body {
     position: absolute;
     right: 0;
     top: .75em;
+  }
+
+.hover\:bg-dark:hover {
+    --tw-bg-opacity: 1;
+    background-color: $bg;
   }
 
 hili {
