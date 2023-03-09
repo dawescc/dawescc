@@ -1,5 +1,5 @@
 @import url(./modules/blob.css);
-@import url(./modules/page.css);
+@import url(./modules/page.scss);
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css");
 
 html {
