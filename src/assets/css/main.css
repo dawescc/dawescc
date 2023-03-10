@@ -6,6 +6,7 @@ html {
     font-family: "Space Mono", monospace;
     background-color: black;
     color: white;
+    overflow: hidden;
 }
 
 body {

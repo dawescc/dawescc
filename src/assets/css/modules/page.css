@@ -137,9 +137,11 @@
 }
 
 .cta {
+  font-size: small;
+  opacity: 45%;
   margin-bottom: 5px;
-  animation: bounce 1s cubic-bezier(0.39, 0.575, 0.565, 1) infinite;
-  -webkit-animation: bounce 1s cubic-bezier(0.39, 0.575, 0.565, 1) infinite;
+  animation: bounce 3s cubic-bezier(0.39, 0.575, 0.565, 1) infinite;
+  -webkit-animation: bounce 3s cubic-bezier(0.39, 0.575, 0.565, 1) infinite;
 }
 @keyframes bounce {
   0% {
