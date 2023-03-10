@@ -149,3 +149,53 @@
   vertical-align: middle;
   margin-inline: 4px;
 }
+
+.cta {
+  margin-bottom: 5px;
+	animation: bounce 1s cubic-bezier(0.39, 0.575, 0.565, 1)  infinite;
+	-webkit-animation: bounce 1s cubic-bezier(0.39, 0.575, 0.565, 1) infinite;
+}
+ 
+@-webkit-keyframes bounce {
+  0% { transform: translateY(-5px)  }
+  50% { transform: translateY(10px) }
+  100% { transform: translateY(-5px) }
+}
+
+@keyframes bounce {
+  0% { transform: translateY(-5px)  }
+  50% { transform: translateY(10px) }
+  100% { transform: translateY(-5px) }
+}
+
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { 
+
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .cta {
+    display: none;
+  }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .cta {
+    display: none;
+  }
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {
+  .cta {
+    display: none;
+  }
+}

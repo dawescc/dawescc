@@ -134,4 +134,36 @@
   font-size: x-small;
   vertical-align: middle;
   margin-inline: 4px;
+}
+
+.cta {
+  margin-bottom: 5px;
+  animation: bounce 1s cubic-bezier(0.39, 0.575, 0.565, 1) infinite;
+  -webkit-animation: bounce 1s cubic-bezier(0.39, 0.575, 0.565, 1) infinite;
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-5px);
+  }
+}
+@media (min-width: 992px) {
+  .cta {
+    display: none;
+  }
+}
+@media (min-width: 1200px) {
+  .cta {
+    display: none;
+  }
+}
+@media (min-width: 1400px) {
+  .cta {
+    display: none;
+  }
 }/*# sourceMappingURL=page.css.map */
