@@ -10,6 +10,43 @@
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%);
   box-shadow: 0 0 6px 0 rgba(32, 32, 36, 0.12);
   transition: all 0.35s ease;
+  /*    &:hover {
+        width: 24em;
+        box-shadow: 0 10px 20px 0 rgba(#202024, .12);
+        background: #FFF;
+        background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,.5) 100%);
+
+        &::before {
+          width: 100%;
+          opacity: 1;
+          transition: opacity .5s ease, width .5s ease;
+          transition-delay: 0;
+        }
+
+        &::after {
+          width: 0;
+          opacity: 0;
+          transition: width 0 ease;
+        }
+
+        .logo {
+          margin-bottom: .5em;
+          filter: none;
+          transform: translateY(-35px) translateX(20px) scale(1.3);
+          opacity: 100%;
+        }
+
+        .stats {
+          filter: blur(4px);
+          opacity: 0;
+          transform: translateX(30px);
+        }
+
+        .hover_content {
+          max-height: 10em;
+          transform: none;
+        }
+      } */
 }
 .card::before, .card::after {
   content: "";
@@ -69,35 +106,36 @@
   color: #cccccc;
   line-height: 1.4em;
 }
-.card:hover {
+
+.card.active {
   width: 24em;
   box-shadow: 0 10px 20px 0 rgba(32, 32, 36, 0.12);
   background: #FFF;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
 }
-.card:hover::before {
+.card.active::before {
   width: 100%;
   opacity: 1;
   transition: opacity 0.5s ease, width 0.5s ease;
   transition-delay: 0;
 }
-.card:hover::after {
+.card.active::after {
   width: 0;
   opacity: 0;
   transition: width 0 ease;
 }
-.card:hover .logo {
+.card.active .logo {
   margin-bottom: 0.5em;
   filter: none;
   transform: translateY(-35px) translateX(20px) scale(1.3);
   opacity: 100%;
 }
-.card:hover .stats {
+.card.active .stats {
   filter: blur(4px);
   opacity: 0;
   transform: translateX(30px);
 }
-.card:hover .hover_content {
+.card.active .hover_content {
   max-height: 10em;
   transform: none;
 }
@@ -170,20 +208,5 @@
   }
   100% {
     transform: translateY(-5px);
-  }
-}
-@media (min-width: 992px) {
-  .cta, .banner {
-    display: none;
-  }
-}
-@media (min-width: 1200px) {
-  .cta, .banner {
-    display: none;
-  }
-}
-@media (min-width: 1400px) {
-  .cta, .banner {
-    display: none;
   }
 }/*# sourceMappingURL=page.css.map */
