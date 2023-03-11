@@ -23,7 +23,7 @@
 }
 
 #blob {
-  background-color: white;
+  background: rgb(0, 0, 0);
   height: 34vmax;
   aspect-ratio: 1;
   position: absolute;
@@ -31,10 +31,12 @@
   top: 50%;
   translate: -50% -50%;
   border-radius: 50%;
-  background: linear-gradient(to right, rgb(253, 127, 253), rgb(91, 188, 245));
-  animation-name: rotate, colorswap;
-  animation-duration: 20s, 40s;
-  animation-iteration-count: infinite, infinite;
+  /* background: linear-gradient(to right, rgb(253, 127, 253), rgb(91, 188, 245)); */
+  background-image: url('../../img/twirl.gif');
+  background-size: cover;
+  animation-name: rotate;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
   animation-timing-function: cubic-bezier(.29, 1.01, 1, -0.68);
   opacity: 0.8;
   z-index: -100
