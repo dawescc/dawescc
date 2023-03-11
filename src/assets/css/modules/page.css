@@ -101,6 +101,9 @@
   max-height: 10em;
   transform: none;
 }
+.card:hover .cta {
+  display: none;
+}
 
 .icons {
   padding-top: 32px;
