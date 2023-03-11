@@ -125,6 +125,14 @@
   padding: 5px;
 }
 
+.stats {
+  position: absolute;
+  right: -70px;
+  top: 15px;
+  transition: opacity .2s ease, transform .1s linear;
+  transition-delay: 0s;
+}
+
 .info {
   width: 100%;
   margin: 0;
@@ -136,15 +144,26 @@
   display: flex;
 }
 
-.stats {
-  position: absolute;
-  right: -70px;
-  top: 15px;
-  transition: opacity .2s ease, transform .1s linear;
-  transition-delay: 0s;
+.info-content {
+  font-size: x-small;
+  vertical-align: middle;
+  margin-inline: 4px;
 }
 
-.info-content {
+.banner {
+  width: 100%;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  padding-block: 0px;
+  background: black;
+  background-color: rgba(0,0,0,.25);
+  display: flex;
+  color: pink;
+  text-align: center;
+}
+
+.banner-content {
   font-size: x-small;
   vertical-align: middle;
   margin-inline: 4px;
@@ -154,19 +173,19 @@
   font-size: small;
   opacity: 45%;
   margin-bottom: 5px;
-	animation: bounce 3s cubic-bezier(0.39, 0.575, 0.565, 1)  infinite;
-	-webkit-animation: bounce 3s cubic-bezier(0.39, 0.575, 0.565, 1) infinite;
+	animation: bounce 2s cubic-bezier(0.39, 0.575, 0.565, 1)  infinite;
+	-webkit-animation: bounce 2s cubic-bezier(0.39, 0.575, 0.565, 1) infinite;
 }
  
 @-webkit-keyframes bounce {
   0% { transform: translateY(-5px)  }
-  50% { transform: translateY(10px) }
+  50% { transform: translateY(5px) }
   100% { transform: translateY(-5px) }
 }
 
 @keyframes bounce {
   0% { transform: translateY(-5px)  }
-  50% { transform: translateY(10px) }
+  50% { transform: translateY(5px) }
   100% { transform: translateY(-5px) }
 }
 
@@ -183,21 +202,22 @@
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
-  .cta {
+  .cta, .banner {
     display: none;
   }
+
 }
 
 // X-Large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
-  .cta {
+  .cta, .banner {
     display: none;
   }
 }
 
 // XX-Large devices (larger desktops, 1400px and up)
 @media (min-width: 1400px) {
-  .cta {
+  .cta, .banner {
     display: none;
   }
 }
