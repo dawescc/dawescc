@@ -101,9 +101,6 @@
   max-height: 10em;
   transform: none;
 }
-.card:hover .cta {
-  display: none;
-}
 
 .icons {
   padding-top: 32px;
@@ -147,15 +144,14 @@
   padding-block: 0px;
   background: black;
   background-color: rgba(0, 0, 0, 0.25);
-  display: flex;
-  color: pink;
-  text-align: center;
 }
 
 .banner-content {
-  font-size: x-small;
+  font-size: xx-small;
   vertical-align: middle;
   margin-inline: 4px;
+  color: pink;
+  text-align: center;
 }
 
 .cta {
