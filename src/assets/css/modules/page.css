@@ -156,6 +156,18 @@
   transition: opacity 0.2s ease, transform 0.1s linear;
   transition-delay: 0s;
 }
+.stats .stat-list {
+  list-style: none;
+  padding-bottom: 0.5em;
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: 900;
+  margin: 0;
+  letter-spacing: 4px;
+}
+.stats .stat-list li {
+  padding-bottom: 0.1em;
+}
 
 .info {
   width: 100%;
@@ -197,7 +209,12 @@
   opacity: 45%;
   margin-bottom: 5px;
   animation: bounce 2s cubic-bezier(0.39, 0.575, 0.565, 1) infinite;
-  -webkit-animation: bounce 2s cubic-bezier(0.39, 0.575, 0.565, 1) infinite;
+  animation: opacity 2s ease;
+  -webkit-animation: opacity 2s ease;
+}
+
+.cta.active {
+  opacity: 0;
 }
 @keyframes bounce {
   0% {

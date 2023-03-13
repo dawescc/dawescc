@@ -172,6 +172,20 @@
   top: 15px;
   transition: opacity .2s ease, transform .1s linear;
   transition-delay: 0s;
+
+  .stat-list {
+    list-style: none;
+    padding-bottom: .5em;
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin: 0;
+    letter-spacing: 4px;
+    
+    li {
+      padding-bottom: .1em;
+    }
+  }
 }
 
 .info {
@@ -216,6 +230,12 @@
   margin-bottom: 5px;
 	animation: bounce 2s cubic-bezier(0.39, 0.575, 0.565, 1)  infinite;
 	-webkit-animation: bounce 2s cubic-bezier(0.39, 0.575, 0.565, 1) infinite;
+  animation: opacity 2s ease;
+  -webkit-animation: opacity 2s ease;
+}
+
+.cta.active{
+  opacity: 0;
 }
  
 @-webkit-keyframes bounce {

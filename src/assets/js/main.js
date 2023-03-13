@@ -1,6 +1,8 @@
 const card = document.querySelector('.card');
+const cta = document.querySelector('.cta');
 card.addEventListener('click', function() {
     card.classList.toggle('active');
+    cta.classList.toggle('active');
 });
 
 
