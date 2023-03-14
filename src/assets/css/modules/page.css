@@ -209,8 +209,7 @@
   opacity: 45%;
   margin-bottom: 5px;
   animation: bounce 2s cubic-bezier(0.39, 0.575, 0.565, 1) infinite;
-  animation: opacity 2s ease;
-  -webkit-animation: opacity 2s ease;
+  -webkit-animation: bounce 2s cubic-bezier(0.39, 0.575, 0.565, 1) infinite;
 }
 
 .cta.active {
