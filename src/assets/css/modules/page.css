@@ -167,6 +167,11 @@
 }
 .stats .stat-list li {
   padding-bottom: 0.1em;
+  transition: all 0.1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+.stats .stat-list li:hover {
+  color: pink;
+  transform: translateX(1em) scale(1.1);
 }
 
 .info {
