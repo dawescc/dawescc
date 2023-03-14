@@ -220,6 +220,10 @@
 .cta.active {
   opacity: 0;
 }
+
+ln:hover {
+  color: pink;
+}
 @keyframes bounce {
   0% {
     transform: translateY(-5px);
