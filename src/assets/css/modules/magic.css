@@ -28,9 +28,6 @@
   fill: var(--pink);
 }
 
-.magic > .magic-text {
-  color: inherit;
-}
 
 @keyframes background-pan {
 from {
