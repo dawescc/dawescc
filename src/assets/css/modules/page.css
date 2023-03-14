@@ -166,6 +166,7 @@
   letter-spacing: 4px;
 }
 .stats .stat-list li {
+  color: white;
   padding-bottom: 0.1em;
   transition: all 0.1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
 }
