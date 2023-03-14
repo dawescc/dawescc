@@ -29,7 +29,7 @@
 }
 
 .magic > .magic-text {
-
+  color: inherit;
 }
 
 @keyframes background-pan {
