@@ -43,7 +43,7 @@
       margin: 0 0 1em;
       width: 10.625em;
       filter: grayscale(80%);
-      transform: translateX(-1.5vh) translateY(-1.5vh) scale(1.25);
+      transform: translateX(-5vh)translateY(-6.75vh)scale(1.75);
       transition: all .35s cubic-bezier(0.445, 0.05, 0.55, 0.95);
       opacity: 100%;
       position: relative;
@@ -80,6 +80,23 @@
         line-height: 1.4em;
       }
     }
+    ln {
+      color: pink;
+      transition: all .5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+
+        &#dev::before {
+          content: "Frontend";
+          opacity: 0;
+          width: 0;
+          display: inline-block;
+        }
+        &#des::before {
+          content: "UX/UI";
+          opacity: 0;
+          width: 0;
+          display: inline-block;
+        }
+    }
 }
 
 .card.active {
@@ -102,9 +119,8 @@
   }
   
   .logo {
-    margin-bottom: .75em;
     filter: none;
-    transform: translateY(-35px) translateX(35px) scale(1.5);
+    transform: translateX(4.5vh)translateY(-6.5vh)scale(1.75);
     opacity: 100%;
   }
 
@@ -118,6 +134,24 @@
     max-height: 10em;
     transform: none;
   }
+
+  ln {
+    color: white;
+
+    &#dev::before {
+      opacity: 1;
+      width: unset;
+      padding-right: 1ch;
+      color: pink;
+    }
+    &#des::before {
+      opacity: 1;
+      width: unset;
+      padding-right: 1ch;
+      color: pink;
+    }
+  }
+
 }
 
 .icons {
@@ -196,25 +230,18 @@
 .cta {
   font-size: small;
   opacity: 45%;
-  margin-bottom: 5px;
 	animation: bounce 2s cubic-bezier(0.39, 0.575, 0.565, 1)  infinite;
 	-webkit-animation: bounce 2s cubic-bezier(0.39, 0.575, 0.565, 1) infinite;
 }
 
-.cta.active{
-  opacity: 0;
+.cta#cta {
+  position: absolute;
+  top: -25;
+  right: 0;
 }
 
-
-.card.active {
-  ln#dev::before {
-    content: "Frontend ";
-    color: pink;
-  }
-  ln#des::before {
-    content: "UX/UI ";
-    color: pink;
-  }
+.cta.active{
+  opacity: 0;
 }
 
 

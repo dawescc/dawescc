@@ -16,6 +16,7 @@
   position: absolute;
   top: var(--star-top);
   width: var(--size);
+  z-index: 2;
 }
 
 .magic > .magic-star > svg {
