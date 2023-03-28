@@ -43,7 +43,7 @@
       margin: 0 0 1em;
       width: 10.625em;
       filter: grayscale(80%);
-      transform: translateX(-1vh) translateY(1vh);
+      transform: translateX(-1.5vh) translateY(-1.5vh) scale(1.25);
       transition: all .35s cubic-bezier(0.445, 0.05, 0.55, 0.95);
       opacity: 100%;
     }
@@ -54,6 +54,7 @@
         text-transform: uppercase;
         margin: 0;
         letter-spacing: 4px;
+        transition: all 5s ease;
       }
 
     h6 {
@@ -62,6 +63,7 @@
       text-transform: uppercase;
       margin: 0;
       letter-spacing: 2px;
+      transition: text-align .5s ease;
     }
     
     .hover_content {
@@ -76,46 +78,7 @@
         line-height: 1.4em;
       }
     }
-    
-/*    &:hover {
-      width: 24em;
-      box-shadow: 0 10px 20px 0 rgba(#202024, .12);
-      background: #FFF;
-      background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,.5) 100%);
-      
-      &::before {
-        width: 100%;
-        opacity: 1;
-        transition: opacity .5s ease, width .5s ease;
-        transition-delay: 0;
-      }
-      
-      &::after {
-        width: 0;
-        opacity: 0;
-        transition: width 0 ease;
-      }
-      
-      .logo {
-        margin-bottom: .5em;
-        filter: none;
-        transform: translateY(-35px) translateX(20px) scale(1.3);
-        opacity: 100%;
-      }
-
-      .stats {
-        filter: blur(4px);
-        opacity: 0;
-        transform: translateX(30px);
-      }
-      
-      .hover_content {
-        max-height: 10em;
-        transform: none;
-      }
-    } */
-  }
-
+}
 
 .card.active {
   width: 24em;
@@ -137,9 +100,9 @@
   }
   
   .logo {
-    margin-bottom: .5em;
+    margin-bottom: .75em;
     filter: none;
-    transform: translateY(-35px) translateX(20px) scale(1.3);
+    transform: translateY(-35px) translateX(35px) scale(1.5);
     opacity: 100%;
   }
 
@@ -154,8 +117,6 @@
     transform: none;
   }
 }
-
-
 
 .icons {
   padding-top: 32px;
@@ -242,10 +203,19 @@
   opacity: 0;
 }
 
-ln:hover {
-  color: pink;
+
+.card.active {
+  ln#dev::before {
+    content: "Frontend ";
+    color: pink;
+  }
+  ln#des::before {
+    content: "UX/UI ";
+    color: pink;
+  }
 }
- 
+
+
 @-webkit-keyframes bounce {
   0% { transform: translateY(-5px)  }
   50% { transform: translateY(5px) }
@@ -268,4 +238,5 @@ ln:hover {
   .card.active {
     margin-inline: auto;
   }
+  
 }
