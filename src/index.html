@@ -6,12 +6,12 @@
 			http-equiv="X-UA-Compatible"
 			content="IE=edge" />
 		<title>Ryan Dawes</title>
+        <meta 
+            name="description"
+            content="Ryan Dawes &mdash; Developer, designer"  />
 		<link
 			rel="icon"
 			href="./assets/img/favicon.ico" />
-		<meta
-			name="description"
-			content="Ryan Dawes &mdash; Developer, designer" />
 		<meta
 			name="viewport"
 			content="width=device-width, initial-scale=1" />
@@ -19,28 +19,147 @@
 			rel="stylesheet"
 			href="./assets/css/main.css" />
 	</head>
-	<body class="dark:bg-black dark:text-white">
-        <article class="max-w-2xl mx-auto">
-            <span class="my-4">
-                <h1>Ryan Dawes</h1>
-                <h2>Developer, designer</h2>
-            </span>
-            <span class="space-y-12">
-                <h3>Specialties</h3>
-                <ul>
-                    <li>HTML, CSS, & JS (Vanilla).</li>
-                    <li>Utilization of modern frameworks for front-and-backend deployment.</li>
-                    <li>REST API & SQL data input sourcing and manipulation</li>
-                </ul>
-    
-                <h3>Biases</h3>
-                <ul>
-                    <li>Modular, reusable systems<span>*</span></li>
-                    <li>Functional, OOP programming<span>*</span></li>
-                    <li>Pragmatic problem solving<span>*</span></li>
-                </ul>
-            </span>
-        </article>
-        <script src="assets/js/main.js"></script>
+	<body class="dark:bg-slate-950 dark:text-white px-4">
+		<div class="max-w-4xl mx-auto divide-y">
+			<div class="my-2">
+				<h1 class="font-extrabold text-6xl mb-2 md:text-7xl">Ryan Dawes</h1>
+				<h2 class="text-3xl mb-2 text-pink-400 dark:text-pink-300">Developer, designer</h2>
+			</div>
+			<div class="py-8 text-lg">
+				<div
+					id="do"
+					class="">
+					<h3 class="text-2xl mb-4 font-bold underline">What I do</h3>
+					<ul class="space-y-2">
+						<li class="dark:bg-slate-900 bg-gray-100 p-2 rounded shadow-md">Design and build gorgeous, user friendly, experiences.
+                            <span class="block text-pink-400 dark:text-pink-300  text-sm mt-2">
+                                Not enough to be beautiful.
+                            </span>
+                        </li>
+						<li class="dark:bg-slate-900 bg-gray-100 p-2 rounded shadow-md">Continuosly update and upgrade content and systems.
+                            <span class="block text-pink-400 dark:text-pink-300  text-sm mt-2">
+                                Don't get left behind.
+                            </span>
+                        </li>
+						<li class="dark:bg-slate-900 bg-gray-100 p-2 rounded shadow-md">Wrangle and support legacy applications.
+                            <span class="block text-pink-400 dark:text-pink-300  text-sm mt-2">
+                                Love the classics.
+                            </span>
+                        </li>
+					</ul>
+				</div>
+
+				<div
+					id="specialties"
+					class="">
+					<h3 class="text-2xl my-4 font-bold underline">Specialties</h3>
+					<ul class="space-y-2">
+						<li class="dark:bg-slate-900 bg-gray-100 p-2 rounded shadow-md">HTML, CSS, & JS (Vanilla), Python
+                            <span class="block text-pink-400 dark:text-pink-300  text-sm mt-2">
+                                Like the back of my hand.
+                            </span>
+                        </li>
+						<li class="dark:bg-slate-900 bg-gray-100 p-2 rounded shadow-md">Utilization of modern frameworks & libraries for front-and-backend deployment.
+                            <span class="block text-pink-400 dark:text-pink-300  text-sm mt-2">
+                                No FOMO here.
+                            </span>
+                        </li>
+						<li class="dark:bg-slate-900 bg-gray-100 p-2 rounded shadow-md">REST API & SQL data input sourcing and manipulation.
+                            <span class="block text-pink-400 dark:text-pink-300  text-sm mt-2">
+                                Remote content? Doesn't feel like it.
+                            </span>
+                        </li>
+					</ul>
+				</div>
+
+				<div
+					id="biases"
+					class="">
+					<h3 class="text-2xl my-4 font-bold underline">Biases</h3>
+					<ul class="space-y-2">
+						<li
+							id="modular"
+							class="dark:bg-slate-900 bg-gray-100 p-2 rounded shadow-md relative cursor-pointer">
+							<span id="alert-1">
+								<span class="absolute -top-1 -right-1 bg-pink-300 rounded-full p-1.5 animate-ping"></span>
+								<span class="absolute -top-1 -right-1 bg-pink-300 rounded-full p-1.5 bg-opacity-75 animate-pulse"></span>
+							</span>
+							<details onclick="hide('alert-1')">
+								<summary class="">Modular systems</summary>
+								<p class="text-sm text-gray-700 dark:text-pink-300 font-mono mt-2 p-2 rounded bg-gray-200 dark:bg-slate-800">
+									A method that divides a program into separate sub-programs or modules, enhancing readability and maintenance.
+									<a class="block mt-3 hover:underline hover:text-pink-400 dark:hover:text-white"
+                                        href="https://www.ibm.com/docs/en/ztpf/1.1.0.15?topic=considerations-modular-programming"
+                                        target="_blank"
+										>Read more about Modular programming
+										<i class="fa-solid fa-arrow-up-right-from-square"></i>
+									</a>
+								</p>
+							</details>
+						</li>
+						<li
+							id="oop"
+							class="dark:bg-slate-900 bg-gray-100 p-2 rounded shadow-md relative cursor-pointer">
+							<span id="alert-2">
+								<span class="absolute -top-1 -right-1 bg-pink-300 rounded-full p-1.5 animate-ping"></span>
+								<span class="absolute -top-1 -right-1 bg-pink-300 rounded-full p-1.5 bg-opacity-75 animate-pulse"></span>
+							</span>
+							<details onclick="hide('alert-2')">
+								<summary class="">OOP programming</summary>
+								<p class="text-sm text-gray-700 dark:text-pink-300  font-mono mt-2 p-2 rounded bg-gray-200 dark:bg-slate-800">
+									<span class="font-bold">OOP programming</span> (object oriented programming) is a coding approach where data and functions
+									are grouped into units called objects, mirroring real-world entities.
+									<a class="block mt-3 hover:underline hover:text-pink-400 dark:hover:text-white"
+                                        href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_programming"
+                                        target="_blank"
+										>Read more about OOP programming
+										<i class="fa-solid fa-arrow-up-right-from-square"></i>
+									</a>
+								</p>
+							</details>
+						</li>
+						<li
+							id="pragmatic"
+							class="dark:bg-slate-900 bg-gray-100 p-2 rounded shadow-md relative cursor-pointer">
+							<span id="alert-3">
+								<span class="absolute -top-1 -right-1 bg-pink-300 rounded-full p-1.5 animate-ping"></span>
+								<span class="absolute -top-1 -right-1 bg-pink-300 rounded-full p-1.5 bg-opacity-75 animate-pulse"></span>
+							</span>
+							<details onclick="hide('alert-3')">
+								<summary class="">Pragmatic problem solving</summary>
+								<p class="text-sm text-gray-700 dark:text-pink-300 font-mono mt-2 p-2 rounded bg-gray-200 dark:bg-slate-800">
+									A practical approach to problem-solving that focuses on finding effective and realistic solutions in a given context.
+									<a class="block mt-3 hover:underline hover:text-pink-400 dark:hover:text-white"
+                                        href="https://www.researchgate.net/publication/228604840_Pragmatic_Approach_as_a_Problem_Solving_Framework"
+                                        target="_blank"
+										>Read more about Pragmatic problem solving
+                                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+									</a>
+								</p>
+							</details>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<footer class="mx-auto w-full max-w-screen-xl">
+				<div class="px-4 py-6 text-center">
+					<div class="text-transparent text-sm sm:text-center bg-clip-text bg-gradient-to-tr from-red-500 to-pink-400">
+                        <p>made with <i class="text-transparent fa-solid fa-heart"></i></p>
+                    </div>
+					<div class="mt-2 space-x-4">
+						<a href="https://twitter.com/dawescc" class="text-gray-400 hover:text-gray-900 dark:hover:text-white">
+							<i class="fa-brands fa-twitter">
+						</a>
+						<a href="https://github.com/dawescc" class="text-gray-400 hover:text-gray-900 dark:hover:text-white">
+							<i class="fa-brands fa-github">
+						</a>
+						<a href="mailto:a9g42b@dawes.cc" class="text-gray-400 hover:text-gray-900 dark:hover:text-white">
+							<i class="fa-solid fa-envelope">
+						</a>
+					</div>
+				</div>
+		</footer>
+		<script src="assets/js/main.js"></script>
 	</body>
 </html>
