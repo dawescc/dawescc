@@ -1,34 +1,4 @@
-@import url(./modules/blob.css);
-@import url(./modules/magic.css);
-@import url(./modules/page.scss);
-@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css");
-
-html {
-    font-family: "Space Mono", monospace;
-    background-color: black;
-    color: white;
-    overflow: hidden;
-}
-
-body {
-    height: 100vh;
-    margin: 0rem;
-    overflow: hidden; 
-}
-
-a {
-    color: white;
-    text-decoration: none;
-}
-
-a:hover {
-    color: pink;
-    text-decoration: underline;
-}
-
-.pg-wrapper {
-    height: 100vh;
-    display: grid;
-    place-content: center;
-    margin: 0;
-}
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
