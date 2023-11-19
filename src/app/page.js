@@ -74,13 +74,16 @@ export default function Home() {
 			</div>
 			<footer className='footer p-10 bg-zinc-800 border-t border-zinc-700'>
 				<div className='w-full flex flex-col items-center gap-4'>
-					<p className='text-center opacity-25 hover:opacity-70 group transition-all duration-200 ease-in-out'>
+					<p className='text-center transition-all duration-200 ease-in-out'>
 						<Badge content={loveBadgeCont} color={'pink'} />
 					</p>
 					<span className='flex gap-4'>
 						<a
 							href='https://twitter.com/dawescc'
 							className='fa-brands fa-twitter'></a>
+					</span>
+					<span className='flex gap-4'>
+						<p>DM me.</p>
 					</span>
 				</div>
 			</footer>
