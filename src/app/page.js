@@ -7,7 +7,7 @@ export default function Home() {
 				<div className='w-full items-center justify-between flex flex-col gap-12'>
 					<div className='w-full rounded-lg shadow-md p-6 border border-zinc-700 bg-zinc-800'>
 						<div className='w-full flex justify-around items-center relative'>
-							<div className='h-20 w-auto rounded-xl overflow-hidden border border-zinc-700 shadow-md absolute top-0 left-0 -translate-x-12 -translate-y-12'>
+							<div className='h-20 w-auto aspect-square rounded-xl overflow-hidden border border-zinc-700 shadow-md absolute top-0 left-0 -translate-x-12 -translate-y-12'>
 								<Image
 									alt='Profile Pic'
 									className='object-cover w-full h-full'
