@@ -10,7 +10,7 @@ export default function Home() {
 							<div
 								className='h-20 w-auto rounded-xl overflow-hidden border border-zinc-700 shadow-md
                           absolute top-0 left-0 -translate-x-12 -translate-y-12'>
-								<Image
+								<Image alt="Profile Pic"
 									className='object-cover w-full h-full'
 									src='https://neutgwolrftsfsvfhutp.supabase.co/storage/v1/object/public/blog/16bmtkif9g3i.png'
 								/>
