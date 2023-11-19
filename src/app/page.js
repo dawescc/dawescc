@@ -3,27 +3,36 @@ import Badge from "../components/badge.js";
 
 export default function Home() {
 	const loveBadgeCont = (
-		<span>made with <i className="fa-solid fa-heart"></i></span>
-	)
+		<span>
+			made with <i className='fa-solid fa-heart'></i>
+		</span>
+	);
 	const folioContent = (
-		<span className="flex gap-2 items-baseline">Visit my portfolio <i className="fa-solid fa-external-link text-sm"></i></span>
-	)
+		<span className='flex gap-2 items-baseline'>
+			Visit my portfolio <i className='fa-solid fa-external-link text-sm'></i>
+		</span>
+	);
 	return (
 		<main className='text-zinc-200 bg-zinc-900 break-words'>
 			<div className='flex min-h-screen flex-col px-12 py-20'>
 				<div className='w-full items-center justify-between flex flex-col gap-12'>
-					<div className='w-full rounded-lg shadow-md p-6 border border-zinc-700 bg-zinc-800'>
-						<div className='w-full flex justify-around items-center relative'>
-							<div className='h-20 w-auto aspect-square rounded-xl overflow-hidden border border-zinc-700 shadow-md absolute top-0 left-0 -translate-x-12 -translate-y-12'>
-								<img
-									alt='Profile Pic'
-									className='object-cover w-full h-full'
-									src='images/16bmtkif9g3i.png'
-								/>
-							</div>
-							<span className="flex flex-col gap-2 w-full pl-16">
-								<h1 className='text-3xl font-semibold '>Ryan Dawes</h1>
-							<span className="text-xs font-light">Developer,&nbsp;&nbsp;<em>2019 &mdash; Current</em></span>
+					<div className='w-full rounded-lg shadow-md border border-zinc-700 bg-zinc-800 relative'>
+						<div className='w-24 h-24 rounded-xl overflow-hidden border border-zinc-700 absolute
+										-translate-x-8 -translate-y-8'>
+							<img
+								alt='Profile Pic'
+								className='object-cover w-full h-full'
+								src='images/16bmtkif9g3i.png'
+							/>
+						</div>
+						<div className='flex flex-col justify-around items-center p-6 ml-16'>
+							<span className='h-4/5 w-full flex content-center justify-center'>
+								<h1 className='text-3xl font-semibold'>Ryan Dawes</h1>
+							</span>
+						</div>
+						<div className='h-1/5 w-full rounded-b-lg flex content-center justify-center py-1 border-t border-zinc-700 bg-zinc-900 bg-opacity-40'>
+							<span className='text-xs font-light'>
+								Developer,&nbsp;&nbsp;<em>2019 &mdash; Current</em>
 							</span>
 						</div>
 					</div>
@@ -63,7 +72,11 @@ export default function Home() {
 						</div>
 					</div>
 					<div className='w-full py-4 flex flex-col gap-1 items-center text-xs'>
-						<Badge link={"https://folio.dawes.cc/"} color={'blue'} content={folioContent}/>
+						<Badge
+							link={"https://folio.dawes.cc/"}
+							color={"blue"}
+							content={folioContent}
+						/>
 					</div>
 				</div>
 			</div>
@@ -73,10 +86,12 @@ export default function Home() {
 						<a
 							href='https://twitter.com/dawescc'
 							className='fa-brands fa-twitter'></a>
-						<p
-							className='text-xs'>Contact me on Twitter with any inquires</p>
-							
-						<Badge content={loveBadgeCont} color={'pink'} />
+						<p className='text-xs'>Contact me on Twitter with any inquires</p>
+
+						<Badge
+							content={loveBadgeCont}
+							color={"pink"}
+						/>
 					</span>
 				</div>
 			</footer>
