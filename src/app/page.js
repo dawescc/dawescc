@@ -5,6 +5,9 @@ export default function Home() {
 	const loveBadgeCont = (
 		<span>made with <i className="fa-solid fa-heart"></i></span>
 	)
+	const folioContent = (
+		<span className="flex gap-2 items-baseline">Visit my portfolio <i className="fa-solid fa-external-link text-sm"></i></span>
+	)
 	return (
 		<main className='text-zinc-200 bg-zinc-900 break-words'>
 			<div className='flex min-h-screen flex-col px-12 py-20'>
@@ -18,7 +21,10 @@ export default function Home() {
 									src='images/16bmtkif9g3i.png'
 								/>
 							</div>
-							<h1 className='text-3xl font-semibold ml-10'>Ryan Dawes</h1>
+							<span className="flex flex-col gap-2 w-full pl-16">
+								<h1 className='text-3xl font-semibold '>Ryan Dawes</h1>
+							<span className="text-xs font-light">Developer,&nbsp;&nbsp;<em>2019 &mdash; Current</em></span>
+							</span>
 						</div>
 					</div>
 					<span className='text-zinc-400 px-2'>
@@ -56,19 +62,8 @@ export default function Home() {
 							</div>
 						</div>
 					</div>
-					<div className='w-full rounded-lg shadow-md p-6 border border-zinc-700 bg-zinc-800'>
-						<div className='w-full flex flex-col gap-4'>
-							<div className='flex gap-6 md:gap-0 flex-col md:flex-row justify-evenly'>
-								<span className='flex flex-col gap-2 md:w-1/3 '>
-									<span className='border-b border-zinc-700 pb-2 font-semibold text-base'>Experience</span>
-									<span className='text-sm flex flex-col gap-1'>
-										<span>Developer, 2019 &mdash; Current</span>
-									</span>
-								</span>
-							</div>
-						</div>
-					</div>
-					<div className='w-full p-4'>
+					<div className='w-full py-4 flex flex-col gap-1 items-center text-xs'>
+						<Badge link={"https://folio.dawes.cc/"} color={'blue'} content={folioContent}/>
 					</div>
 				</div>
 			</div>
