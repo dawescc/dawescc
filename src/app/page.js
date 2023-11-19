@@ -1,6 +1,10 @@
 import Image from "next/image";
+import Badge from "../components/badge.js";
 
 export default function Home() {
+	const loveBadgeCont = (
+		<span>made with <i className="fa-solid fa-heart"></i></span>
+	)
 	return (
 		<main className='text-zinc-200 bg-zinc-900 break-words'>
 			<div className='flex min-h-screen flex-col px-12 py-20'>
@@ -8,7 +12,7 @@ export default function Home() {
 					<div className='w-full rounded-lg shadow-md p-6 border border-zinc-700 bg-zinc-800'>
 						<div className='w-full flex justify-around items-center relative'>
 							<div className='h-20 w-auto aspect-square rounded-xl overflow-hidden border border-zinc-700 shadow-md absolute top-0 left-0 -translate-x-12 -translate-y-12'>
-								<Image
+								<img
 									alt='Profile Pic'
 									className='object-cover w-full h-full'
 									src='images/16bmtkif9g3i.png'
@@ -28,15 +32,20 @@ export default function Home() {
 					<div className='w-full rounded-lg shadow-md p-6 border border-zinc-700 bg-zinc-800'>
 						<div className='w-full flex flex-col gap-4'>
 							<div className='flex gap-6 md:gap-0 flex-col md:flex-row justify-evenly'>
-								<span className='flex flex-col gap-2'>
+								<span className='flex flex-col gap-2 md:w-1/3'>
 									<span className='border-b border-zinc-700 pb-2 font-semibold text-base'>Personal Projects</span>
 									<span className='text-sm flex flex-col gap-1'>
 										<a href='https://github.com/dawescc/porpo'>Porpo</a>
 										<a href='https://github.com/dawescc/emems'>eMems</a>
 									</span>
 								</span>
-
-								<span className='flex flex-col gap-2'>
+							</div>
+						</div>
+					</div>
+					<div className='w-full rounded-lg shadow-md p-6 border border-zinc-700 bg-zinc-800'>
+						<div className='w-full flex flex-col gap-4'>
+							<div className='flex gap-6 md:gap-0 flex-col md:flex-row justify-evenly'>
+								<span className='flex flex-col gap-2 md:w-1/3 '>
 									<span className='border-b border-zinc-700 pb-2 font-semibold text-base'>Social</span>
 									<span className='text-sm flex flex-col gap-1'>
 										<a href='https://twitter.com/dawescc/'>Twitter</a>
@@ -44,8 +53,13 @@ export default function Home() {
 										<a href='https://blog.dawes.cc/dawescc/'>Blog</a>
 									</span>
 								</span>
-
-								<span className='flex flex-col gap-2'>
+							</div>
+						</div>
+					</div>
+					<div className='w-full rounded-lg shadow-md p-6 border border-zinc-700 bg-zinc-800'>
+						<div className='w-full flex flex-col gap-4'>
+							<div className='flex gap-6 md:gap-0 flex-col md:flex-row justify-evenly'>
+								<span className='flex flex-col gap-2 md:w-1/3 '>
 									<span className='border-b border-zinc-700 pb-2 font-semibold text-base'>Experience</span>
 									<span className='text-sm flex flex-col gap-1'>
 										<span>Developer, 2019 &mdash; Current</span>
@@ -54,12 +68,14 @@ export default function Home() {
 							</div>
 						</div>
 					</div>
+					<div className='w-full p-4'>
+					</div>
 				</div>
 			</div>
 			<footer className='footer p-10 bg-zinc-800 border-t border-zinc-700'>
 				<div className='w-full flex flex-col items-center gap-4'>
 					<p className='text-center opacity-25 hover:opacity-70 group transition-all duration-200 ease-in-out'>
-						made with <i className='fa-solid fa-heart group-hover:text-red-700 duration-300'></i>
+						<Badge content={loveBadgeCont} color={'pink'} />
 					</p>
 					<span className='flex gap-4'>
 						<a
