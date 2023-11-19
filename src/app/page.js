@@ -73,17 +73,15 @@ export default function Home() {
 				</div>
 			</div>
 			<footer className='footer p-10 bg-zinc-800 border-t border-zinc-700'>
-				<div className='w-full flex flex-col items-center gap-4'>
-					<p className='text-center transition-all duration-200 ease-in-out'>
-						<Badge content={loveBadgeCont} color={'pink'} />
-					</p>
-					<span className='flex gap-4'>
+				<div className='w-full flex flex-col items-center p-4'>
+					<span className='flex flex-col gap-12 items-center'>
 						<a
 							href='https://twitter.com/dawescc'
 							className='fa-brands fa-twitter'></a>
-					</span>
-					<span className='flex gap-4'>
-						<p>DM me.</p>
+						<p
+							className='text-xs'>Contact me on Twitter with any inquires</p>
+							
+						<Badge content={loveBadgeCont} color={'pink'} />
 					</span>
 				</div>
 			</footer>
