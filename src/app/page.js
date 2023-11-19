@@ -11,7 +11,7 @@ export default function Home() {
 								<Image
 									alt='Profile Pic'
 									className='object-cover w-full h-full'
-									src='https://neutgwolrftsfsvfhutp.supabase.co/storage/v1/object/public/blog/16bmtkif9g3i.png'
+									src='/public/16bmtkif9g3i.png'
 								/>
 							</div>
 							<h1 className='text-3xl font-semibold ml-10'>Ryan Dawes</h1>
