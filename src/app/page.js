@@ -11,7 +11,7 @@ export default function Home() {
 								<Image
 									alt='Profile Pic'
 									className='object-cover w-full h-full'
-									src='@/public/16bmtkif9g3i.png'
+									src='images/16bmtkif9g3i.png'
 								/>
 							</div>
 							<h1 className='text-3xl font-semibold ml-10'>Ryan Dawes</h1>
