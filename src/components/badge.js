@@ -9,8 +9,17 @@ const colorClasses = {
 	pink: "bg-pink-50 text-pink-700 ring-pink-700/10",
 };
 
-const Badge = ({ content, color, link }) => {
-	const badgeClasses = `inline-flex items-center rounded-md px-3 py-1 text-xs font-medium ring-1 ring-inset ${colorClasses[color]}`;
+const roundness = {
+	pill: "rounded-full",
+	roundedSm: "rounded-sm",
+	rounded: "rounded-md",
+	roundedLg: "rounded-lg",
+	roundedXl: "rounded-xl",
+	normal: "rounded-none",
+}
+
+const Badge = ({ content, color, shape, link }) => {
+	const badgeClasses = `inline-flex items-center px-3 py-1 text-xs font-medium ring-1 ring-inset ${colorClasses[color]} ${roundness[shape]}`;
 
 	return link ? (
 		<a

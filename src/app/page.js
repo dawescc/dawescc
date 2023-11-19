@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Badge from "../components/badge.js";
 
 export default function Home() {
@@ -75,6 +74,7 @@ export default function Home() {
 						<Badge
 							link={"https://folio.dawes.cc/"}
 							color={"blue"}
+							shape={"rounded"}
 							content={folioContent}
 						/>
 					</div>
@@ -91,6 +91,7 @@ export default function Home() {
 						<Badge
 							content={loveBadgeCont}
 							color={"pink"}
+							shape={"rounded"}
 						/>
 					</span>
 				</div>
