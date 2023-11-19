@@ -9,9 +9,9 @@ export default function Home() {
 						<div className='w-full flex justify-around items-center relative'>
 							<div className='h-20 w-auto rounded-xl overflow-hidden border border-zinc-700 shadow-md absolute top-0 left-0 -translate-x-12 -translate-y-12'>
 								<Image
-									alt= { 'Profile Pic' }
-									className= { 'object-cover w-full h-full' }
-									src= { 'https://neutgwolrftsfsvfhutp.supabase.co/storage/v1/object/public/blog/16bmtkif9g3i.png' }
+									alt='Profile Pic'
+									className='object-cover w-full h-full'
+									src='https://neutgwolrftsfsvfhutp.supabase.co/storage/v1/object/public/blog/16bmtkif9g3i.png'
 								/>
 							</div>
 							<h1 className='text-3xl font-semibold ml-10'>Ryan Dawes</h1>
@@ -19,7 +19,7 @@ export default function Home() {
 					</div>
 					<span className='text-zinc-400 px-2'>
 						<div className='flex flex-col gap-4'>
-							<span className='font-semibold text-2xl'>I'm a pragmatic developer and designer.</span>
+							<span className='font-semibold text-2xl'>I&apos;m a pragmatic developer and designer.</span>
 							<span className='text-lg'>
 								I build apps and websites for the modern web. Versitile and flexible, without sacrificing on quality.
 							</span>
