@@ -7,10 +7,9 @@ export default function Home() {
 				<div className='w-full items-center justify-between flex flex-col gap-12'>
 					<div className='w-full rounded-lg shadow-md p-6 border border-zinc-700 bg-zinc-800'>
 						<div className='w-full flex justify-around items-center relative'>
-							<div
-								className='h-20 w-auto rounded-xl overflow-hidden border border-zinc-700 shadow-md
-                          absolute top-0 left-0 -translate-x-12 -translate-y-12'>
-								<Image alt="Profile Pic"
+							<div className='h-20 w-auto rounded-xl overflow-hidden border border-zinc-700 shadow-md absolute top-0 left-0 -translate-x-12 -translate-y-12'>
+								<Image
+									alt='Profile Pic'
 									className='object-cover w-full h-full'
 									src='https://neutgwolrftsfsvfhutp.supabase.co/storage/v1/object/public/blog/16bmtkif9g3i.png'
 								/>
@@ -21,7 +20,7 @@ export default function Home() {
 					<span className='text-zinc-400 px-2'>
 						<div className='flex flex-col gap-4'>
 							<span className='font-semibold text-2xl'>I'm a pragmatic developer and designer.</span>
-							<span className='text-lg '>
+							<span className='text-lg'>
 								I build apps and websites for the modern web. Versitile and flexible, without sacrificing on quality.
 							</span>
 						</div>
@@ -60,7 +59,6 @@ export default function Home() {
 			<footer className='footer p-10 bg-zinc-800 border-t border-zinc-700'>
 				<div className='w-full flex flex-col items-center gap-4'>
 					<p className='text-center opacity-25 hover:opacity-70 group transition-all duration-200 ease-in-out'>
-						{" "}
 						made with <i className='fa-solid fa-heart group-hover:text-red-700 duration-300'></i>
 					</p>
 					<span className='flex gap-4'>
