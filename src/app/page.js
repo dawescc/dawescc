@@ -49,7 +49,7 @@ export default function Home() {
 									<span className='text-sm flex flex-col gap-1'>
 										<a href='https://twitter.com/dawescc/'>Twitter</a>
 										<a href='https://github.com/dawescc/'>Github</a>
-										<a href='https://blog.dawes.cc/dawescc/'>Blog</a>
+										<a href='https://blog.dawes.cc/'>Blog</a>
 									</span>
 								</span>
 							</div>
