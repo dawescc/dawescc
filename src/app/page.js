@@ -32,13 +32,12 @@ export default function Home() {
 					<div className='flex flex-col gap-2'>
 						<p className='font-bold'>Now</p>
 						<p className='text-balance'>
-							I am a developer for the Department of Education. I work primarily with <code>.NET</code> or <code>Javascript</code> web
-							applications.
+							I am a developer for the U.S. Government. I work primarily with <code>Javascript</code> or <code>.NET</code> web applications.
 						</p>
 					</div>
 					<div className='flex flex-col gap-2'>
 						<p className='font-bold'>About</p>
-						<p>I like to build pragmatic web applications that are efficient and look good.</p>
+						<p>I like to focus on pragmatic DX for web applications that are efficient and look good.</p>
 					</div>
 					<a
 						className='text-sm font-bold inline-flex items-center mr-auto bg-neutral-800/50 active:bg-neutral-700/50 hover:bg-neutral-700/30 p-2 rounded-lg hover:no-underline transition-all ease-in-out duration-200'
