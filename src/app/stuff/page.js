@@ -18,9 +18,9 @@ export default function Stuff() {
 
 	const TABLE_HEAD = ["Name", "Description", "Link"];
 	const TABLE_BODY = [
-		["porpo", "an F1 data visulaitions app written in python", "https://github.com/dawescc/porpo"],
-		["emems", "a friendly notetaker in the shape of a docker image", "https://github.com/dawescc/emems"],
-		["bloggie", "a micro-blogging platform but for one person", "https://github.com/dawescc/bloggie"],
+		["porpo", "an F1 data visualisation app written in python", "https://github.com/dawescc/porpo"],
+		["emems", "a friendly memo in the shape of a docker image", "https://github.com/dawescc/emems"],
+		["bloggie", "a micro-blogging platform but for one person, my blog", "https://github.com/dawescc/bloggie"],
 	];
 
 	return (
