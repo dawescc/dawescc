@@ -1,3 +1,7 @@
+"use client";
+
+import Footer from "@/components/footer";
+
 export default function Stuff() {
 	const slash = (
 		<svg
@@ -19,7 +23,7 @@ export default function Stuff() {
 	const TABLE_HEAD = ["Name", "Description", "Link"];
 	const TABLE_BODY = [
 		["porpo", "an F1 data visualisation app written in python", "https://github.com/dawescc/porpo"],
-		["emems", "a friendly memo in the shape of a docker image", "https://github.com/dawescc/emems"],
+		["emems", "a friendly memo maker in the shape of a docker image", "https://github.com/dawescc/emems"],
 		["bloggie", "a micro-blogging platform but for one person, my blog", "https://github.com/dawescc/bloggie"],
 	];
 
@@ -92,10 +96,17 @@ export default function Stuff() {
 						<div className='flex flex-col gap-10'>
 							<div className='flex flex-col gap-1'>
 								<p className='mb-1'>
-									[01] <span className='bg-neutral-200 rounded-md text-transparent select-none'>*********</span>
+									[01] <span className='bg-neutral-200 rounded-md text-neutral-700 select-none p-[0.05rem] px-1'>Design</span> &mdash; Apple
+									Orchard
 								</p>
 								<div className='bg-neutral-950/40 ring-1 ring-neutral-700/60 p-10 rounded-xl overflow-hidden relative'>
-									<div className='grid place-items-center'>Coming Soon</div>
+									<div className='grid place-items-center'>
+										<img
+											alt='4 macbook computers in a 2 by 2 grid.'
+											className='rounded-lg w-full h-auto'
+											src='https://pbs.twimg.com/media/GEs6di_XMAAU1X4?format=jpg&name=large'
+										/>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -108,25 +119,7 @@ export default function Stuff() {
 					<i className='fa-solid fa-arrow-left-long mr-2 '></i>Back
 				</a>
 
-				<div className='text-lg font-semibold border-t border-neutral-800'>
-					<div className='py-4 grid grid-rows-1 gap-2 sm:gap-4 *:bg-neutral-800/50 *:justify-center *:p-2 *:rounded-lg *:hover:no-underline *:transition-all *:ease-in-out *:duration-200'>
-						<a
-							className='active:bg-neutral-700/50 hover:bg-neutral-700/30 inline-flex items-center'
-							href='https://x.com/dawescc'>
-							Twitter<i className='fa-brands fa-twitter ml-2'></i>
-						</a>
-						<a
-							className='active:bg-neutral-700/50 hover:bg-neutral-700/30 inline-flex items-center'
-							href='https://github.com/dawescc'>
-							Github<i className='fa-brands fa-github-alt ml-2'></i>
-						</a>
-						<a
-							className='active:bg-neutral-700/50 hover:bg-neutral-700/30 inline-flex items-center'
-							href='https://blog.dawes.cc'>
-							Blog<i className='fa-solid fa-arrow-up-right-from-square ml-2'></i>
-						</a>
-					</div>
-				</div>
+				<Footer />
 			</div>
 		</main>
 	);
