@@ -41,7 +41,7 @@ export default function Stuff() {
 
 	return (
 		<main className='text-neutral-200 bg-neutral-900 h-dvh'>
-			<div className='h-full mx-auto md:max-w-2xl flex flex-col gap-8 pt-10'>
+			<div className='h-full mx-auto md:max-w-2xl flex flex-col gap-8 pt-10 px:2 sm:px-0'>
 				<Header page={stuffPage} />
 
 				<div className='flex flex-col gap-4'>
