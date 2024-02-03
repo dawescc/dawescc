@@ -22,7 +22,7 @@ const aboutText = () => {
 export default function Home() {
 	return (
 		<main className='text-neutral-200 bg-neutral-900 h-dvh min-h-dvh'>
-			<div className='h-full mx-auto md:max-w-2xl flex flex-col gap-8 pt-10 px:2 sm:px-0'>
+			<div className='h-full mx-auto md:max-w-2xl flex flex-col gap-8 pt-10 px-2 sm:px-0'>
 				<Header page={{ name: "", url: "#" }} />
 				<div className='text-sm flex flex-col gap-8'>
 					<div className='flex flex-col gap-2'>

@@ -41,13 +41,25 @@ export default function Stuff() {
 
 	return (
 		<main className='text-neutral-200 bg-neutral-900 h-dvh'>
-			<div className='h-full mx-auto md:max-w-2xl flex flex-col gap-8 pt-10 px:2 sm:px-0'>
+			<div className='h-full mx-auto md:max-w-2xl flex flex-col gap-8 pt-10 px-2 md:px-0'>
 				<Header page={stuffPage} />
 
 				<div className='flex flex-col gap-4'>
 					<p className='font-bold text-lg'>Stuff</p>
 					<p className='text-balance'>
-						You can find more of my work on <a href='https://github.com/dawescc'>Github</a> or <a href='https://twitter.com/dawescc'>Twitter</a>.
+						You can find more of my work on{" "}
+						<a
+							className='hover:underline'
+							href='https://github.com/dawescc'>
+							Github
+						</a>{" "}
+						or{" "}
+						<a
+							className='hover:underline'
+							href='https://twitter.com/dawescc'>
+							Twitter
+						</a>
+						.
 					</p>
 				</div>
 
