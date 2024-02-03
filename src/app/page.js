@@ -18,8 +18,8 @@ export default function Home() {
 		</svg>
 	);
 	return (
-		<main className='text-neutral-200 bg-neutral-900 h-dvh'>
-			<div className='h-full mx-auto md:max-w-2xl flex flex-col gap-10 px-2 sm:px-6 pt-10'>
+		<main className='text-neutral-200 bg-neutral-900 h-dvh min-h-dvh'>
+			<div className='h-full mx-auto md:max-w-2xl flex flex-col justify-between px-2 sm:px-6 pt-10'>
 				<div className='flex flex-col'>
 					<div className='inline-flex items-center gap-1 text-xs text-neutral-500 mb-6'>
 						{slash}

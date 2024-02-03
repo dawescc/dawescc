@@ -1,6 +1,7 @@
 "use client";
 
 import Footer from "@/components/footer";
+import Image from "next/image";
 
 export default function Stuff() {
 	const slash = (
@@ -25,6 +26,28 @@ export default function Stuff() {
 		["porpo", "an F1 data visualisation app written in python", "https://github.com/dawescc/porpo"],
 		["emems", "a friendly memo maker in the shape of a docker image", "https://github.com/dawescc/emems"],
 		["bloggie", "a micro-blogging platform but for one person, my blog", "https://github.com/dawescc/bloggie"],
+	];
+
+	const MISC_ITEMS = [
+		// id, title, topic, program, year, alt, url,
+		{
+			id: "01",
+			topic: "Design",
+			program: "Figma",
+			year: "2024",
+			title: "Apple Orchard",
+			alt: "4 macbook computers in a 2 by 2 grid.",
+			url: "https://pbs.twimg.com/media/GEs6di_XMAAU1X4?format=jpg&name=large",
+		},
+		{
+			id: "02",
+			topic: "Design",
+			program: "Figma",
+			year: "2024",
+			title: "Bottomsheet Auth",
+			alt: "An auth flow using a bottomsheet instead of a full page.",
+			url: "https://pbs.twimg.com/media/GE4Myw6WEAApHZd?format=jpg&name=large",
+		},
 	];
 
 	return (
@@ -94,21 +117,31 @@ export default function Stuff() {
 					<div className='flex flex-col gap-2'>
 						<p className='font-bold mb-2'>Misc</p>
 						<div className='flex flex-col gap-10'>
-							<div className='flex flex-col gap-1'>
-								<p className='mb-1'>
-									[01] <span className='bg-neutral-200 rounded-md text-neutral-700 select-none p-[0.05rem] px-1'>Design</span> &mdash; Apple
-									Orchard
-								</p>
-								<div className='bg-neutral-950/40 ring-1 ring-neutral-700/60 p-10 rounded-xl overflow-hidden relative'>
-									<div className='grid place-items-center'>
-										<img
-											alt='4 macbook computers in a 2 by 2 grid.'
-											className='rounded-lg w-full h-auto'
-											src='https://pbs.twimg.com/media/GEs6di_XMAAU1X4?format=jpg&name=large'
-										/>
+							{MISC_ITEMS.map((item) => (
+								<div
+									key={item.id}
+									className='flex flex-col gap-1'>
+									<p className='mb-1'>
+										[{item.id}]{" "}
+										<span className='bg-neutral-200 rounded-md text-neutral-700 select-none p-[0.05rem] px-1'>{item.topic}</span> &mdash;{" "}
+										{item.title}
+									</p>
+									<div className='bg-neutral-950/40 ring-1 ring-neutral-700/60 p-10 rounded-xl overflow-hidden relative'>
+										<div className='grid place-items-center gap-2'>
+											<Image
+												alt={item.alt}
+												width={"1920"}
+												height={"1080"}
+												className='rounded-lg w-full h-auto'
+												src={item.url}
+											/>
+											<span className='mr-auto font-semibold text-xs font-mono text-neutral-400'>
+												{item.year} &mdash; {item.program}
+											</span>
+										</div>
 									</div>
 								</div>
-							</div>
+							))}
 						</div>
 					</div>
 				</div>
