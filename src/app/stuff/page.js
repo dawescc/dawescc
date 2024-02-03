@@ -1,26 +1,10 @@
 "use client";
 
 import Footer from "@/components/footer";
+import Header from "@/components/header";
 import Image from "next/image";
 
 export default function Stuff() {
-	const slash = (
-		<svg
-			class='flex-shrink-0 h-5 w-5'
-			width='16'
-			height='16'
-			viewBox='0 0 16 16'
-			fill='none'
-			xmlns='http://www.w3.org/2000/svg'
-			aria-hidden='true'>
-			<path
-				d='M6 13L10 3'
-				stroke='currentColor'
-				stroke-linecap='round'
-			/>
-		</svg>
-	);
-
 	const TABLE_HEAD = ["Name", "Description", "Link"];
 	const TABLE_BODY = [
 		["porpo", "an F1 data visualisation app written in python", "https://github.com/dawescc/porpo"],
@@ -50,33 +34,29 @@ export default function Stuff() {
 		},
 	];
 
+	const stuffPage = {
+		url: "/stuff",
+		name: "stuff",
+	};
+
 	return (
 		<main className='text-neutral-200 bg-neutral-900 h-dvh'>
-			<div className='h-full mx-auto md:max-w-2xl flex flex-col gap-10 px-2 sm:px-6 pt-10'>
-				<div className='flex flex-col'>
-					<div className='inline-flex items-center gap-1 text-xs text-neutral-500 mb-6'>
-						{slash}
-						<a href='/'>dawes.cc</a>
-						{slash}
-						<a href='/stuff'>stuff</a>
-					</div>
+			<div className='h-full mx-auto md:max-w-2xl flex flex-col gap-8 pt-10'>
+				<Header page={stuffPage} />
 
-					<h1 className='text-3xl font-bold whitespace-nowrap mb-2'>Ryan Dawes</h1>
-					<div className='text-2xl'>Developer</div>
-				</div>
-
-				<div className='flex flex-col gap-2'>
+				<div className='flex flex-col gap-4'>
 					<p className='font-bold text-lg'>Stuff</p>
 					<p className='text-balance'>
 						You can find more of my work on <a href='https://github.com/dawescc'>Github</a> or <a href='https://twitter.com/dawescc'>Twitter</a>.
 					</p>
 				</div>
-				<div className='text-sm flex flex-col gap-8'>
+
+				<div className='text-sm flex flex-col gap-10'>
 					<div className='flex flex-col gap-2'>
 						<p className='font-bold'>Projects</p>
-						<div class='flex flex-col'>
-							<div class='min-w-full'>
-								<table class='min-w-full divide-ydivide-neutral-700 text-xs'>
+						<div className='flex flex-col'>
+							<div className='min-w-full'>
+								<table className='min-w-full divide-ydivide-neutral-700 text-xs'>
 									<thead>
 										<tr>
 											{TABLE_HEAD.map((head) => (
@@ -88,7 +68,7 @@ export default function Stuff() {
 											))}
 										</tr>
 									</thead>
-									<tbody class='divide-y divide-neutral-700/50 text-neutral-300'>
+									<tbody className='divide-y divide-neutral-700/50 text-neutral-300'>
 										{TABLE_BODY.map((index) => (
 											<tr
 												key={index}
