@@ -15,7 +15,7 @@ export default function Header({ page }) {
 			/>
 		</svg>
 	);
-	const title = "Design Engineer";
+	const title = "Developer";
 	return (
 		<div className='flex flex-col'>
 			<div className='inline-flex items-center gap-1 text-xs text-neutral-500 mb-6'>
