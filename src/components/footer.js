@@ -21,6 +21,7 @@ export default function Footer() {
 					Blog
 					<ArrowUpRight className='ml-2' />
 				</a>
+				<span className='inline-flex items-center justify-center text-xs font-light opacity-25'>designed and developed by Ryan with love</span>
 			</div>
 		</div>
 	);
