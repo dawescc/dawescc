@@ -1,5 +1,6 @@
 import Footer from "@/components/footer";
 import Header from "@/components/header";
+import { MoveRight } from "lucide-react";
 
 const nowText = () => {
 	return (
@@ -13,32 +14,37 @@ const nowText = () => {
 const aboutText = () => {
 	return (
 		<p className='text-balance'>
-			I like to focus on pragmatic development strategies for web applications that are efficient and look good. I want to fix long load times and
-			complicated code structures.
+			I am an engineer that likes to focus on pragmatic development and design for web and native applications. I want to fix long load times and run
+			headfirst at problems.
 		</p>
 	);
 };
 
 export default function Home() {
 	return (
-		<main className='text-neutral-200 bg-neutral-900 h-dvh min-h-dvh'>
+		<main className='h-dvh min-h-dvh font-normal text-medium'>
 			<div className='h-full mx-auto md:max-w-2xl flex flex-col gap-8 pt-10 px-2 sm:px-0'>
 				<Header page={{ name: "", url: "#" }} />
 				<div className='text-sm flex flex-col gap-8'>
 					<div className='flex flex-col gap-2'>
-						<p className='font-bold'>Now</p>
-						{nowText()}
-					</div>
-					<div className='flex flex-col gap-2'>
 						<p className='font-bold'>About</p>
 						{aboutText()}
 					</div>
+
+					<div className='flex flex-col gap-2'>
+						<p className='font-bold'>Now</p>
+						{nowText()}
+					</div>
 					<a
-						className='text-sm font-bold inline-flex items-center mr-auto bg-neutral-800/50 active:bg-neutral-700/50 hover:bg-neutral-700/30 p-2 rounded-lg hover:no-underline transition-all ease-in-out duration-200'
+						className='button mr-auto text-sm'
 						href='/stuff'>
-						Some of my work<i className='fa-solid fa-arrow-right-long ml-2'></i>
+						Some of my work
+						<MoveRight className='ml-2' />
 					</a>
 				</div>
+				<div
+					role='spacer'
+					className='flex-1'></div>
 				<Footer />
 			</div>
 		</main>

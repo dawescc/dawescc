@@ -3,6 +3,7 @@
 import Footer from "@/components/footer";
 import Header from "@/components/header";
 import Image from "next/image";
+import { MoveLeft, ArrowUpRight, Twitter, Github } from "lucide-react";
 
 export default function Stuff() {
 	const TABLE_HEAD = ["Name", "Description", "Link"];
@@ -32,6 +33,15 @@ export default function Stuff() {
 			alt: "An auth flow using a bottomsheet instead of a full page.",
 			url: "https://pbs.twimg.com/media/GE4Myw6WEAApHZd?format=jpg&name=large",
 		},
+		{
+			id: "03",
+			topic: "Design",
+			program: "Figma",
+			year: "2024",
+			title: "AppleTV Mini+ Pro",
+			alt: "An imaginary device designed in California.",
+			url: "https://neutgwolrftsfsvfhutp.supabase.co/storage/v1/object/public/images/uploads/1706847494043_editted.png",
+		},
 	];
 
 	const stuffPage = {
@@ -40,7 +50,7 @@ export default function Stuff() {
 	};
 
 	return (
-		<main className='text-neutral-200 bg-neutral-900 h-dvh'>
+		<main className='h-dvh'>
 			<div className='h-full mx-auto md:max-w-2xl flex flex-col gap-8 pt-10 px-2 md:px-0'>
 				<Header page={stuffPage} />
 
@@ -49,13 +59,19 @@ export default function Stuff() {
 					<p className='text-balance'>
 						You can find more of my work on{" "}
 						<a
-							className='hover:underline'
+							className='underline'
+							href='https://blog.dawes.cc'>
+							my blog
+						</a>
+						,{" "}
+						<a
+							className='underline'
 							href='https://github.com/dawescc'>
 							Github
-						</a>{" "}
-						or{" "}
+						</a>
+						, or{" "}
 						<a
-							className='hover:underline'
+							className='underline'
 							href='https://twitter.com/dawescc'>
 							Twitter
 						</a>
@@ -80,11 +96,11 @@ export default function Stuff() {
 											))}
 										</tr>
 									</thead>
-									<tbody className='divide-y divide-neutral-700/50 text-neutral-300'>
+									<tbody className='divide-y divide-neutral-700/50 bg:text-neutral-300'>
 										{TABLE_BODY.map((index) => (
 											<tr
 												key={index}
-												className='hover:bg-neutral-800/50 hover:text-white transition-all ease-in-out duration-200'>
+												className='hover:bg-neutral-400/40 dark:hover:bg-neutral-800/50 transition-all ease-in-out duration-200'>
 												<td className='p-4'>
 													<span className='leading-none'>{index[0]}</span>
 												</td>
@@ -94,8 +110,9 @@ export default function Stuff() {
 												<td className='p-4'>
 													<a
 														href={index[2]}
-														className='leading-none inline-flex items-center hover:text-pink-300'>
-														Visit<i className='fa-solid fa-arrow-up-right-from-square ml-2'></i>
+														className='leading-none inline-flex items-center'>
+														Visit
+														<ArrowUpRight className='ml-2' />
 													</a>
 												</td>
 											</tr>
@@ -115,10 +132,12 @@ export default function Stuff() {
 									className='flex flex-col gap-1'>
 									<p className='mb-1'>
 										[{item.id}]{" "}
-										<span className='bg-neutral-200 rounded-md text-neutral-700 select-none p-[0.05rem] px-1'>{item.topic}</span> &mdash;{" "}
-										{item.title}
+										<span className='bg-neutral-950 dark:bg-neutral-200 rounded-md text-neutral-200 dark:text-neutral-700 select-none p-[0.05rem] px-1'>
+											{item.topic}
+										</span>{" "}
+										&mdash; {item.title}
 									</p>
-									<div className='bg-neutral-950/40 ring-1 ring-neutral-700/60 p-10 rounded-xl overflow-hidden relative'>
+									<div className='bg-neutral-300/60 dark:bg-neutral-950/40 ring-1 ring-neutral-700/20 dark:ring-neutral-700/60 p-10 rounded-xl overflow-hidden relative'>
 										<div className='grid place-items-center gap-2'>
 											<Image
 												alt={item.alt}
@@ -127,7 +146,7 @@ export default function Stuff() {
 												className='rounded-lg w-full h-auto'
 												src={item.url}
 											/>
-											<span className='mr-auto font-semibold text-xs font-mono text-neutral-400'>
+											<span className='mr-auto font-semibold text-xs font-mono text-neutral-600 dark:text-neutral-400'>
 												{item.year} &mdash; {item.program}
 											</span>
 										</div>
@@ -139,11 +158,14 @@ export default function Stuff() {
 				</div>
 
 				<a
-					className='text-sm font-bold inline-flex items-center mr-auto bg-neutral-800/50 active:bg-neutral-700/50 hover:bg-neutral-700/30 p-2 rounded-lg hover:no-underline transition-all ease-in-out duration-200'
+					className='button mr-auto text-sm'
 					href='/'>
-					<i className='fa-solid fa-arrow-left-long mr-2 '></i>Back
+					<MoveLeft className='mr-2' />
+					Back
 				</a>
-
+				<div
+					role='spacer'
+					className='flex-1'></div>
 				<Footer />
 			</div>
 		</main>

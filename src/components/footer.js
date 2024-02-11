@@ -1,21 +1,25 @@
+import { ArrowUpRight, Twitter, Github } from "lucide-react";
 export default function Footer() {
 	return (
-		<div className='text-lg font-semibold border-t border-neutral-800'>
-			<div className='py-4 grid grid-rows-1 gap-2 sm:gap-4 *:bg-neutral-800/50 *:justify-center *:p-2 *:rounded-lg g *:hover:no-underline *:transition-all *:ease-in-out *:duration-200'>
+		<div className='text-lg font-semibold border-t border-neutral-400/60 dark:border-neutral-800'>
+			<div className='py-4 grid grid-rows-1 gap-2 sm:gap-4'>
 				<a
-					className='active:bg-neutral-700/50 hover:bg-neutral-700/30 inline-flex items-center'
+					className='button'
 					href='https://x.com/dawescc'>
-					Twitter<i className='fa-brands fa-twitter ml-2'></i>
+					Twitter
+					<Twitter className='ml-2' />
 				</a>
 				<a
-					className='active:bg-neutral-700/50 hover:bg-neutral-700/30 inline-flex items-center'
+					className='button'
 					href='https://github.com/dawescc'>
-					Github<i className='fa-brands fa-github-alt ml-2'></i>
+					Github
+					<Github className='ml-2' />
 				</a>
 				<a
-					className='active:bg-neutral-700/50 hover:bg-neutral-700/30 inline-flex items-center'
+					className='button'
 					href='https://blog.dawes.cc'>
-					Blog<i className='fa-solid fa-arrow-up-right-from-square ml-2'></i>
+					Blog
+					<ArrowUpRight className='ml-2' />
 				</a>
 			</div>
 		</div>

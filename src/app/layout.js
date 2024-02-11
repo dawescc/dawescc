@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
 	return (
 		<html
 			lang='en'
-			className='bg-neutral-900'>
+			className='dark:text-neutral-200 dark:bg-neutral-900 bg-neutral-200 text-black'>
 			<body className={vietnam.className}>{children}</body>
 		</html>
 	);
