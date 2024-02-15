@@ -1,5 +1,3 @@
-"use client";
-
 import Footer from "@/components/footer";
 import Header from "@/components/header";
 import Image from "next/image";
@@ -14,7 +12,7 @@ export default function Stuff() {
 	];
 
 	const MISC_ITEMS = [
-		// id, title, topic, program, year, alt, url,
+		// id, title, topic, program, year, alt, url, optional extras
 		{
 			id: "01",
 			topic: "Design",
@@ -41,6 +39,16 @@ export default function Stuff() {
 			title: "AppleTV Mini+ Pro",
 			alt: "An imaginary device designed in California.",
 			url: "https://neutgwolrftsfsvfhutp.supabase.co/storage/v1/object/public/images/uploads/1706847494043_editted.png",
+		},
+		{
+			id: "04",
+			topic: "Design",
+			program: "Figma",
+			year: "2024",
+			title: "Goals in Amie",
+			desc: "yurrrr",
+			alt: "An imagined app screen of goals in Amie",
+			url: "https://pbs.twimg.com/media/GGLEf2oW8AEME4Z?format=jpg&name=large",
 		},
 	];
 
