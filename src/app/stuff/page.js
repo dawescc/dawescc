@@ -9,6 +9,7 @@ export default function Stuff() {
 		["porpo", "an F1 data visualisation app written in python", "https://github.com/dawescc/porpo"],
 		["emems", "a friendly memo maker in the shape of a docker image", "https://github.com/dawescc/emems"],
 		["bloggie", "a micro-blogging platform but for one person, my blog", "https://github.com/dawescc/bloggie"],
+		["longform", "a longform writing platform with public likes on each article", "https://github.com/dawescc/longform"],
 	];
 
 	const MISC_ITEMS = [
