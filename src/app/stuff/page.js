@@ -24,15 +24,6 @@ export default function Stuff() {
 			url: "https://pbs.twimg.com/media/GEs6di_XMAAU1X4?format=jpg&name=large",
 		},
 		{
-			id: "02",
-			topic: "Design",
-			program: "Figma",
-			year: "2024",
-			title: "Bottomsheet Auth",
-			alt: "An auth flow using a bottomsheet instead of a full page.",
-			url: "https://pbs.twimg.com/media/GE4Myw6WEAApHZd?format=jpg&name=large",
-		},
-		{
 			id: "03",
 			topic: "Design",
 			program: "Figma",
@@ -40,16 +31,6 @@ export default function Stuff() {
 			title: "AppleTV Mini+ Pro",
 			alt: "An imaginary device designed in California.",
 			url: "https://neutgwolrftsfsvfhutp.supabase.co/storage/v1/object/public/images/uploads/1706847494043_editted.png",
-		},
-		{
-			id: "04",
-			topic: "Design",
-			program: "Figma",
-			year: "2024",
-			title: "Goals in Amie",
-			desc: "yurrrr",
-			alt: "An imagined app screen of goals in Amie",
-			url: "https://pbs.twimg.com/media/GGLEf2oW8AEME4Z?format=jpg&name=large",
 		},
 	];
 
