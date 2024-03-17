@@ -4,12 +4,14 @@ import Image from "next/image";
 export default function Home() {
 	return (
 		<main className='relative flex-[1_1_100%] overflow-hidden max-w-xl lg:max-w-4xl pb-32'>
-			<a href='https://twitter.com/dawescc'>
+			<a
+				href='https://twitter.com/dawescc'
+				className='group w-fit'>
 				<Image
-					className='absolute w-[100px] lg:w-[120px] aspect-square rounded-3xl rotate-3 hover:-rotate-3 transition-all m-5 top-0 right-0 opacity-90'
+					className='absolute w-[100px] lg:w-[120px] aspect-square rounded-3xl rotate-6 group-hover:-rotate-3 transition-all m-5 top-0 right-0 opacity-90'
 					src='/images/Headshot.jpg'
-					height={100}
-					width={100}
+					height={500}
+					width={500}
 					alt="Ryan's Headshot"
 				/>
 			</a>
