@@ -6,9 +6,27 @@ const vietnam = Be_Vietnam_Pro({
 	weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 });
 
+const defaultUrl = process.env.VERCEL_URL ? `https://dawes.cc/` : "http://localhost:3000";
+const title = "Ryan Dawes";
 export const metadata = {
-	title: "Ryan Dawes",
-	description: "Developer",
+	title: title,
+	metadataBase: new URL(defaultUrl),
+	openGraph: {
+		title: title,
+		url: new URL(defaultUrl),
+		siteName: title,
+	},
+	twitter: {
+		title: title,
+		card: "summary_large_image",
+		site: "@dawescc",
+		creator: "@dawescc",
+	},
+	description: "A pragmatic and effective design engineer.",
+};
+
+export const viewport = {
+	themeColor: "transparent",
 };
 
 export default function RootLayout({ children }) {
