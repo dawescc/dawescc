@@ -36,7 +36,7 @@ body {
 }
 
 .paragraph {
-	@apply break-words text-pretty;
+	@apply text-pretty;
 }
 
 a:not(.clean) {
@@ -59,6 +59,11 @@ a:not(.clean) {
 	}
 }
 
+.project-tech {
+	@apply max-w-fit px-2 py-[1px] rounded-lg text-base;
+	background-color: rgba(var(--text-color), 0.05);
+}
+
 .hover-bg {
 	&:hover {
 		background-color: rgba(var(--text-color), 0.025);
@@ -68,7 +73,7 @@ a:not(.clean) {
 @media (prefers-color-scheme: dark) {
 	.hover-bg {
 		&:hover {
-			background-color: rgba(var(--text-color), 0.05);
+			background-color: rgba(var(--text-color), 0.0225);
 		}
 	}
 }

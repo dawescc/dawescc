@@ -28,7 +28,10 @@ export default function Home() {
 				<div className='flex flex-col gap-6'>
 					<p className='label font-normal'>Now</p>
 					<p className='paragraph'>Developer with the Department of Education.</p>
-					<p className='paragraph text-2xl font-normal'>I work primarily with Javascript and .NET web applications.</p>
+					<p className='paragraph text-2xl font-normal'>
+						I work primarily with <span className='bg-[#F0DB4F]/75 text-black rounded-lg px-1 py-[1px]'>Javascript</span> and{" "}
+						<span className='bg-[#512bd4]/75 text-white rounded-lg px-1 py-[1px]'>.NET</span> web applications.
+					</p>
 					<p className='paragraph text-2xl font-normal'>I am comfortable using a variety of technologies in the design and development process.</p>
 				</div>
 
