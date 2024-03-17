@@ -21,7 +21,7 @@ export default function Home() {
 					<p className='label font-normal'>About</p>
 					<p className='paragraph'>Engineer of pragmatic development and design.</p>
 					<p className='paragraph text-2xl font-normal'>
-						Described as &ldquo;the one on the team that will take on any project and get it <em>done</em>.&rdquo;
+						Described as &ldquo;the one on the team that will take on any project and get it done.&rdquo;
 					</p>
 				</div>
 
