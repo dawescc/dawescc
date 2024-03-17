@@ -8,7 +8,7 @@ export default function Home() {
 				href='https://twitter.com/dawescc'
 				className='group w-fit'>
 				<Image
-					className='img-card z-[3] bg-green-300 rotate-3 group-hover:-rotate-3 group-hover:scale-[1.05]'
+					className='img-card z-[3] bg-gray-200 rotate-3 group-hover:-rotate-3 group-hover:scale-[1.05]'
 					src='/images/Headshot.jpg'
 					height={120}
 					width={120}
