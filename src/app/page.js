@@ -10,8 +10,8 @@ export default function Home() {
 				<Image
 					className='img-card z-[3] bg-green-300 rotate-3 group-hover:-rotate-3 group-hover:scale-[1.05]'
 					src='/images/Headshot.jpg'
-					height={500}
-					width={500}
+					height={120}
+					width={120}
 					alt="Ryan's Headshot"
 				/>
 				<div className='img-card z-[2] bg-gray-400 -rotate-6 group-hover:rotate-6 translate-x-0 group-hover:translate-x-1'></div>
