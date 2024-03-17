@@ -46,7 +46,7 @@ export default function Stuff() {
 							<a
 								key={index}
 								href={index[2]}
-								className='*:py-6 clean grid grid-cols-2 hover-bg transition-all rounded-md px-2'>
+								className='*:py-6 clean grid grid-cols-2 hover-bg transition-all rounded-md px-2 -mx-2'>
 								<span>
 									{index[0]} <ArrowUpRight />
 								</span>
@@ -66,7 +66,7 @@ export default function Stuff() {
 								<a
 									key={index}
 									href={index[2]}
-									className='*:py-6 clean grid grid-cols-2 hover-bg transition-all rounded-md px-2'>
+									className='*:py-6 clean grid grid-cols-2 hover-bg transition-all rounded-md px-2 -mx-2'>
 									<span>
 										{index[0]} <ArrowUpRight />
 									</span>
