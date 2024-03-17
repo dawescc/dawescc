@@ -15,8 +15,8 @@ export default function RootLayout({ children }) {
 	return (
 		<html
 			lang='en'
-			className='dark:text-neutral-200 dark:bg-neutral-900 bg-neutral-200 text-black'>
-			<body className={vietnam.className}>{children}</body>
+			className={vietnam.className}>
+			<body className='relative flex justify-center text-3xl lg:text-4xl leading-10 lg:leading-[46px] tracking-[0.02rem;] font-medium'>{children}</body>
 		</html>
 	);
 }

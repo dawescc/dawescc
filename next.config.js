@@ -12,6 +12,11 @@ const nextConfig = {
 				hostname: "neutgwolrftsfsvfhutp.supabase.co",
 				pathname: "/storage/v1/object/public/images/**",
 			},
+			{
+				protocol: "https",
+				hostname: "github.com",
+				pathname: "/**/**",
+			},
 		],
 	},
 };

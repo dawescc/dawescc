@@ -2,21 +2,73 @@
 @tailwind components;
 @tailwind utilities;
 
-.button {
-	@apply font-bold inline-flex items-center justify-center bg-neutral-300 dark:bg-neutral-800/50 active:bg-neutral-700/50 hover:bg-neutral-700/30 p-2 rounded-lg hover:no-underline transition-all ease-in-out duration-200;
+:root {
+	--bg-color: 255, 255, 255;
+	--text-color: 0, 0, 0;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--bg-color: 0, 0, 0;
+		--text-color: 255, 255, 255;
+	}
 }
 
 html {
+	@apply antialiased;
 	scroll-behavior: smooth;
+	background-color: rgba(var(--bg-color), 1);
+	color: rgba(var(--text-color), 1);
 }
 
 body {
-	padding-top: env(safe-area-inset-top);
-	padding-right: env(safe-area-inset-right);
-	padding-bottom: env(safe-area-inset-bottom);
-	padding-left: env(safe-area-inset-left);
+	padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
 }
 
-a:hover {
+.label {
+	@apply text-xl relative;
+
+	&::after {
+		content: "";
+		@apply absolute left-[1px] -bottom-[2px] w-[1ch] h-[2px];
+		background-color: rgba(var(--text-color), 0.5);
+	}
+}
+
+.paragraph {
+	@apply break-words text-pretty;
+}
+
+a:not(.clean) {
 	text-decoration: underline;
+	text-decoration-color: rgba(var(--text-color), 0.15);
+	@apply transition-all;
+
+	&:hover {
+		text-decoration-color: rgba(var(--text-color), 1);
+	}
+
+	@media (prefers-color-scheme: dark) {
+		& {
+			text-decoration-color: rgba(var(--text-color), 0.55);
+		}
+
+		&:hover {
+			text-decoration-color: rgba(var(--text-color), 0.9);
+		}
+	}
+}
+
+.hover-bg {
+	&:hover {
+		background-color: rgba(var(--text-color), 0.025);
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	.hover-bg {
+		&:hover {
+			background-color: rgba(var(--text-color), 0.05);
+		}
+	}
 }
