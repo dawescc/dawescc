@@ -42,7 +42,7 @@ body {
 a:not(.clean) {
 	text-decoration: underline;
 	text-decoration-color: rgba(var(--text-color), 0.15);
-	@apply transition-all;
+	@apply transition-all duration-500;
 
 	&:hover {
 		text-decoration-color: rgba(var(--text-color), 1);
