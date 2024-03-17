@@ -31,10 +31,14 @@ export default function Home() {
 					<p className='label font-normal'>Now</p>
 					<p className='paragraph'>Developer with the Department of Education.</p>
 					<p className='paragraph text-2xl font-normal'>
-						I work primarily with <span className='bg-[#F0DB4F]/75 text-black rounded-lg px-1 py-[1px]'>Javascript</span> and{" "}
-						<span className='bg-[#512bd4]/75 text-white rounded-lg px-1 py-[1px]'>.NET</span> web applications.
+						{" I work primarily with "}
+						<span className='bg-[#F0DB4F] text-black rounded-lg px-1 py-[1px] font-medium'>Javascript</span>
+						{" and "}
+						<span className='bg-[#512bd4] text-white rounded-lg px-1 py-[1px] font-medium'>.NET</span> applications.
 					</p>
-					<p className='paragraph text-2xl font-normal'>I am comfortable using a variety of technologies in the design and development process.</p>
+					<p className='paragraph text-2xl font-normal'>
+						However, I am comfortable using a variety of technologies in the design and development process.
+					</p>
 				</div>
 
 				<a
