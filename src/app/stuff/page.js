@@ -15,7 +15,7 @@ export default function Stuff() {
 
 	const work = [
 		// name, description, tech array, url
-		["NCES", "Misc. sites under the U.S. Deptartment of Education umbrella.", ["ASP.NET 2/3/4", "Classic ASP"], "https://nces.ed.gov"],
+		["NCES", "Misc. sites under the U.S. Department of Education umbrella.", ["ASP.NET 2/3/4", "Classic ASP"], "https://nces.ed.gov"],
 	];
 
 	return (
