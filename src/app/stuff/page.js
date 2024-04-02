@@ -5,8 +5,6 @@ export default function Stuff() {
 		// name, description, tech array, url
 		["porpo", "Formula 1 data visualizations on any device.", ["Python"], "https://github.com/dawescc/porpo"],
 		["emems", "Friendly web-based memo maker.", ["Javascript", "Docker"], "https://github.com/dawescc/emems"],
-		["bloggie", "Microblogging platform for one person.", ["NextJS", "Supabase"], "https://github.com/dawescc/bloggie"],
-		["longform", "Longform writing platform with public likes on each article.", ["NextJS", "Supabase"], "https://github.com/dawescc/longform"],
 	];
 
 	const misc = [
@@ -15,7 +13,7 @@ export default function Stuff() {
 
 	const work = [
 		// name, description, tech array, url
-		["NCES", "Misc. sites under the U.S. Department of Education umbrella.", ["ASP.NET 2/3/4", "Classic ASP"], "https://nces.ed.gov"],
+		["nces", "Misc. sites under the U.S. Department of Education umbrella.", ["ASP.NET 2/3/4", "Classic ASP"], "https://nces.ed.gov"],
 	];
 
 	return (
@@ -23,12 +21,6 @@ export default function Stuff() {
 			<div className='flex flex-col gap-12 pt-20 px-8'>
 				<p>
 					You can find more of my work on{" "}
-					<a
-						className='underline'
-						href='https://blog.dawes.cc'>
-						my blog
-					</a>
-					,{" "}
 					<a
 						className='underline'
 						href='https://github.com/dawescc'>
