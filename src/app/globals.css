@@ -3,81 +3,59 @@
 @tailwind utilities;
 
 :root {
-	--bg-color: 255, 255, 255;
-	--text-color: 0, 0, 0;
-}
-
-@media (prefers-color-scheme: dark) {
-	:root {
-		--bg-color: 0, 0, 0;
-		--text-color: 255, 255, 255;
-	}
+	font-size: 18px;
 }
 
 html {
 	@apply antialiased;
 	scroll-behavior: smooth;
-	background-color: rgba(var(--bg-color), 1);
-	color: rgba(var(--text-color), 1);
+	@apply bg-[#E6FAFC] text-[#22333B] dark:bg-[#22333B] dark:text-[#E6FAFC];
 }
 
 body {
 	padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
 }
 
-.label {
-	@apply text-xl relative;
+a {
+	@apply underline hover:no-underline hover:cursor-pointer;
 
-	&::after {
-		content: "";
-		@apply absolute left-[1px] -bottom-[2px] w-[1ch] h-[2px];
-		background-color: rgba(var(--text-color), 0.5);
+	&:not(.clean) {
+		@apply hover:bg-pink-300 dark:hover:bg-pink-500;
 	}
 }
 
-.paragraph {
-	@apply text-pretty;
+.siteTitle {
+	@apply text-[5.25rem]/[1] sm:text-9xl font-black font-serif max-w-full overflow-clip;
 }
 
-a:not(.clean) {
-	text-decoration: underline;
-	text-decoration-color: rgba(var(--text-color), 0.15);
-	@apply transition-all duration-500;
+.siteSubtitle {
+	@apply text-2xl font-serif font-medium;
+}
 
-	&:hover {
-		text-decoration-color: rgba(var(--text-color), 1);
+.section {
+	@apply flex flex-col font-sans text-base/[1.333] font-normal;
+
+	.subSection {
+		@apply flex flex-col gap-8;
 	}
 
-	@media (prefers-color-scheme: dark) {
-		& {
-			text-decoration-color: rgba(var(--text-color), 0.55);
-		}
-
-		&:hover {
-			text-decoration-color: rgba(var(--text-color), 0.9);
-		}
+	&:not(#title) {
+		@apply border-dotted border-b-[1px] border-[#22333B] dark:border-[#E6FAFC] py-5;
 	}
-}
 
-.project-tech {
-	@apply max-w-fit px-2 py-[1px] rounded-lg text-base;
-	background-color: rgba(var(--text-color), 0.05);
-}
-
-.hover-bg {
-	&:hover {
-		background-color: rgba(var(--text-color), 0.025);
+	&#title {
+		@apply pb-12 gap-4;
 	}
 }
 
-.img-card {
-	@apply absolute w-[100px] lg:w-[120px] aspect-square rounded-3xl transition-all m-5 top-0 right-0;
+.sectionHeader {
+	@apply font-bold font-serif text-[1.5rem]/[1] capitalize mb-4;
 }
 
-@media (prefers-color-scheme: dark) {
-	.hover-bg {
-		&:hover {
-			background-color: rgba(var(--text-color), 0.0225);
-		}
-	}
+.basicText {
+	@apply font-normal;
+}
+
+.infoText {
+	@apply font-light;
 }

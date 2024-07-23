@@ -1,53 +1,64 @@
-import { MoveRight } from "lucide-react";
-import Image from "next/image";
+const works = [
+	{ title: "nces", url: "https://nces.ed.gov", desc: "part of the federal department of education" },
+	{ title: "porpo", url: "https://github.com/dawescc/porpo", desc: "a data visualisation tool for formula 1" },
+];
+
+const links = [
+	{ title: "twitter", url: "https://nces.ed.gov/" },
+	{ title: "github", url: "https://github.com/dawescc/" },
+];
+
+const subTitle = "";
+
+const bioText = "i work primarily with Javascript and .NET applications.";
 
 export default function Home() {
 	return (
-		<main className='relative flex-[1_1_100%] overflow-hidden max-w-xl lg:max-w-4xl pb-32'>
-			<a
-				href='https://twitter.com/dawescc'
-				className='group w-fit'>
-				<Image
-					className='img-card z-[3] bg-gray-200 rotate-3 group-hover:-rotate-3 group-hover:scale-[1.05]'
-					src='/images/Headshot.jpg'
-					height={120}
-					width={120}
-					alt="Ryan's Headshot"
-				/>
-				<div className='img-card z-[2] bg-gray-400 -rotate-6 group-hover:rotate-6 translate-x-0 group-hover:translate-x-1'></div>
-				<div className='img-card z-[1] bg-gray-700 rotate-[9deg] group-hover:-rotate-[9deg] translate-x-0 group-hover:-translate-x-1'></div>
-			</a>
-
-			<div className='flex flex-col gap-12 pt-20 px-8'>
-				<div className='flex flex-col gap-6'>
-					<p className='label font-normal'>About</p>
-					<p className='paragraph'>Engineer of pragmatic development and design.</p>
-					<p className='paragraph text-2xl font-normal'>
-						Described as &ldquo;the one on the team that will take on any project and get it done.&rdquo;
-					</p>
-				</div>
-
-				<div className='flex flex-col gap-6'>
-					<p className='label font-normal'>Now</p>
-					<p className='paragraph'>Developer with the Department of Education.</p>
-					<p className='paragraph text-2xl font-normal'>
-						{" I work primarily with "}
-						<span className='bg-[#F0DB4F] text-black rounded-lg px-1 py-[1px] font-medium'>Javascript</span>
-						{" and "}
-						<span className='bg-[#512bd4] text-white rounded-lg px-1 py-[1px] font-medium'>.NET</span> applications.
-					</p>
-					<p className='paragraph text-2xl font-normal'>
-						However, I am comfortable using a variety of technologies in the design and development process.
-					</p>
-				</div>
-
-				<a
-					href='/stuff'
-					className='flex-1 w-fit inline-flex items-center gap-2 text-xl'>
-					View some of my work
-					<MoveRight className='translate-y-[0.5px]' />
-				</a>
+		<div className='flex flex-col pt-20 px-8'>
+			<div
+				className='section'
+				id='title'>
+				<h1 className='siteTitle'>Ryan Dawes</h1>
+				<h2 className='siteSubtitle'>{subTitle}</h2>
 			</div>
-		</main>
+
+			<div className='section'>
+				<h3 className='sectionHeader'>about</h3>
+				<p>{bioText}</p>
+			</div>
+
+			<div className='section'>
+				<h3 className='sectionHeader'>works</h3>
+				<div className='subSection'>
+					{works.map((work, index) => (
+						<div
+							key={index}
+							id={work.title}
+							className='flex flex-col gap-1.5'>
+							<a
+								className='w-min'
+								href={work.url}>
+								{work.title}
+							</a>
+							<span className='infoText'>{work.desc}</span>
+						</div>
+					))}
+				</div>
+			</div>
+
+			<div className='section'>
+				<h3 className='sectionHeader'>links</h3>
+				<div className='subSection'>
+					{links.map((link, index) => (
+						<a
+							className='w-min'
+							key={index}
+							href={link.url}>
+							{link.title}
+						</a>
+					))}
+				</div>
+			</div>
+		</div>
 	);
 }
