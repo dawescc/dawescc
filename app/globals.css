@@ -41,6 +41,10 @@ html {
 		--radius: 0.5rem;
 	}
 
+	.bg-project {
+		@apply bg-gradient-to-r from-blue-200 to-cyan-200;
+	}
+
 	@media (prefers-color-scheme: dark) {
 		:root {
 			--background: 0 0% 3.9%;
@@ -67,6 +71,10 @@ html {
 			--chart-3: 30 80% 55%;
 			--chart-4: 280 65% 60%;
 			--chart-5: 340 75% 55%;
+		}
+
+		.bg-project {
+			@apply bg-gradient-to-r from-neutral-300 to-stone-400;
 		}
 	}
 }

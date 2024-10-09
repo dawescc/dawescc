@@ -88,7 +88,7 @@ function MobileLink({ href, onOpenChange, className, children, ...props }: Mobil
 				router.push(href.toString());
 				onOpenChange?.(false);
 			}}
-			className={cn(className)}
+			className={`${cn(className)} w-fit`}
 			{...props}>
 			{children}
 		</Link>
