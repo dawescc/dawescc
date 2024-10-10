@@ -42,7 +42,7 @@ export default function Home() {
 						<div className='flex flex-col px-2 space-y-1'>
 							<h3 className='font-semibold font-serif text-lg'>NCAAF</h3>
 							<p className='text-pretty'>
-								Real-time scores, team and player statistics, national rankings, and the latest news for college football for college football.
+								Real-time scores, team and player statistics, national rankings, and the latest news for college football.
 							</p>
 							<div className='flex gap-2'>
 								<Link
