@@ -13,7 +13,7 @@ export default function Home() {
 				</div>
 
 				<div className='container px-0 flex flex-col space-y-2'>
-					<h2 className='font-bold font-serif text-xl'>Works</h2>
+					<h2 className='font-bold font-serif text-xl'>Now</h2>
 					<div className='flex flex-col px-2 space-y-1'>
 						<h3 className='font-semibold font-serif text-lg'>Department of Education</h3>
 						<p className='text-pretty'>
@@ -37,7 +37,7 @@ export default function Home() {
 				</div>
 
 				<div className='container px-0 flex flex-col space-y-2'>
-					<h2 className='font-bold font-serif text-xl'>Misc.</h2>
+					<h2 className='font-bold font-serif text-xl'>Works</h2>
 					<div className='flex flex-col space-y-8'>
 						<div className='flex flex-col px-2 space-y-1'>
 							<h3 className='font-semibold font-serif text-lg'>NCAAF</h3>
