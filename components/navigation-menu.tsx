@@ -7,7 +7,7 @@ import { cn } from "@/lib/utils";
 import { useRouter } from "next/navigation";
 import Link, { LinkProps } from "next/link";
 import { siteConfig } from "@/config/siteConfig";
-import { ScrollArea } from "./ui/scroll-area";
+import { ScrollArea } from "@/components/ui/scroll-area";
 
 export default function NavigationMenu() {
 	return (
@@ -37,7 +37,7 @@ export default function NavigationMenu() {
 										return (
 											link.href && (
 												<MobileLink
-													className='hover:underline capitalize flex items-center gap-2'
+													className='capitalize flex items-center gap-2'
 													key={link.href}
 													href={link.href}>
 													<Icon /> {link.name}
@@ -55,7 +55,7 @@ export default function NavigationMenu() {
 										return (
 											project.href && (
 												<MobileLink
-													className='hover:underline flex items-center gap-2'
+													className='flex items-center gap-2'
 													key={project.href}
 													href={project.href}>
 													<Icon /> {project.name}

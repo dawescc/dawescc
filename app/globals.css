@@ -45,6 +45,10 @@ html {
 		@apply bg-gradient-to-r from-blue-200 to-cyan-200;
 	}
 
+	a {
+		@apply underline hover:no-underline;
+	}
+
 	@media (prefers-color-scheme: dark) {
 		:root {
 			--background: 0 0% 3.9%;

@@ -20,7 +20,7 @@ export const siteConfig = {
 	],
 	projects: [
 		{ name: "porpo", href: "https://github.com/dawescc/porpo", icon: TbHexagonLetterPFilled },
-		{ name: "ncaaf", href: "https://ncaaf.com", icon: FaFootballBall },
+		{ name: "ncaaf", href: "https://ncaaf.dawes.cc", icon: FaFootballBall },
 	],
 };
 
