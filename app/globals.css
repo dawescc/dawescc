@@ -2,92 +2,75 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer utilities {
-	.text-balance {
-		text-wrap: balance;
-	}
-}
-
-html {
-	font-size: 14px;
-}
-
 @layer base {
 	:root {
-		--background: 0 0% 100%;
-		--foreground: 0 0% 3.9%;
-		--card: 0 0% 100%;
-		--card-foreground: 0 0% 3.9%;
-		--popover: 0 0% 100%;
-		--popover-foreground: 0 0% 3.9%;
-		--primary: 0 0% 9%;
-		--primary-foreground: 0 0% 98%;
-		--secondary: 0 0% 96.1%;
-		--secondary-foreground: 0 0% 9%;
-		--muted: 0 0% 96.1%;
-		--muted-foreground: 0 0% 45.1%;
-		--accent: 0 0% 96.1%;
-		--accent-foreground: 0 0% 9%;
-		--destructive: 0 84.2% 60.2%;
-		--destructive-foreground: 0 0% 98%;
-		--border: 0 0% 89.8%;
-		--input: 0 0% 89.8%;
-		--ring: 0 0% 3.9%;
-		--chart-1: 12 76% 61%;
-		--chart-2: 173 58% 39%;
-		--chart-3: 197 37% 24%;
-		--chart-4: 43 74% 66%;
-		--chart-5: 27 87% 67%;
+		--background: oklch(97% 0 0);
+		--foreground: oklch(20% 0 0);
+
+		--border-lightness: 85%;
+		--tag-lightness: 94%;
+		--tag-active-lightness: calc(var(--tag-lightness) - 3.12%);
+		--accent-lightness: 80%;
+
+		--border: oklch(from var(--foreground) calc(var(--border-lightness)) c h);
+		--tag: oklch(from var(--background) calc(var(--tag-lightness)) c h);
+		--tag-active: oklch(from var(--tag) calc(var(--tag-active-lightness)) c h);
+
+		--accent: oklch(from var(--tag) calc(var(--accent-lightness)) c h);
 		--radius: 0.5rem;
 	}
 
-	.bg-project {
-		@apply bg-gradient-to-r from-blue-200 to-cyan-200;
+	[data-theme="dark"] {
+		--background: oklch(20% 0 0);
+		--foreground: oklch(85% 0 0);
+
+		--border-lightness: 29.8%;
+		--tag-lightness: var(--border-lightness);
+		--tag-active-lightness: calc(var(--tag-lightness) - 3.12%);
+		--accent-lightness: 50%;
+	}
+
+	body {
+		@apply bg-background text-foreground;
+	}
+
+	html {
+		font-size: 14px;
+	}
+
+	table {
+		@apply rounded-sm overflow-clip ring-[1px] ring-border;
+
+		tr {
+			@apply border-b;
+
+			&:last-of-type {
+				@apply border-b-0;
+			}
+
+			td {
+				@apply py-1;
+
+				&:first-of-type {
+					@apply pl-2 font-semibold;
+				}
+
+				&:last-of-type {
+					@apply pr-2;
+				}
+			}
+		}
 	}
 
 	a {
 		@apply underline hover:no-underline;
 	}
 
-	@media (prefers-color-scheme: dark) {
-		:root {
-			--background: 0 0% 3.9%;
-			--foreground: 0 0% 98%;
-			--card: 0 0% 3.9%;
-			--card-foreground: 0 0% 98%;
-			--popover: 0 0% 3.9%;
-			--popover-foreground: 0 0% 98%;
-			--primary: 0 0% 98%;
-			--primary-foreground: 0 0% 9%;
-			--secondary: 0 0% 14.9%;
-			--secondary-foreground: 0 0% 98%;
-			--muted: 0 0% 14.9%;
-			--muted-foreground: 0 0% 63.9%;
-			--accent: 0 0% 14.9%;
-			--accent-foreground: 0 0% 98%;
-			--destructive: 0 62.8% 30.6%;
-			--destructive-foreground: 0 0% 98%;
-			--border: 0 0% 14.9%;
-			--input: 0 0% 14.9%;
-			--ring: 0 0% 83.1%;
-			--chart-1: 220 70% 50%;
-			--chart-2: 160 60% 45%;
-			--chart-3: 30 80% 55%;
-			--chart-4: 280 65% 60%;
-			--chart-5: 340 75% 55%;
-		}
+	.co-img {
+		@apply grayscale;
 
-		.bg-project {
-			@apply bg-gradient-to-r from-neutral-300 to-stone-400;
+		[data-theme="dark"] & {
+			@apply brightness-150;
 		}
-	}
-}
-
-@layer base {
-	* {
-		@apply border-border;
-	}
-	body {
-		@apply bg-background text-foreground;
 	}
 }

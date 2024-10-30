@@ -2,12 +2,13 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import { siteConfig } from "@/config/siteConfig";
 import { fontSans, fontSerif, fontMono } from "@/lib/fonts";
-import NavigationMenu from "@/components/navigation-menu";
 import GlobalFooter from "@/components/site-footer";
+import { Analytics } from "@vercel/analytics/react";
+import { Theme } from "@/components/theme-switch";
 
 export const metadata: Metadata = {
 	title: {
-		default: siteConfig.name,
+		default: siteConfig.title,
 		template: `%s - ${siteConfig.name}`,
 	},
 	metadataBase: new URL(siteConfig.url),
@@ -57,15 +58,17 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang='en'>
+		<html
+			lang='en'
+			suppressHydrationWarning>
 			<body className={`${fontSans.variable} ${fontSerif.variable} ${fontMono.variable} font-sans min-h-screen antialiased`}>
-				<main className='relative flex min-h-screen flex-col bg-background'>
-					<div className='w-full h-12 flex justify-end items-center px-2 py-1'>
-						<NavigationMenu />
-					</div>
-					{children}
-					<GlobalFooter />
-				</main>
+				<Theme>
+					<main className='relative flex min-h-screen flex-col bg-background transition-colors'>
+						{children}
+						<GlobalFooter />
+					</main>
+					<Analytics />
+				</Theme>
 			</body>
 		</html>
 	);
