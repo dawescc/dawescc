@@ -36,11 +36,11 @@ export default function Home() {
 
 				<div className='flex flex-col gap'>
 					<p>
-						Creator of <Tag>JavaScript</Tag> and <Tag>ASP.NET</Tag>, and sometimes <Tag>Python</Tag> things on the internet. Enough experience that
+						Creator of <Tag>JavaScript</Tag>, <Tag>ASP.NET</Tag>, and sometimes <Tag>Python</Tag> things on the internet. Enough experience that
 						I&apos;m starting to feel ... <i>old</i>.
 					</p>
 					<p>
-						My current timezone is <TimeZone timezone='America/New_York' /> which includes cities like Boston, Atlanta, and Miami. The time here is{" "}
+						My current timezone is <TimeZone timezone='America/New_York' /> which features cities like Boston, Atlanta, and Miami. The time here is{" "}
 						<LiveTime timezone='America/New_York' />.
 					</p>
 				</div>
