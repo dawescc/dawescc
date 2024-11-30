@@ -10,7 +10,7 @@ export const siteConfig = {
 	},
 	links: {
 		twitter: "https://twitter.com/dawescc",
-		bsky: "https://bsky.app/profile/dawes.cc",
+		bsky: "https://bsky.app/profile/r.dawes.cc",
 		github: "https://github.com/dawescc",
 		website: "https://dawes.cc",
 	},
