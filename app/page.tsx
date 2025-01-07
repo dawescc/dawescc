@@ -1,6 +1,6 @@
+/* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
 import { LiveTime, Tag, TimeZone } from "@/components/time";
-import Image from "next/image";
 
 export default function Home() {
 	const experience = [
@@ -32,23 +32,21 @@ export default function Home() {
 			<div className='container content-start max-w-2xl flex flex-col gap text-pretty'>
 				<Cc className='size-10' />
 				<h1 className='font-serif font-bold text-6xl'>Ryan Dawes</h1>
-				<p className='font-serif font-medium text-4xl mb-4'>Engineer</p>
+				<p className='font-serif font-medium text-4xl mb-4'>Engineer II</p>
 
 				<div className='flex flex-col gap'>
 					<p>
-						Creator of <Tag>JavaScript</Tag>, <Tag>ASP.NET</Tag>, and sometimes <Tag>Python</Tag> things on the internet. Enough experience that
-						I&apos;m starting to feel ... <i>old</i>.
+						Creator of <Tag>JavaScript</Tag>, <Tag>ASP.NET</Tag>, and sometimes <Tag>Python</Tag> things.
 					</p>
 					<p>
-						My current timezone is <TimeZone timezone='America/New_York' /> which features cities like Boston, Atlanta, and Miami. The time here is{" "}
-						<LiveTime timezone='America/New_York' />.
+						My current timezone is <TimeZone timezone='America/New_York' />. The time here is <LiveTime timezone='America/New_York' />.
 					</p>
 				</div>
 
 				<hr></hr>
 
 				<div className='flex gap items-start'>
-					<Image
+					<img
 						alt=''
 						src='/images/usdoe.png'
 						width={1024}
@@ -56,7 +54,7 @@ export default function Home() {
 						className='size-20 co-img'
 					/>
 
-					<Image
+					<img
 						alt=''
 						src='/images/eastman.png'
 						width={750}
@@ -90,7 +88,6 @@ export default function Home() {
 
 				<div className='flex gap-[1rem] items-start'>
 					<Tag href='https://github.com/dawescc'>Github</Tag>
-					<Tag href='https://ncaaf.dawes.cc'>NCAAF</Tag>
 				</div>
 			</div>
 		</div>
