@@ -1,95 +1,11 @@
 /* eslint-disable @next/next/no-img-element */
-import Link from "next/link";
-import { LiveTime, Tag, TimeZone } from "@/components/time";
 
 export default function Home() {
-	const experience = [
-		{
-			role: "Software Engineer II",
-			company: {
-				name: "US Department of Education",
-				url: "https://www.ed.gov/",
-			},
-		},
-		{
-			role: "Software Engineer I",
-			company: {
-				name: "US Department of Education",
-				url: "https://www.ed.gov/",
-			},
-		},
-		{
-			role: "Support Engineer",
-			company: {
-				name: "Eastman Chemical Company",
-				url: "https://www.eastman.com/en",
-			},
-		},
-	];
-
 	return (
-		<div className=' flex-1 flex flex-col py-20 overflow-hidden'>
-			<div className='container content-start max-w-2xl flex flex-col gap text-pretty'>
-				<Cc className='size-10' />
-				<h1 className='font-serif font-bold text-6xl'>Ryan Dawes</h1>
-				<p className='font-serif font-medium text-4xl mb-4'>Engineer II</p>
-
-				<div className='flex flex-col gap'>
-					<p>
-						Creator of <Tag>JavaScript</Tag>, <Tag>ASP.NET</Tag>, and sometimes <Tag>Python</Tag> things.
-					</p>
-					<p>
-						My current timezone is <TimeZone timezone='America/New_York' />. The time here is <LiveTime timezone='America/New_York' />.
-					</p>
-				</div>
-
-				<hr></hr>
-
-				<div className='flex gap items-start'>
-					<img
-						alt=''
-						src='/images/usdoe.png'
-						width={1024}
-						height={1024}
-						className='size-20 co-img'
-					/>
-
-					<img
-						alt=''
-						src='/images/eastman.png'
-						width={750}
-						height={500}
-						className='h-auto max-w-32 co-img'
-					/>
-				</div>
-
-				<div className='flex flex-col items-start gap'>
-					<table className='w-full max-w-lg'>
-						<tbody>
-							{experience.map((job, index) => (
-								<tr key={index}>
-									<td>{job.role}</td>
-									<td>
-										<Tag href={job.company.url}>{job.company.name}</Tag>
-									</td>
-								</tr>
-							))}
-						</tbody>
-					</table>
-
-					<span>
-						While I am not currently available, feel free to <Link href='mailto:hello@dawes.cc?subject=CV%20Request'>request my CV</Link>
-						{" or "}
-						<Link href='mailto:hello@dawes.cc?subject=Contact%20Request'>contact me</Link>.
-					</span>
-				</div>
-
-				<hr></hr>
-
-				<div className='flex gap-[1rem] items-start'>
-					<Tag href='https://github.com/dawescc'>Github</Tag>
-				</div>
-			</div>
+		<div className='px-2 py-4'>
+			<Cc className='size-10' />
+			<h1 className='font-serif font-bold text-2xl'>ryan dawes</h1>
+			<p>engineer II</p>
 		</div>
 	);
 }

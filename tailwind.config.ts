@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import { fontMono, fontSans, fontSerif } from "./lib/fonts";
 
 const config: Config = {
 	darkMode: ["class"],
@@ -26,9 +27,9 @@ const config: Config = {
 				accent: "var(--accent)",
 			},
 			fontFamily: {
-				sans: ["var(--font-cust-sans)"],
-				serif: ["var(--font-cust-serif)"],
-				mono: ["var(--font-cust-mono)"],
+				sans: [`var(${fontSans.variable})`],
+				serif: [`var(${fontSerif.variable})`],
+				mono: [`var(${fontMono.variable})`],
 			},
 			borderRadius: {
 				lg: "var(--radius)",

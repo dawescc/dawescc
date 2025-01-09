@@ -61,10 +61,11 @@ export default function RootLayout({
 		<html
 			lang='en'
 			suppressHydrationWarning>
-			<body className={`${fontSans.variable} ${fontSerif.variable} ${fontMono.variable} font-sans min-h-screen antialiased`}>
+			<body className={`${fontSans.variable} ${fontSerif.variable} ${fontMono.variable} font-sans antialiased bg-background transition-colors`}>
 				<Theme>
-					<main className='relative flex min-h-screen flex-col bg-background transition-colors'>
-						{children}
+					<main className='relative flex h-dvh max-h-dvh flex-col'>
+						<div className='flex-grow'>{children}</div>
+						<hr />
 						<GlobalFooter />
 					</main>
 					<Analytics />
