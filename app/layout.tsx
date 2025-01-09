@@ -64,7 +64,7 @@ export default function RootLayout({
 			<body className={`${fontSans.variable} ${fontSerif.variable} ${fontMono.variable} font-sans antialiased bg-background transition-colors`}>
 				<Theme>
 					<main className='relative flex h-dvh max-h-dvh flex-col'>
-						<div className='flex-grow'>{children}</div>
+						<div className='grow'>{children}</div>
 						<hr />
 						<GlobalFooter />
 					</main>
