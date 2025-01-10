@@ -1,9 +1,11 @@
 import { sitePages } from "@/config/sitePages";
 import { ReactNode } from "react";
+import Cc from "./cc-logo";
 
 export default function GlobalHeader() {
 	return (
-		<header className='py-4 pb-20 flex flex-col gap-[2rem]'>
+		<header className='pt-20 pb-20 flex flex-col gap-[2rem]'>
+			<Cc className='size-10 mb-20' />
 			<div>
 				<a
 					href='/'
