@@ -22,7 +22,7 @@ function ThemeSwitch() {
 
 	const getClassName = (buttonTheme: string) => `
 	  p-1 px-2 rounded-md transition-colors
-	  ${theme === buttonTheme ? "bg-tag-active text-foreground" : "text-foreground"}
+	  ${theme === buttonTheme ? "bg-button-active text-foreground" : "text-foreground"}
 	`;
 
 	return (

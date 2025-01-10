@@ -5,6 +5,7 @@ import { fontSans, fontSerif, fontMono } from "@/lib/fonts";
 import GlobalFooter from "@/components/site-footer";
 import { Analytics } from "@vercel/analytics/react";
 import { Theme } from "@/components/theme-switch";
+import GlobalHeader from "@/components/site-header";
 
 export const metadata: Metadata = {
 	title: {
@@ -61,11 +62,11 @@ export default function RootLayout({
 		<html
 			lang='en'
 			suppressHydrationWarning>
-			<body className={`${fontSans.variable} ${fontSerif.variable} ${fontMono.variable} font-sans antialiased bg-background transition-colors`}>
+			<body className={`${fontSans.variable} ${fontSerif.variable} ${fontMono.variable} font-sans antialiased`}>
 				<Theme>
-					<main className='relative flex h-dvh max-h-dvh flex-col'>
-						<div className='grow'>{children}</div>
-						<hr />
+					<main className='container max-w-2xl mx-auto relative'>
+						<GlobalHeader />
+						{children}
 						<GlobalFooter />
 					</main>
 					<Analytics />

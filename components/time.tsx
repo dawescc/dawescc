@@ -1,17 +1,10 @@
 "use client";
 
-import Link from "next/link";
 import { useEffect, useState, memo } from "react";
-import { TbCircleArrowUpRight } from "react-icons/tb";
 
 interface TimeState {
 	value: string;
 	isLoading: boolean;
-}
-
-interface Tag {
-	children: React.ReactNode;
-	href?: string;
 }
 
 const LiveTime = memo(({ timezone }: { timezone: string }) => {
@@ -26,7 +19,7 @@ const LiveTime = memo(({ timezone }: { timezone: string }) => {
 				second: "2-digit",
 				hour: "numeric",
 				minute: "numeric",
-				hour12: true,
+				hour12: false,
 				timeZone: timezone,
 			};
 
@@ -48,14 +41,10 @@ const LiveTime = memo(({ timezone }: { timezone: string }) => {
 	}, [timezone]);
 
 	if (timeState.isLoading) {
-		return (
-			<Tag>
-				<span className='rounded-sm bg-tag-active w-[10ch] animate-[pulse_1s_ease-in-out_infinite] inline-block text-transparent select-none'>:)</span>
-			</Tag>
-		);
+		return <div className='rounded-lg bg-button-active animate-pulse h-[1em] w-[5ch] px-2'></div>;
 	}
 
-	return <Tag>{timeState.value}</Tag>;
+	return timeState.value;
 });
 
 const TimeZone = memo(({ timezone }: { timezone: string }) => {
@@ -80,46 +69,18 @@ const TimeZone = memo(({ timezone }: { timezone: string }) => {
 		};
 
 		updateOffset();
-		// Update every hour to catch DST changes
 		const interval = setInterval(updateOffset, 3600000);
 		return () => clearInterval(interval);
 	}, [timezone]);
 
 	if (state.isLoading) {
-		return (
-			<Tag>
-				<span className='rounded-sm bg-tag-active w-[6ch] animate-[pulse_1s_ease-in-out_infinite] inline-block text-transparent select-none'>:)</span>
-			</Tag>
-		);
+		return <div className='rounded-lg bg-button-active animate-pulse h-[1em] w-[6ch] px-2'></div>;
 	}
 
-	return <Tag>{state.value}</Tag>;
+	return state.value;
 });
-
-const Tag = ({ children, href }: Tag) => {
-	const content = (
-		<>
-			{children}
-			{href && <TbCircleArrowUpRight className='ml-1 inline' />}
-		</>
-	);
-
-	const className = `inline-flex items-center px-2 py-1 mx-1 my-1 text-sm bg-tag text-foreground rounded-sm font-semibold ${
-		href && "hover:bg-tag-active transition-colors cursor-pointer no-underline"
-	}`;
-
-	return href ? (
-		<Link
-			href={href}
-			className={className}>
-			{content}
-		</Link>
-	) : (
-		<span className={className}>{content}</span>
-	);
-};
 
 LiveTime.displayName = "LiveTime";
 TimeZone.displayName = "TimeZone";
 
-export { LiveTime, TimeZone, Tag };
+export { LiveTime, TimeZone };

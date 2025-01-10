@@ -56,39 +56,31 @@
 	:root {
 		--background: oklch(97% 0 0);
 		--foreground: oklch(20% 0 0);
-
-		--border-lightness: 85%;
-		--tag-lightness: 94%;
-		--tag-active-lightness: calc(var(--tag-lightness) - 3.12%);
-		--accent-lightness: 80%;
-
-		--border: oklch(from var(--foreground) calc(var(--border-lightness)) c h);
-		--tag: oklch(from var(--background) calc(var(--tag-lightness)) c h);
-		--tag-active: oklch(from var(--tag) calc(var(--tag-active-lightness)) c h);
-
-		--accent: oklch(from var(--tag) calc(var(--accent-lightness)) c h);
+		--accent: oklch(from var(--foreground) calc(l + 0.2) c h / 0.5);
+		--button-default: oklch(from var(--foreground) calc(l + 0.6) c h / 0.5);
+		--button-hover: oklch(from var(--foreground) calc(l + 0.65) c h / 0.5);
+		--button-active: oklch(from var(--foreground) calc(l + 0.7) c h / 0.5);
+		--border: var(--foreground);
 		--radius: 0.5rem;
 	}
 
 	[data-theme="dark"] {
 		--background: oklch(20% 0 0);
-		--foreground: oklch(85% 0 0);
-
-		--border-lightness: 29.8%;
-		--tag-lightness: var(--border-lightness);
-		--tag-active-lightness: calc(var(--tag-lightness) - 3.12%);
-		--accent-lightness: 50%;
+		--foreground: oklch(89% 0 0);
+		--button-default: oklch(from var(--foreground) calc(l - 0.3) c h / 0.5);
+		--button-hover: oklch(from var(--foreground) calc(l - 0.4) c h / 0.5);
+		--button-active: oklch(from var(--foreground) calc(l - 0.5) c h / 0.5);
 	}
 
 	body {
 		@apply bg-background text-foreground;
 	}
 
-	html {
-		font-size: 14px;
+	.button {
+		@apply bg-button-default hover:bg-button-hover active:bg-button-active;
 	}
 
-	a {
-		@apply underline hover:no-underline;
+	html {
+		font-size: 16px;
 	}
 }
