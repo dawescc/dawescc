@@ -1,4 +1,5 @@
 import Page from "@/components/page";
+import Vols from "@/components/vols-logo";
 
 export default function Home() {
 	return (
