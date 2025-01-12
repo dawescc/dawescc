@@ -14,12 +14,7 @@ export const siteConfig = {
 		github: "https://github.com/dawescc",
 		website: "https://dawes.cc",
 	},
-	projects: {
-		ncaaf: {
-			href: "https://ncaaf.dawes.cc",
-			github: "https://github.com/dawescc/ncaaf",
-		},
-	},
+	projects: null,
 };
 
 export type SiteConfig = typeof siteConfig;

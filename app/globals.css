@@ -6,6 +6,7 @@
 	:root {
 		--background: oklch(97% 0 0);
 		--foreground: oklch(20% 0 0);
+		--primary: oklch(73.49% 0.1845 53.83);
 		--accent: oklch(from var(--foreground) calc(l + 0.2) c h / 0.5);
 		--button-default: oklch(from var(--foreground) calc(l + 0.6) c h / 0.5);
 		--button-hover: oklch(from var(--foreground) calc(l + 0.65) c h / 0.5);
