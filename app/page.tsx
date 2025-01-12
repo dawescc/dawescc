@@ -22,7 +22,7 @@ export default function Home() {
 				</div>
 				{sitePages && (
 					<div className='flex flex-col items-end row-start-1 col-start-2 md:col-start-3'>
-						{Object.values(sitePages).map((page: any) => (
+						{Object.values(sitePages).map((page) => (
 							<a
 								key={page.name}
 								href={page.link}

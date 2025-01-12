@@ -1,4 +1,5 @@
 import Cc from "@/components/cc-logo";
+import Link from "next/link";
 
 export default function GlobalHeader() {
 	return (
@@ -11,11 +12,11 @@ export default function GlobalHeader() {
 				</a>
 				<div></div>
 				<div className='flex flex-row-reverse flex-wrap gap-[1rem] items-center'>
-					<a
+					<Link
 						href={"/"}
 						className='w-fit font-bold'>
 						Ryan Dawes
-					</a>
+					</Link>
 				</div>
 			</div>
 		</header>
