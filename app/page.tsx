@@ -16,7 +16,7 @@ export default function Home() {
 				<div className='space-y-[1em] [&_a]:italic'>
 					<p className='text-pretty'>I currently work with the Department of Education.</p>
 					<p className='text-pretty row-start-2'>
-						I'm not curently looking for a new role, but feel free to{" "}
+						I&apos;m not curently looking for a new role, but feel free to{" "}
 						<a href='mailto:hello@dawes.cc?subject=Website%20Contact%20Request'>contact me</a>.
 					</p>
 				</div>

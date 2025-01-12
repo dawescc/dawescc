@@ -1,5 +1,4 @@
 import Cc from "@/components/cc-logo";
-import { siteConfig } from "@/config/siteConfig";
 
 export default function GlobalHeader() {
 	return (
