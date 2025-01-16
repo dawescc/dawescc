@@ -63,6 +63,13 @@ const sport = {
 					reps: "12-15",
 				},
 			},
+			cardio: {
+				run: {
+					exercise: "Relaxing Run",
+					pace: 9,
+					distance: 1.5,
+				},
+			},
 		},
 		B1: {
 			focus: "Shoulders/Legs/Triceps",
@@ -115,6 +122,13 @@ const sport = {
 					exercise: "Rope Pushdown",
 					sets: 3,
 					reps: "12-15",
+				},
+			},
+			cardio: {
+				run: {
+					exercise: "Standard Run",
+					pace: 9.5,
+					distance: 2.5,
 				},
 			},
 		},
@@ -171,6 +185,13 @@ const sport = {
 					reps: "12-15",
 				},
 			},
+			cardio: {
+				run: {
+					exercise: "5K Run",
+					pace: 10,
+					distance: 3.5,
+				},
+			},
 		},
 		B2: {
 			focus: "Shoulders/Legs/Triceps",
@@ -223,6 +244,13 @@ const sport = {
 					exercise: "Rope Overhead Extension",
 					sets: 3,
 					reps: "12-15",
+				},
+			},
+			cardio: {
+				run: {
+					exercise: "Long Distance, Slow, Run",
+					pace: 11.5,
+					distance: 5,
 				},
 			},
 		},

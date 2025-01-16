@@ -107,23 +107,29 @@ export function SportDisplay() {
 						key={group}
 						className='space-y-4'>
 						<h3 className=' font-serif text-lg font-semibold capitalize'>{group}</h3>
-						{Object.entries(exercises).map(([type, details]) => (
-							<div
-								key={type}
-								className='ml-4'>
-								<div className='border px-2 pt-3 pb-2 rounded-md grid grid-cols-1 space-y-2'>
-									<div className='text-xs font-mono capitalize flex justify-between'>
-										<span className='rounded-sm border px-1'>{type}</span>
-										<span>
-											{details.sets} × {details.reps}
-										</span>
-									</div>
-									<div className='capitalize text-xl'>
-										<span>{details.exercise}</span>
+						<div className='space-y-2'>
+							{Object.entries(exercises).map(([type, details]) => (
+								<div key={type}>
+									<div className='border px-2 pt-3 pb-2 rounded-md grid grid-cols-1 space-y-2'>
+										<div className='text-xs font-mono capitalize flex justify-between'>
+											<span className='rounded-sm border px-1'>{type}</span>
+											{group !== "cardio" ? (
+												<span>
+													{details.sets} × {details.reps}
+												</span>
+											) : (
+												<span>
+													{details.distance}mi @ {details.pace}min
+												</span>
+											)}
+										</div>
+										<div className='capitalize text-xl'>
+											<span>{details.exercise}</span>
+										</div>
 									</div>
 								</div>
-							</div>
-						))}
+							))}
+						</div>
 					</div>
 				);
 			})}
