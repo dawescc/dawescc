@@ -11,14 +11,7 @@ export default function GlobalHeader() {
 					className='w-fit'>
 					<Cc className='inline size-10 -translate-x-0.5 text-primary' />
 				</Link>
-				<div></div>
-				<div className='flex flex-row-reverse flex-wrap gap-[1rem] items-center'>
-					<Link
-						href={"/"}
-						className='w-fit'>
-						Ryan Dawes
-					</Link>
-				</div>
+
 				<Navbar className='col-span-3' />
 			</div>
 		</header>

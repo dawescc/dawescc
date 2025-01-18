@@ -22,7 +22,7 @@ const Navbar = ({ className }: NavbarProps) => {
 							key={page.name}
 							href={page.link}
 							className='w-fit clean font-mono'>
-							<span className='text-nowrap flex gap-[0.25em] items-center'>
+							<span className='text-nowrap flex gap-[0.5em] items-center'>
 								<HiFolder className='inline' /> {page.name}/
 							</span>
 						</Link>

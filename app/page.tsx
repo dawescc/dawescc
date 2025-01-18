@@ -1,9 +1,10 @@
-import { Page, PageBlock, PageSectionTitle } from "@/components/page";
+import { Page, PageBlock, PageSectionTitle, PageDesc } from "@/components/page";
 import Link from "next/link";
 
 export default function Home() {
 	return (
-		<Page title='Sr. Software Engineer'>
+		<Page title='Ryan Dawes'>
+			<PageDesc>Sr. Software Engineer</PageDesc>
 			<PageBlock>
 				<PageSectionTitle text='About' />
 				<p className='text-pretty'>
