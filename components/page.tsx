@@ -1,5 +1,4 @@
 import { ReactNode } from "react";
-import Navbar from "./navbar";
 
 interface PageProps {
 	title?: string;
@@ -54,7 +53,6 @@ const Page = ({ title, children }: PageProps) => {
 			<div className='grid grid-cols-1 gap-[2.5em]'>
 				<div className='grid grid-cols-1 md:grid-cols-2 gap-[2em]'>{otherContent}</div>
 			</div>
-			<Navbar />
 		</div>
 	);
 };
