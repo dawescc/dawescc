@@ -3,7 +3,7 @@ import { SportDisplay, SportProvider, SportSelector } from "@/components/sport";
 
 export default function Home() {
 	return (
-		<Page title='Sport'>
+		<Page title='Routine'>
 			<PageDesc>Deliberate and effective movements are the key to good exercise.</PageDesc>
 			<SportProvider>
 				<PageBlock>

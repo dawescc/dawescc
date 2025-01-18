@@ -61,10 +61,11 @@ export default function RootLayout({
 	return (
 		<html
 			lang='en'
+			className='border-primary border-l-4'
 			suppressHydrationWarning>
 			<body className={`${fontSans.variable} ${fontSerif.variable} ${fontMono.variable} font-sans antialiased`}>
 				<Theme>
-					<main className='container max-w-2xl mx-auto relative'>
+					<main className='container max-w-3xl mx-auto relative '>
 						<GlobalHeader />
 						{children}
 						<GlobalFooter />

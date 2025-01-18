@@ -7,12 +7,6 @@ const config: Config = {
 		container: {
 			padding: "2rem",
 		},
-		gap: {
-			DEFAULT: "2rem",
-		},
-		borderColor: {
-			DEFAULT: "var(--border)",
-		},
 		extend: {
 			colors: {
 				background: "var(--background)",

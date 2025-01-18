@@ -3,8 +3,8 @@ import Link from "next/link";
 
 export default function GlobalHeader() {
 	return (
-		<header className='grid grid-cols-1 pb-20 pt-40 mb-10'>
-			<div className='font-serif text-xl grid grid-cols-3 items-center'>
+		<header className='grid grid-cols-1 py-20 mb-[2.5em]'>
+			<div className='font-mono text-sm grid grid-cols-3 items-center'>
 				<Link
 					href='/'
 					className='w-fit'>
@@ -14,7 +14,7 @@ export default function GlobalHeader() {
 				<div className='flex flex-row-reverse flex-wrap gap-[1rem] items-center'>
 					<Link
 						href={"/"}
-						className='w-fit font-bold'>
+						className='w-fit'>
 						Ryan Dawes
 					</Link>
 				</div>

@@ -2,6 +2,7 @@
 
 import { createContext, useContext, useState, useEffect, ReactNode } from "react";
 import sport from "@/lib/sport";
+import { PageBlock, PageSectionTitle, PageSubSectionTitle } from "./page";
 
 type SportContextType = {
 	selectedDay: string;
@@ -92,47 +93,56 @@ export function SportDisplay() {
 	const { selectedWorkout } = useSport();
 
 	if (!selectedWorkout || selectedWorkout === "Rest") {
-		return <div>Rest Day</div>;
+		return (
+			<PageBlock>
+				<PageSubSectionTitle
+					className='capitalize'
+					text='Rest Day'
+				/>
+				<p>Enjoy the day!</p>
+			</PageBlock>
+		);
 	}
 
 	const workout = sport.workouts[selectedWorkout as keyof typeof sport.workouts];
 
 	return (
-		<div className='space-y-6'>
-			<h2 className='text-xl font-serif font-bold'>{workout.focus}</h2>
+		<PageBlock>
+			<PageSectionTitle text={workout.focus} />
 			{Object.entries(workout).map(([group, exercises]) => {
 				if (group === "focus") return null;
 				return (
 					<div
-						key={group}
-						className='space-y-4'>
-						<h3 className=' font-serif text-lg font-semibold capitalize'>{group}</h3>
-						<div className='space-y-2'>
+						className='grid grid-cols-1 gap-[0.5em]'
+						key={group}>
+						<PageSubSectionTitle
+							className='capitalize mt-[0.5em]'
+							text={group}
+						/>
+						<PageBlock>
 							{Object.entries(exercises).map(([type, details]) => (
-								<div key={type}>
-									<div className='border px-2 pt-3 pb-2 rounded-md grid grid-cols-1 space-y-2'>
-										<div className='text-xs font-mono capitalize flex justify-between'>
-											<span className='rounded-sm border px-1'>{type}</span>
-											{group !== "cardio" ? (
-												<span>
-													{details.sets} × {details.reps}
-												</span>
-											) : (
-												<span>
-													{details.distance}mi @ {details.pace}min
-												</span>
-											)}
-										</div>
-										<div className='capitalize text-xl'>
-											<span>{details.exercise}</span>
-										</div>
+								<div
+									key={type}
+									className='grid grid-cols-1 gap-[0.5em]'>
+									<span className='text-xs font-mono capitalize'>{type}</span>
+									<div className='capitalize flex justify-between items-baseline'>
+										<span className='font-semibold'>{details.exercise}</span>
+										{group !== "cardio" ? (
+											<span>
+												{details.sets} × {details.reps}
+											</span>
+										) : (
+											<span>
+												{details.distance}mi @ {details.pace}min
+											</span>
+										)}
 									</div>
 								</div>
 							))}
-						</div>
+						</PageBlock>
 					</div>
 				);
 			})}
-		</div>
+		</PageBlock>
 	);
 }
