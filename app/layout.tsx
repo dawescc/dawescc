@@ -61,7 +61,7 @@ export default function RootLayout({
 	return (
 		<html
 			lang='en'
-			className='border-primary border-l-4'
+			className='border-primary border-l-4 min-h-dvh'
 			suppressHydrationWarning>
 			<body className={`${fontSans.variable} ${fontSerif.variable} ${fontMono.variable} font-sans antialiased`}>
 				<Theme>
