@@ -5,4 +5,9 @@ export type Page = {
 
 export type SitePages = Record<string, Page> | null;
 
-export const sitePages: SitePages = null;
+export const sitePages: SitePages = {
+	nothing: {
+		name: "Nothing",
+		link: "/nothing",
+	},
+};
