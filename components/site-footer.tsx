@@ -1,4 +1,4 @@
-import { LiveTime, TimeZone } from "@/components/time";
+import { LiveTime, TimeZone } from "@/components/ui/time";
 import { siteConfig } from "@/config/siteConfig";
 import Link from "next/link";
 
@@ -9,7 +9,9 @@ export default function GlobalFooter() {
 				<div>
 					<LiveTime timezone='America/New_York' />
 					&nbsp;
-					<TimeZone timezone='America/New_York' />
+					<span className='text-primary'>
+						<TimeZone timezone='America/New_York' />
+					</span>
 				</div>
 				<div></div>
 				<div className='flex flex-row-reverse flex-wrap gap-[1rem] items-center'>

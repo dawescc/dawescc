@@ -2,7 +2,7 @@
 
 import { createContext, useContext, useState, useEffect, ReactNode } from "react";
 import sport from "@/lib/sport";
-import { PageBlock, PageSectionTitle, PageSubSectionTitle } from "./page";
+import { PageBlock, PageSectionTitle, PageSubSectionTitle } from "./ui/page";
 
 type SportContextType = {
 	selectedDay: string;

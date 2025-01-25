@@ -1,6 +1,5 @@
-import Cc from "@/components/cc-logo";
+import Cc from "@/components/logos/cc-logo";
 import Link from "next/link";
-import Navbar from "@/components/navbar";
 
 export default function GlobalHeader() {
 	return (
@@ -11,8 +10,6 @@ export default function GlobalHeader() {
 					className='w-fit'>
 					<Cc className='inline size-10 -translate-x-0.5 text-primary' />
 				</Link>
-
-				<Navbar className='col-span-3' />
 			</div>
 		</header>
 	);

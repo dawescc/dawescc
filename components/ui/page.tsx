@@ -11,7 +11,7 @@ interface PageSubChildProps {
 }
 
 interface PageBlockProps {
-	children: ReactNode;
+	children?: ReactNode;
 	className?: string;
 	fullWidth?: true;
 }
@@ -59,7 +59,10 @@ const Page = ({ title, children }: PageProps) => {
 
 const PageBlock = ({ children, fullWidth, className }: PageBlockProps) => {
 	return (
-		<div className={`text-pretty space-y-[1em] [&_a:not(.clean)]:italic ${fullWidth ? " " + "md:col-span-2" : ""} ${className ? " " + className : ""}`}>
+		<div
+			className={`text-pretty space-y-[1em] [&_a:not(.clean)]:italic hover:[&_a:not(.clean)]:text-primary ${fullWidth ? " " + "md:col-span-2" : ""} ${
+				className ? " " + className : ""
+			}`}>
 			{children}
 		</div>
 	);

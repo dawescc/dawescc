@@ -4,7 +4,7 @@ import { siteConfig } from "@/config/siteConfig";
 import { fontSans, fontSerif, fontMono } from "@/lib/fonts";
 import GlobalFooter from "@/components/site-footer";
 import { Analytics } from "@vercel/analytics/react";
-import { Theme } from "@/components/theme-switch";
+import { Theme } from "@/components/ui/theme-switch";
 import GlobalHeader from "@/components/site-header";
 
 export const metadata: Metadata = {
@@ -61,7 +61,6 @@ export default function RootLayout({
 	return (
 		<html
 			lang='en'
-			className='border-primary border-l-4 min-h-dvh'
 			suppressHydrationWarning>
 			<body className={`${fontSans.variable} ${fontSerif.variable} ${fontMono.variable} font-sans antialiased`}>
 				<Theme>

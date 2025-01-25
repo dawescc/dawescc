@@ -1,4 +1,4 @@
-import { Page, PageBlock } from "@/components/page";
+import { Page, PageBlock } from "@/components/ui/page";
 
 export default function NotFound() {
 	return (
