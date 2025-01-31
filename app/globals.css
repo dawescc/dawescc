@@ -11,6 +11,7 @@
 		--button-default: oklch(from var(--foreground) calc(l + 0.6) c h / 0.5);
 		--button-hover: oklch(from var(--foreground) calc(l + 0.65) c h / 0.5);
 		--button-active: oklch(from var(--foreground) calc(l + 0.7) c h / 0.5);
+		--block: oklch(from var(--foreground) calc(l + 0.733) c h / 0.5);
 		--border: var(--foreground);
 		--radius: 0.5rem;
 	}
@@ -21,6 +22,7 @@
 		--button-default: oklch(from var(--foreground) calc(l - 0.3) c h / 0.5);
 		--button-hover: oklch(from var(--foreground) calc(l - 0.4) c h / 0.5);
 		--button-active: oklch(from var(--foreground) calc(l - 0.5) c h / 0.5);
+		--block: oklch(from var(--foreground) calc(l - 0.733) c h / 0.5);
 	}
 
 	body {
@@ -37,5 +39,14 @@
 
 	a {
 		@apply hover:underline;
+	}
+}
+
+@keyframes spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
 	}
 }
