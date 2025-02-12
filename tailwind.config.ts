@@ -16,6 +16,18 @@ const config: Config = {
 				"button-hover": "var(--button-hover)",
 				"button-active": "var(--button-active)",
 				accent: "var(--accent)",
+				block: "var(--block)",
+				surface: {
+					light: "var(--surface-light)",
+					dark: "var(--surface-dark)",
+				},
+				ui: {
+					ice: "var(--ice)",
+					polar: "var(--polar)",
+					mellow: "var(--mellow)",
+					royal: "var(--royal)",
+					rhapsody: "var(--rhapsody)",
+				},
 			},
 			fontFamily: {
 				sans: ["var(--font-cust-sans)"],
@@ -26,6 +38,7 @@ const config: Config = {
 				lg: "var(--radius)",
 				md: "calc(var(--radius) - 2px)",
 				sm: "calc(var(--radius) - 4px)",
+				"2xl": "1.5rem",
 			},
 		},
 	},

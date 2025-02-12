@@ -11,8 +11,18 @@
 		--button-default: oklch(from var(--foreground) calc(l + 0.6) c h / 0.5);
 		--button-hover: oklch(from var(--foreground) calc(l + 0.65) c h / 0.5);
 		--button-active: oklch(from var(--foreground) calc(l + 0.7) c h / 0.5);
+		--block: oklch(from var(--foreground) calc(l + 0.733) c h / 0.5);
 		--border: var(--foreground);
 		--radius: 0.5rem;
+
+		--surface-light: oklch(100% 0 0);
+		--surface-dark: oklch(98% 0 0);
+
+		--ice: oklch(98% 0.001 240); /* #F9FAFA */
+		--polar: oklch(92% 0.02 240); /* #DEE7ED */
+		--mellow: oklch(80% 0.12 60); /* #FFAB6E */
+		--royal: oklch(40% 0.13 0); /* #69092D */
+		--rhapsody: oklch(30% 0.05 240); /* #002244 */
 	}
 
 	[data-theme="dark"] {
@@ -21,6 +31,10 @@
 		--button-default: oklch(from var(--foreground) calc(l - 0.3) c h / 0.5);
 		--button-hover: oklch(from var(--foreground) calc(l - 0.4) c h / 0.5);
 		--button-active: oklch(from var(--foreground) calc(l - 0.5) c h / 0.5);
+		--block: oklch(from var(--foreground) calc(l - 0.733) c h / 0.5);
+
+		--surface-light: oklch(25% 0 0);
+		--surface-dark: oklch(22% 0 0);
 	}
 
 	body {
@@ -37,5 +51,14 @@
 
 	a {
 		@apply hover:underline;
+	}
+}
+
+@keyframes spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
 	}
 }
