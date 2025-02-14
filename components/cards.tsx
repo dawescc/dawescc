@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 
@@ -8,23 +10,41 @@ interface CardItem {
 
 interface RotatingCardsProps {
 	items: CardItem[];
+	baseSize?: number;
 }
 
-const RotatingCards: React.FC<RotatingCardsProps> = ({ items }) => {
+const RotatingCards: React.FC<RotatingCardsProps> = ({ items, baseSize = 7 }) => {
 	return (
-		<div className='flex flex-row -space-x-9 md:-space-x-6 lg:-space-x-8'>
+		<div className='flex flex-row -space-x-9 lg:-space-x-8 w-fit'>
 			{items.map((item, index) => {
-				// Alternate between positive and negative rotation
 				const rotation = index % 2 === 0 ? "rotate-6" : "-rotate-6";
 
 				return (
 					<div
 						key={index}
-						className={`aspect-square size-28 sm:size-32 md:size-36 
-                         bg-[#F5F4F9] border border-[#E6E6E6] rounded-md 
+						className={`rotating-card flex-shrink-0 aspect-square
+                         bg-[#F5F4F9] border-white border-[0.45em] rounded-[12.666px]
                          overflow-hidden shadow-[0_1px_2px_rgba(0,0,0,0.04)] 
                          hover:shadow-[0_6px_6px_rgba(0,0,0,0.08)] 
-                         hover:-translate-y-1 transition duration-200 ease-in-out ${rotation}`}>
+                         hover:-translate-y-1 transition duration-200 ease-in-out ${rotation}`}
+						style={{
+							width: `${baseSize}rem`,
+							height: `${baseSize}rem`,
+						}}>
+						<style jsx>{`
+							@media (min-width: 640px) {
+								.rotating-card {
+									width: ${baseSize + 1}rem !important;
+									height: ${baseSize + 1}rem !important;
+								}
+							}
+							@media (min-width: 768px) {
+								.rotating-card {
+									width: ${baseSize + 2}rem !important;
+									height: ${baseSize + 2}rem !important;
+								}
+							}
+						`}</style>
 						<Link
 							href={item.link}
 							className='no-opacity-hover'>

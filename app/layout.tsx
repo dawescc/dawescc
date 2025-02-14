@@ -64,7 +64,7 @@ export default function RootLayout({
 			suppressHydrationWarning>
 			<body className={`${fontSans.variable} ${fontSerif.variable} ${fontMono.variable} font-sans antialiased`}>
 				<Theme>
-					<main className='container max-w-3xl mx-auto relative '>
+					<main className='container mx-auto max-w-4xl px-8 relative overflow-hidden'>
 						<GlobalHeader />
 						{children}
 						<GlobalFooter />

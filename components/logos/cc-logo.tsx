@@ -1,7 +1,9 @@
+import { cn } from "@/lib/utils";
+
 const Cc = ({ className }: { className?: string }) => (
 	<svg
 		fill='currentColor'
-		className={className}
+		className={cn(className, "-translate-x-0.5")}
 		viewBox='0 0 4500 4500'>
 		<g>
 			<path d='M3471.24,2685.52l-294.088,-509.375l-571.067,119.258l388.125,-436.125l-294.087,-509.375l535.612,240.792l386.942,-435.438l-56.708,585.959l534.429,241.475l-569.883,118.575l-59.276,584.254Z' />

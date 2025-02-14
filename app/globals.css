@@ -4,61 +4,31 @@
 
 @layer base {
 	:root {
-		--background: oklch(97% 0 0);
-		--foreground: oklch(20% 0 0);
-		--primary: oklch(73.49% 0.1845 53.83);
+		--background: rgb(255, 255, 255);
+		--foreground: rgb(0, 0, 0);
+		--primary: rgb(255, 130, 0);
 		--accent: oklch(from var(--foreground) calc(l + 0.2) c h / 0.5);
-		--button-default: oklch(from var(--foreground) calc(l + 0.6) c h / 0.5);
-		--button-hover: oklch(from var(--foreground) calc(l + 0.65) c h / 0.5);
-		--button-active: oklch(from var(--foreground) calc(l + 0.7) c h / 0.5);
-		--block: oklch(from var(--foreground) calc(l + 0.733) c h / 0.5);
 		--border: var(--foreground);
-		--radius: 0.5rem;
-
-		--surface-light: oklch(100% 0 0);
-		--surface-dark: oklch(98% 0 0);
-
-		--ice: oklch(98% 0.001 240); /* #F9FAFA */
-		--polar: oklch(92% 0.02 240); /* #DEE7ED */
-		--mellow: oklch(80% 0.12 60); /* #FFAB6E */
-		--royal: oklch(40% 0.13 0); /* #69092D */
-		--rhapsody: oklch(30% 0.05 240); /* #002244 */
+		--cta-text: rgb(109, 38, 14);
+		--footer-bg: rgb(247, 246, 246);
 	}
 
 	[data-theme="dark"] {
-		--background: oklch(20% 0 0);
-		--foreground: oklch(89% 0 0);
-		--button-default: oklch(from var(--foreground) calc(l - 0.3) c h / 0.5);
-		--button-hover: oklch(from var(--foreground) calc(l - 0.4) c h / 0.5);
-		--button-active: oklch(from var(--foreground) calc(l - 0.5) c h / 0.5);
-		--block: oklch(from var(--foreground) calc(l - 0.733) c h / 0.5);
-
-		--surface-light: oklch(25% 0 0);
-		--surface-dark: oklch(22% 0 0);
+		--background: rgb(0, 0, 0);
+		--foreground: rgb(255, 255, 255);
+		--cta-text: rgb(249, 224, 195);
+		--footer-bg: rgb(18, 18, 18);
 	}
 
 	body {
 		@apply bg-background text-foreground;
 	}
 
-	.button {
-		@apply bg-button-default hover:bg-button-hover active:bg-button-active;
-	}
-
 	html {
-		font-size: 14px;
+		font-size: 15px;
 	}
 
 	a {
 		@apply hover:underline;
-	}
-}
-
-@keyframes spin {
-	from {
-		transform: rotate(0deg);
-	}
-	to {
-		transform: rotate(360deg);
 	}
 }
