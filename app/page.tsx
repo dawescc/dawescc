@@ -13,7 +13,7 @@ export default function Home() {
 	return (
 		<div className='grid grid-cols-1 gap-10'>
 			<div className='h-screen pt-20 grid grid-cols-1 gap-10'>
-				<div className='hover:rotate-[2deg] hover:scale-[1.035] transition-all cursor-default rounded-full bg-gradient-to-br from-[var(--primary)] to-[color-mix(in_srgb,var(--primary),black_10%)] text-[var(--cta-text)] px-4 py-1 w-fit h-fit mx-auto ring-1 ring-inset ring-primary/80 shadow-[0_2px_4px_0_rgb(0_0_0_/_0.097)] hover:shadow-md'>
+				<div className='hover:rotate-[2deg] hover:scale-[1.035] transition-all cursor-default rounded-full bg-gradient-to-br from-[var(--primary)] to-[color-mix(in_srgb,var(--primary),black_0%)] text-[var(--cta-text)] px-4 py-1 w-fit h-fit mx-auto ring-1 ring-inset ring-primary/80 shadow-[0_2px_4px_0_rgb(0_0_0_/_0.097)] hover:shadow-md'>
 					<HiHandThumbUp className='inline mb-0.5 mr-1' />
 					<span className='text-nowrap'>Available Now!</span>
 				</div>

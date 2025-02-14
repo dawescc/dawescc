@@ -25,10 +25,7 @@ export const Collapsible = ({ title, children }: CollapsibleProps) => {
 	};
 
 	return (
-		<motion.div
-			className='w-full rounded-[12.67897px] bg-foreground text-background shadow-sm'
-			animate={{ borderRadius: "16px" }}
-			transition={{ duration: 0.2 }}>
+		<motion.div className='w-full rounded-[16.87897px] bg-[var(--collapsible-bg)] shadow-sm ring-1 ring-inset ring-foreground/5'>
 			<div
 				className='w-full px-6 py-4 flex justify-between items-center text-left cursor-pointer'
 				onClick={() => setIsOpen(!isOpen)}>
@@ -45,7 +42,7 @@ export const Collapsible = ({ title, children }: CollapsibleProps) => {
 						transition: { delay: 0.15 },
 					}}
 					transition={isOpen ? openSpring : closeSpring}
-					className='text-primary text-2xl origin-center'>
+					className='text-primary text-2xl origin-center select-none'>
 					+
 				</motion.div>
 			</div>

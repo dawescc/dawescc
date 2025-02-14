@@ -1,7 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import { siteConfig } from "@/config/siteConfig";
-import { fontSans, fontSerif, fontMono } from "@/lib/fonts";
+import { fontSans, fontSerif, fontMono, fontBC, fontFor } from "@/lib/fonts";
 import GlobalFooter from "@/components/site-footer";
 import { Analytics } from "@vercel/analytics/react";
 import { Theme } from "@/components/ui/theme-switch";
@@ -61,8 +61,9 @@ export default function RootLayout({
 	return (
 		<html
 			lang='en'
-			suppressHydrationWarning>
-			<body className={`${fontSans.variable} ${fontSerif.variable} ${fontMono.variable} font-sans antialiased`}>
+			suppressHydrationWarning
+			className={`${fontSans.variable} ${fontSerif.variable} ${fontMono.variable} ${fontBC.variable} ${fontFor.variable}`}>
+			<body className={`font-sans antialiased`}>
 				<Theme>
 					<main className='container mx-auto max-w-4xl px-8 relative overflow-hidden'>
 						<GlobalHeader />

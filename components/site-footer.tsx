@@ -1,21 +1,26 @@
-import { siteConfig } from "@/config/siteConfig";
-import Link from "next/link";
+import Cc from "@/components/logos/cc-logo";
 
 export default function GlobalFooter() {
 	return (
-		<footer className='grid grid-cols-1 py-20 mt-[2.5em] px-5'>
-			<div className='font-mono text-sm grid grid-cols-1 place-items-center rounded-xl bg-[var(--footer-bg)] min-h-40 p-5'>
-				<div className='flex flex-row-reverse flex-wrap gap-[1rem] items-center'>
-					{Object.entries(siteConfig.links)
-						.filter(([key]) => key !== "website")
-						.map(([key, url]) => (
-							<Link
-								key={key}
-								href={url}
-								className='w-fit'>
-								{key.charAt(0).toUpperCase() + key.slice(1)}
-							</Link>
-						))}
+		<footer className='grid grid-cols-1 py-20 pb-4 -mx-4 mt-[2.5em]'>
+			<div className='rounded-[16.87897px] bg-[var(--footer-bg)] min-h-40 py-10 px-5 text-accent font-light tracking-wider text-sm'>
+				<div className='grid place-content-center'>
+					<div className='grid grid-cols-1 aspect-square w-fit *:-my-4 translate-y-4'>
+						<div className='text-[1.27em] tracking-widest font-medium'>RYAN DAWES</div>
+						<div className='text-[1.55em] tracking-wider flex'>
+							<span>&apos;25</span>
+							<span className='ml-auto'>
+								<Cc className='inline size-6' /> <Cc className='inline size-6' /> <Cc className='inline size-6' />
+							</span>
+						</div>
+						<div className='font-for text-[1.55em] tracking-wider'>著作権 2025</div>
+						<a
+							href='mailto:hello@dawes.cc'
+							className='font-bc translate-y-1.5 text-[1.167em]'>
+							HELLO@DAWES.CC
+						</a>
+						<div className='font-mono'>DESIGN&mdash;DEVELOP</div>
+					</div>
 				</div>
 			</div>
 		</footer>

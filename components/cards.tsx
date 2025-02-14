@@ -23,7 +23,7 @@ const RotatingCards: React.FC<RotatingCardsProps> = ({ items, baseSize = 7 }) =>
 					<div
 						key={index}
 						className={`rotating-card flex-shrink-0 aspect-square
-                         bg-[#F5F4F9] border-white border-[0.45em] rounded-[12.666px]
+                         bg-[#F5F4F9] border-white border-[0.45em] rounded-[16.87897px]
                          overflow-hidden shadow-[0_1px_2px_rgba(0,0,0,0.04)] 
                          hover:shadow-[0_6px_6px_rgba(0,0,0,0.08)] 
                          hover:-translate-y-1 transition duration-200 ease-in-out ${rotation}`}
