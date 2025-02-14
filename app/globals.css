@@ -7,17 +7,20 @@
 		--background: rgb(255, 255, 255);
 		--foreground: rgb(0, 0, 0);
 		--primary: rgb(255, 130, 0);
-		--accent: oklch(from var(--foreground) calc(l + 0.2) c h / 0.5);
+		--accent: rgb(131, 131, 131);
 		--border: var(--foreground);
 		--cta-text: rgb(109, 38, 14);
 		--footer-bg: rgb(247, 246, 246);
+		--collapsible-bg: rgb(243, 242, 242);
 	}
 
 	[data-theme="dark"] {
 		--background: rgb(0, 0, 0);
 		--foreground: rgb(255, 255, 255);
+		--accent: rgb(133, 133, 133);
 		--cta-text: rgb(249, 224, 195);
 		--footer-bg: rgb(18, 18, 18);
+		--collapsible-bg: rgb(22, 22, 22);
 	}
 
 	body {
