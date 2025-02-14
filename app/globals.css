@@ -12,6 +12,7 @@
 		--cta-text: rgb(109, 38, 14);
 		--footer-bg: rgb(247, 246, 246);
 		--collapsible-bg: rgb(243, 242, 242);
+		--card-border: rgb(243, 242, 242);
 	}
 
 	[data-theme="dark"] {
@@ -21,6 +22,7 @@
 		--cta-text: rgb(249, 224, 195);
 		--footer-bg: rgb(18, 18, 18);
 		--collapsible-bg: rgb(22, 22, 22);
+		--card-border: rgb(22, 22, 22);
 	}
 
 	body {

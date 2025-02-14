@@ -22,11 +22,11 @@ const RotatingCards: React.FC<RotatingCardsProps> = ({ items, baseSize = 7 }) =>
 				return (
 					<div
 						key={index}
-						className={`rotating-card flex-shrink-0 aspect-square
-                         bg-[#F5F4F9] border-white border-[0.45em] rounded-[16.87897px]
-                         overflow-hidden shadow-[0_1px_2px_rgba(0,0,0,0.04)] 
-                         hover:shadow-[0_6px_6px_rgba(0,0,0,0.08)] 
-                         hover:-translate-y-1 transition duration-200 ease-in-out ${rotation}`}
+						className={`rotating-card relative flex-shrink-0 aspect-square
+                 bg-[var(--card-border)] rounded-[16.87897px] ring-1 ring-inset ring-foreground/5
+                 shadow-[0_1px_2px_rgba(0,0,0,0.04)] 
+                 hover:shadow-[0_6px_6px_rgba(0,0,0,0.08)] 
+                 hover:-translate-y-1 transition duration-200 ease-in-out ${rotation}`}
 						style={{
 							width: `${baseSize}rem`,
 							height: `${baseSize}rem`,
@@ -45,18 +45,20 @@ const RotatingCards: React.FC<RotatingCardsProps> = ({ items, baseSize = 7 }) =>
 								}
 							}
 						`}</style>
-						<Link
-							href={item.link}
-							className='no-opacity-hover'>
-							<Image
-								alt='Card Image'
-								loading='lazy'
-								width='144'
-								height='144'
-								className='object-cover text-transparent object-center h-full w-full'
-								src={item.imageUrl}
-							/>
-						</Link>
+						<div className='absolute inset-[0.45em] overflow-hidden rounded-[12px]'>
+							<Link
+								href={item.link}
+								className='absolute inset-[-0.45em] no-opacity-hover'>
+								<Image
+									alt='Card Image'
+									loading='lazy'
+									width='144'
+									height='144'
+									className='object-cover text-transparent object-center h-full w-full'
+									src={item.imageUrl}
+								/>
+							</Link>
+						</div>
 					</div>
 				);
 			})}
