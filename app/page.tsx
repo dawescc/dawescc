@@ -9,7 +9,7 @@ export default function Home() {
 	const faqs = [
 		{
 			title: "Why do I like development?",
-			text: "Working in development allows me to systematically solve comlpex problems and be creative in a space that really allows you to do anything you can imagine. I'd say imagining it is the hardest part!",
+			text: "Working in development allows me to systematically solve complex problems and be creative in a space that really allows you to do anything you can imagine. I'd say imagining it is the hardest part!",
 		},
 		{
 			title: "What technologies do I use?",
