@@ -4,7 +4,7 @@ import Cc from "@/components/logos/cc-logo";
 import CTA from "@/components/cta";
 
 export default function Home() {
-	const items = [{ imageUrl: "/img/goops.gif" }, { imageUrl: "/img/plane.gif" }, { imageUrl: "/img/sunrise.gif" }];
+	const items = [{ imageUrl: "/img/plane.gif" }, { imageUrl: "/img/sunrise.gif" }];
 
 	const faqs = [
 		{
