@@ -38,7 +38,7 @@ interface HeroProps {
 }
 
 const Hero: React.FC<HeroProps> = ({ imageUrl }) => {
-	const classesToModifyForHero = "h-full w-full hero-img invert";
+	const classesToModifyForHero = "h-full w-full hero-img";
 	return (
 		<div className='relative'>
 			<div

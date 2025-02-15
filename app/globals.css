@@ -25,6 +25,10 @@
 		--collapsible-bg: rgb(22, 22, 22);
 		--card-border: rgb(22, 22, 22);
 		--hero-opacity: 0.16667;
+
+		.hero-img {
+			@apply invert;
+		}
 	}
 
 	body {
