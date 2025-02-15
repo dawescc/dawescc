@@ -65,8 +65,8 @@ export default function RootLayout({
 			className={`${fontSans.variable} ${fontSerif.variable} ${fontMono.variable} ${fontBC.variable} ${fontFor.variable}`}>
 			<body className={`font-sans antialiased`}>
 				<Theme>
+					<GlobalHeader />
 					<main className='container mx-auto max-w-4xl px-8 relative'>
-						<GlobalHeader />
 						{children}
 						<SiteFooter version={2} />
 					</main>
