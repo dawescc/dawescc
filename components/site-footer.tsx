@@ -89,4 +89,4 @@ function SiteFooter({ version = 1 }: { version?: number }) {
 	}
 }
 
-export default SiteFooter;
+export { SiteFooter, Sticker };

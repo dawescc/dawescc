@@ -2,7 +2,7 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import { siteConfig } from "@/config/siteConfig";
 import { fontSans, fontSerif, fontMono, fontBC, fontFor } from "@/lib/fonts";
-import SiteFooter from "@/components/site-footer";
+import { SiteFooter } from "@/components/site-footer";
 import { Analytics } from "@vercel/analytics/react";
 import { Theme } from "@/components/ui/theme-switch";
 import GlobalHeader from "@/components/site-header";
