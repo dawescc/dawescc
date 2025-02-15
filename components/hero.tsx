@@ -38,12 +38,12 @@ interface HeroProps {
 }
 
 const Hero: React.FC<HeroProps> = ({ imageUrl }) => {
-	const classesToModifyForHero = "h-full w-full invert";
+	const classesToModifyForHero = "h-full w-full hero-img invert";
 	return (
 		<div className='relative'>
 			<div
 				aria-hidden='true'
-				className='absolute top-0 w-screen z-[2] h-screen overflow-clip -translate-y-4 opacity-[0.06667] pointer-events-none'>
+				className='absolute top-0 w-screen z-[2] h-screen overflow-clip -translate-y-4 opacity-[var(--hero-opacity)] pointer-events-none'>
 				<div className='absolute z-[3] inset-0 bg-gradient-to-t from-[var(--background)] via-[rgb(from_var(--background)_r_g_b_/_0.75)] to-transparent'></div>
 				<Card
 					imageUrl={imageUrl}

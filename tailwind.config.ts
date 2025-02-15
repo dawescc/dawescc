@@ -1,5 +1,4 @@
 import type { Config } from "tailwindcss";
-import cornerSmoothing from "tailwind-corner-smoothing";
 
 const config: Config = {
 	darkMode: ["class"],
@@ -26,6 +25,5 @@ const config: Config = {
 			},
 		},
 	},
-	plugins: [cornerSmoothing],
 };
 export default config;

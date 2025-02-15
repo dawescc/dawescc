@@ -23,7 +23,7 @@ export default function Home() {
 
 	return (
 		<div className='grid grid-cols-1 gap-10'>
-			<div className='h-screen pt-20 mt-10 grid grid-cols-1 gap-10'>
+			<div className='h-screen pt-20 mt-10 grid grid-cols-1 gap-10 z-[4]'>
 				<div className='flex flex-col justify-center'>
 					<h1 className='font-serif font-black text-[5rem]/[0.88] tracking-tight text-center uppercase'>Ryan Dawes</h1>
 					<div className='max-w-lg mx-auto pt-5 font-mono text-xs font-light text-accent grid grid-cols-2 place-items-center'>
