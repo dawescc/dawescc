@@ -38,7 +38,7 @@ interface HeroProps {
 }
 
 const Hero: React.FC<HeroProps> = ({ imageUrl }) => {
-	const classesToModifyForHero = "h-full w-full hero-img";
+	const classesToModifyForHero = "h-full w-full hero-img -translate-y-32";
 	return (
 		<div className='relative'>
 			<div
