@@ -13,7 +13,7 @@ export default function Home() {
 		},
 		{
 			title: "What technologies do I use?",
-			text: "My favorite to use is React via NextJS or Astro, but C# and .NET Core pay the bills. I integrate modern tools to produce effective tools — you name it, and it I've probably used it one way or another!",
+			text: "My favorite to use is React via NextJS or Astro, but C# and .NET Core pay the bills. I integrate modern pieces to produce effective tools — you name it, and it I've probably used it one way or another!",
 		},
 		{
 			title: "What does my experience look like?",
