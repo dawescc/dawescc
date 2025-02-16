@@ -29,7 +29,7 @@ export const Collapsible = ({ title, children }: CollapsibleProps) => {
 			<div
 				className='w-full px-6 py-4 flex justify-between items-center text-left cursor-pointer'
 				onClick={() => setIsOpen(!isOpen)}>
-				<span className='text-lg font-medium'>{title}</span>
+				<span className='text-lg font-medium select-none'>{title}</span>
 				<motion.div
 					animate={{
 						rotate: isOpen ? 45 + 45 : 0,
