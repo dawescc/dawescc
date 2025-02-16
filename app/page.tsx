@@ -46,7 +46,8 @@ export default function Home() {
 				<p className='text-3xl sm:text-4xl'>Nice to meet you!</p>
 				<p className='text-2xl sm:text-3xl'>I&apos;m Ryan, an engineer on the east coast.</p>
 				<p className='text-2xl sm:text-3xl'>
-					I have a <span className='font-light font-serif italic mr-[0.133ch]'>thing</span> for reliable code that does what it needs to do.
+					I have a <span className='font-light font-serif italic mr-[0.133ch]'>thing</span> for reliable code that just{" "}
+					<span className='font-light font-serif italic mr-[0.133ch]'>works.</span>
 				</p>
 			</div>
 			<div className='mt-10 max-w-lg mx-auto grid grid-cols-1 gap-4 text-pretty'>
