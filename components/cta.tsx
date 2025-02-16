@@ -1,12 +1,12 @@
-import { IoIosMailOpen } from "react-icons/io";
+import { PiHandWavingThin } from "react-icons/pi";
 
 const CTA = () => {
 	return (
 		<a
-			href='mailto:hello@dawes.cc?subject=Website%20Contact%20Request'
+			href='mailto:hello@dawes.cc?subject=Hello!'
 			className='h-fit w-fit'>
-			<IoIosMailOpen className='inline size-[1.05rem] -translate-y-0.5 mr-[0.25em]' />
-			Contact Me
+			<PiHandWavingThin className='inline size-[1.05em] -translate-y-[0.1em] mr-[0.325em] stroke-[2]' />
+			Say Hello!
 		</a>
 	);
 };
