@@ -13,6 +13,7 @@
 		--footer-bg: rgb(247, 246, 246);
 		--collapsible-bg: rgb(243, 242, 242);
 		--card-border: rgb(243, 242, 242);
+		--button-bg: rgb(243, 242, 242);
 		--hero-opacity: 0.09667;
 	}
 
@@ -24,6 +25,7 @@
 		--footer-bg: rgb(18, 18, 18);
 		--collapsible-bg: rgb(22, 22, 22);
 		--card-border: rgb(22, 22, 22);
+		--button-bg: rgb(22, 22, 22);
 		--hero-opacity: 0.16667;
 
 		.hero-img {
