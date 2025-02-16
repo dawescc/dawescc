@@ -45,7 +45,9 @@ export default function Home() {
 			<div className='mt-20 max-w-lg mx-auto grid grid-cols-1 gap-8 sm:gap-10 text-pretty'>
 				<p className='text-3xl sm:text-4xl'>Nice to meet you!</p>
 				<p className='text-2xl sm:text-3xl'>I&apos;m Ryan, an engineer on the east coast.</p>
-				<p className='text-2xl sm:text-3xl'>I have a thing for reliable code that does what it needs to do.</p>
+				<p className='text-2xl sm:text-3xl'>
+					I have a <span className='font-light font-serif italic mr-[0.133ch]'>thing</span> for reliable code that does what it needs to do.
+				</p>
 			</div>
 			<div className='mt-10 max-w-lg mx-auto grid grid-cols-1 gap-4 text-pretty'>
 				{faqs.map((faq, index) => (
