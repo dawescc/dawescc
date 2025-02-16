@@ -17,7 +17,7 @@ const RotatingCards: React.FC<RotatingCardsProps> = ({ items, baseSize = 7 }) =>
 	return (
 		<div className='flex flex-row -space-x-9 lg:-space-x-8 w-fit'>
 			{items.map((item, index) => {
-				const rotation = index % 2 === 0 ? "rotate-6" : "-rotate-6";
+				const rotation = index % 2 === 0 ? "-rotate-6" : "rotate-6";
 
 				return (
 					<div
