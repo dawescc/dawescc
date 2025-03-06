@@ -5,7 +5,9 @@
 
 @layer base {
 	:root {
-		--primary: hsl(31, 100%, 50%);
+		--dawescc: hsl(302, 100%, 50%);
+		--dawesdesign: hsl(31, 100%, 50%);
+		--primary: var(--dawesdesign);
 	}
 }
 
@@ -23,7 +25,9 @@
 	--spacing-max-content: 1000px;
 	--spacing-header: 64px;
 
-	--color-primary: var(--primary);
+	--color-brand-dawescc: var(--dawescc);
+	--color-brand-dawesdesign: var(--dawesdesign);
+	--color-primary: var(--dawescc);
 }
 
 @utility timing-spring {

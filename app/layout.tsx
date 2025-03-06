@@ -5,8 +5,7 @@ import font from "@/lib/fonts";
 import { Analytics } from "@vercel/analytics/react";
 import { Theme } from "@/components/theme-provider";
 import MainMenu from "@/components/main-menu";
-import DawesCC from "@/components/logos/dawescc";
-import Link from "next/link";
+import NavMenu from "@/components/nav-menu";
 
 export const metadata: Metadata = {
 	title: {
@@ -67,11 +66,11 @@ export default function RootLayout({
 			<body className={`font-sans antialiased w-dvw h-dvh overflow-hidden flex`}>
 				<Theme>
 					<main className='grow flex flex-col gap-0 px-3 py-4 overflow-hidden'>
-						<div className='flex items-center justify-end pb-2'>
+						{/*<div className='flex items-center justify-end pb-2'>
 							<Link href={"/"}>
 								<DawesCC className='size-6' />
-							</Link>
-						</div>
+							</Link> */}
+						<NavMenu />
 						<div className='flex-1 bg-background-100 pt-10 pb-5 px-5 rounded overflow-y-auto border border-gray-400/40 relative'>{children}</div>
 						<MainMenu />
 					</main>
