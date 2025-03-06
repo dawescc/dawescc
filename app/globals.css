@@ -37,3 +37,17 @@
 		font-medium transition-colors timing-spring;
 	}
 }
+
+/* Doesnt Work 
+@custom-variant short {
+	@container (100cqh <= 24rem) {
+		@slot;
+	}
+}
+*/
+
+.short {
+	@container (height <= 24rem) {
+		@apply py-2;
+	}
+}
