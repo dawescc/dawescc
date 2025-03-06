@@ -31,8 +31,8 @@ export default function Home() {
 					<div>PYTHON</div>
 					<div className='select-none'>&nbsp;</div>
 					<div>
-						I've been developing websites for over 10 years, working on a variety of projects, from small business websites to internal tools and
-						enterprise applications.
+						I&apos;ve been developing websites for over 10 years, working on a variety of projects, from small business websites to internal tools
+						and enterprise applications.
 					</div>
 				</div>
 			</div>
