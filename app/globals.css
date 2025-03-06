@@ -2,8 +2,11 @@
 @import "./theme.css";
 
 /* Brand Specific Styles */
-:root {
-	--primary: hsl(31, 100%, 50%);
+
+@layer base {
+	:root {
+		--primary: hsl(31, 100%, 50%);
+	}
 }
 
 @theme inline {
@@ -35,19 +38,5 @@
 		bg-gray-100 hover:bg-gray-200 active:bg-gray-300
 		border-gray-400 hover:border-gray-500 active:border-gray-600
 		font-medium transition-colors timing-spring;
-	}
-}
-
-/* Doesnt Work 
-@custom-variant short {
-	@container (100cqh <= 24rem) {
-		@slot;
-	}
-}
-*/
-
-.short {
-	@container (height <= 24rem) {
-		@apply py-2;
 	}
 }
