@@ -1,4 +1,3 @@
-import Cc from "@/components/logos/cc-logo";
 import Link from "next/link";
 import { HiOutlineArrowCircleLeft } from "react-icons/hi";
 
@@ -6,9 +5,7 @@ export default function NotFound() {
 	return (
 		<div className='grid grid-cols-1 gap-10'>
 			<div className='pt-20 grid grid-cols-1 gap-10'>
-				<div className='flex justify-center'>
-					<Cc className='inline size-10 text-primary' />
-				</div>
+				<div className='flex justify-center'></div>
 			</div>
 			<div className='mt-20 max-w-lg mx-auto grid grid-cols-1 gap-8 sm:gap-10 text-pretty'>
 				<p className='text-3xl sm:text-4xl'>Uh-oh!</p>

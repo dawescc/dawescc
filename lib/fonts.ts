@@ -1,11 +1,15 @@
-import { Rubik, Playfair_Display, JetBrains_Mono } from "next/font/google";
+import { Source_Sans_3, EB_Garamond, JetBrains_Mono, Pixelify_Sans } from "next/font/google";
 
-import { M_PLUS_1_Code, Libre_Barcode_39_Extended } from "next/font/google";
+const fontSans = Source_Sans_3({ subsets: ["latin"], variable: "--font-sans-custom" });
+const fontSerif = EB_Garamond({ subsets: ["latin"], variable: "--font-serif-custom" });
+const fontMono = JetBrains_Mono({ subsets: ["latin"], variable: "--font-mono-custom" });
+const fontDisplay = Pixelify_Sans({ subsets: ["latin"], weight: "400", variable: "--font-display-custom" });
 
-export const fontSans = Rubik({ subsets: ["latin"], variable: "--font-sans" });
-export const fontSerif = Playfair_Display({ subsets: ["latin"], variable: "--font-serif" });
-export const fontMono = JetBrains_Mono({ subsets: ["latin"], variable: "--font-mono" });
+const font = {
+	sans: fontSans,
+	serif: fontSerif,
+	mono: fontMono,
+	display: fontDisplay,
+};
 
-// Misc. Extra Fonts
-export const fontFor = M_PLUS_1_Code({ subsets: ["latin"], variable: "--font-for" });
-export const fontBC = Libre_Barcode_39_Extended({ subsets: ["latin"], variable: "--font-bc", weight: "400" });
+export default font;

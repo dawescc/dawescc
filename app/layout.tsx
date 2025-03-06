@@ -1,11 +1,12 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
-import { siteConfig } from "@/config/siteConfig";
-import { fontSans, fontSerif, fontMono, fontBC, fontFor } from "@/lib/fonts";
-import { SiteFooter } from "@/components/site-footer";
+import { siteConfig } from "@/lib/config";
+import font from "@/lib/fonts";
 import { Analytics } from "@vercel/analytics/react";
-import { Theme } from "@/components/ui/theme-switch";
-import GlobalHeader from "@/components/site-header";
+import { Theme } from "@/components/theme-provider";
+import MainMenu from "@/components/main-menu";
+import DawesCC from "@/components/logos/dawescc";
+import Link from "next/link";
 
 export const metadata: Metadata = {
 	title: {
@@ -62,16 +63,20 @@ export default function RootLayout({
 		<html
 			lang='en'
 			suppressHydrationWarning
-			className={`${fontSans.variable} ${fontSerif.variable} ${fontMono.variable} ${fontBC.variable} ${fontFor.variable}`}>
-			<body className={`font-sans antialiased`}>
+			className={`${font.sans.variable} ${font.serif.variable} ${font.mono.variable} ${font.display.variable}`}>
+			<body className={`font-sans antialiased w-dvw h-dvh overflow-hidden flex`}>
 				<Theme>
-					<GlobalHeader />
-					<main className='container mx-auto max-w-4xl px-8 relative'>
-						{children}
-						<SiteFooter version={2} />
+					<main className='grow flex flex-col gap-0 px-3 py-4 overflow-hidden'>
+						<div className='flex items-center justify-end pb-2'>
+							<Link href={"/"}>
+								<DawesCC className='size-6' />
+							</Link>
+						</div>
+						<div className='flex-1 bg-background-100 pt-10 pb-5 px-5 rounded overflow-y-auto border border-gray-400/40 relative'>{children}</div>
+						<MainMenu />
 					</main>
-					<Analytics />
 				</Theme>
+				<Analytics />
 			</body>
 		</html>
 	);

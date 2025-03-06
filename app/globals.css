@@ -1,47 +1,39 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@import "./theme.css";
 
-@layer base {
-	:root {
-		--background: rgb(255, 255, 255);
-		--foreground: rgb(0, 0, 0);
-		--primary: rgb(255, 130, 0);
-		--accent: rgb(131, 131, 131);
-		--border: var(--foreground);
-		--cta-text: rgb(109, 38, 14);
-		--footer-bg: rgb(247, 246, 246);
-		--collapsible-bg: rgb(243, 242, 242);
-		--card-border: rgb(243, 242, 242);
-		--button-bg: rgb(243, 242, 242);
-		--hero-opacity: 0.09667;
-	}
+/* Brand Specific Styles */
+:root {
+	--primary: hsl(31, 100%, 50%);
+}
 
-	[data-theme="dark"] {
-		--background: rgb(0, 0, 0);
-		--foreground: rgb(255, 255, 255);
-		--accent: rgb(133, 133, 133);
-		--cta-text: rgb(249, 224, 195);
-		--footer-bg: rgb(18, 18, 18);
-		--collapsible-bg: rgb(22, 22, 22);
-		--card-border: rgb(22, 22, 22);
-		--button-bg: rgb(22, 22, 22);
-		--hero-opacity: 0.16667;
-
-		.hero-img {
-			@apply invert;
+@theme inline {
+	@keyframes spinner-leaf-fade {
+		0%,
+		100% {
+			opacity: 0;
+		}
+		50% {
+			opacity: 1;
 		}
 	}
+	--animate-spinner-leaf-fade: spinner-leaf-fade 800ms linear infinite;
+	--spacing-max-content: 1000px;
+	--spacing-header: 64px;
 
-	body {
-		@apply bg-background text-foreground;
-	}
+	--color-primary: var(--primary);
+}
 
-	html {
-		font-size: 15px;
-	}
+@utility timing-spring {
+	transition-timing-function: cubic-bezier(0.68, -0.6, 0.32, 1.6);
+	transition-duration: 150ms;
+}
 
-	a {
-		@apply hover:underline;
+@layer components {
+	.button {
+		@apply border grid grid-cols-1 place-items-center px-2 py-1.5
+		cursor-pointer rounded select-none
+		bg-gray-100 hover:bg-gray-200 active:bg-gray-300
+		border-gray-400 hover:border-gray-500 active:border-gray-600
+		font-medium transition-colors timing-spring;
 	}
 }
