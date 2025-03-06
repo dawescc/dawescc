@@ -88,8 +88,8 @@ export function MenuContent({ children, className }: MenuContentProps) {
 
 	const openSpring = {
 		type: "spring",
-		stiffness: 327,
-		damping: 32,
+		stiffness: 330,
+		damping: 39,
 		mass: 2,
 	};
 
@@ -126,7 +126,7 @@ export function MenuContent({ children, className }: MenuContentProps) {
 						transition={open ? openSpring : closeSpring}
 						className={cn("overflow-hidden origin-top", className)}
 						data-state={open ? "open" : "closed"}>
-						<div className='py-1'>{children}</div>
+						{children}
 					</motion.div>
 				)}
 			</AnimatePresence>

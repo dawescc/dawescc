@@ -1,19 +1,15 @@
 import Link from "next/link";
-import { HiOutlineArrowCircleLeft } from "react-icons/hi";
+import { VscTriangleLeft } from "react-icons/vsc";
 
 export default function NotFound() {
 	return (
 		<div className='grid grid-cols-1 gap-10'>
-			<div className='pt-20 grid grid-cols-1 gap-10'>
-				<div className='flex justify-center'></div>
-			</div>
-			<div className='mt-20 max-w-lg mx-auto grid grid-cols-1 gap-8 sm:gap-10 text-pretty'>
-				<p className='text-3xl sm:text-4xl'>Uh-oh!</p>
-				<p className='text-2xl sm:text-3xl'>I wasn&apos;t able to locate that page.</p>
-				<Link
-					className='text-2xl sm:text-3xl'
-					href='/'>
-					<HiOutlineArrowCircleLeft className='inline mb-0.5 mr-1' /> Go back home
+			<div className='mt-20 max-w-lg mx-auto grid grid-cols-1 gap-8 sm:gap-10 text-pretty font-mono uppercase'>
+				<p className='text-9xl font-display font-medium'>404</p>
+				<p className='text-2xl '>page not found</p>
+				<Link href='/'>
+					<VscTriangleLeft className='inline mb-0.5 mr-1' />
+					home
 				</Link>
 			</div>
 		</div>

@@ -1,12 +1,11 @@
 import Link from "next/link";
-import { RxGithubLogo } from "react-icons/rx";
 import DawesDesign from "@/components/logos/dsd";
 import Menu, { MenuTrigger, MenuContent } from "@/components/menu";
 import { cn } from "@/lib/utils";
 import formatTitle from "title";
-import { HiEnvelope, HiLockClosed } from "react-icons/hi2";
+import { HiLockClosed } from "react-icons/hi2";
 import { HiArchive } from "react-icons/hi";
-import { ImMenu3, ImMenu4 } from "react-icons/im";
+import { IoFolderOpen, IoFolder } from "react-icons/io5";
 
 const projects = [
 	{ name: "lab", url: "https://lab.dawes.cc", bg: "text-brand-dawesdesign", protected: false, archived: false },
@@ -23,60 +22,50 @@ export default function MainMenu() {
 	return (
 		<Menu>
 			<MenuContent>
-				<div className='flex items-center justify-start flex-wrap gap-3 px-1 pt-1'>
-					<Link
-						href={"https://github.com/dawescc"}
-						className='button'>
-						<div className='flex gap-2'>
-							<RxGithubLogo className='size-6' />
-							GitHub
-						</div>
-					</Link>
-					<Link
-						href={"mailto:hello@dawes.cc&subject=Hello%20From%Your%20Website!"}
-						className='button'>
-						<div className='flex gap-2'>
-							<HiEnvelope className='size-6' />
-							Email
-						</div>
-					</Link>
-					{projects.map((project, index) => {
-						const isDisabled = project.protected || !project.url;
-						const isArchived = !isDisabled && project.archived;
+				<div className='border rounded bg-background-100 p-1.5 mt-2'>
+					<div className='flex items-center justify-start flex-wrap gap-3'>
+						{projects.map((project, index) => {
+							const isDisabled = project.protected || !project.url;
+							const isArchived = !isDisabled && project.archived;
 
-						const projectItemProps = {
-							key: index,
-							className: cn("button", isDisabled ? protectedClasses : isArchived ? archiveClasses : null),
-						};
+							const projectItemProps = {
+								className: cn("button", isDisabled ? protectedClasses : isArchived ? archiveClasses : null),
+							};
 
-						const content = (
-							<div className={cn("flex items-center gap-2")}>
-								<DawesDesign className={cn("size-6", !isDisabled && !isArchived ? project.bg : null)} />
-								{formatTitle(project.name)}
-								{isDisabled && <HiLockClosed className='inline -ml-[1px] mb-[1.5px]' />}
-								{isArchived && <HiArchive className='inline -ml-[1px] mb-[0.5px]' />}
-							</div>
-						);
+							const content = (
+								<div className={cn("flex items-center gap-2")}>
+									<DawesDesign className={cn("size-6", !isDisabled && !isArchived ? project.bg : null)} />
+									{formatTitle(project.name)}
+									{isDisabled && <HiLockClosed className='inline -ml-[1px] mb-[1.5px]' />}
+									{isArchived && <HiArchive className='inline -ml-[1px] mb-[0.5px]' />}
+								</div>
+							);
 
-						return isDisabled ? (
-							<div {...projectItemProps}>{content}</div>
-						) : (
-							<Link
-								href={project.url}
-								{...projectItemProps}>
-								{content}
-							</Link>
-						);
-					})}
+							return isDisabled ? (
+								<div
+									key={index}
+									{...projectItemProps}>
+									{content}
+								</div>
+							) : (
+								<Link
+									key={index}
+									href={project.url}
+									{...projectItemProps}>
+									{content}
+								</Link>
+							);
+						})}
+					</div>
 				</div>
 			</MenuContent>
 			<MenuTrigger asChild>
 				<div className='pt-2 px-0 flex justify-end items-center group'>
 					<button
 						aria-label='Expand Menu'
-						className='size-[1.25rem] relative overflow-clip'>
-						<ImMenu3 className='cursor-pointer size-full absolute inset-0 transition-[scale] timing-spring group-data-[state=closed]:opacity-0 group-data-[state=closed]:scale-95' />
-						<ImMenu4 className='cursor-pointer size-full absolute inset-0 transition-[scale] timing-spring group-data-[state=open]:opacity-0 group-data-[state=open]:scale-95' />
+						className='size-[1.8rem] relative overflow-clip'>
+						<IoFolderOpen className='cursor-pointer size-full absolute inset-0 transition-[scale] timing-spring group-data-[state=closed]:opacity-0 group-data-[state=closed]:scale-95' />
+						<IoFolder className='cursor-pointer size-full absolute inset-0 transition-[scale] timing-spring group-data-[state=open]:opacity-0 group-data-[state=open]:scale-95' />
 					</button>
 				</div>
 			</MenuTrigger>

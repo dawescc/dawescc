@@ -5,7 +5,7 @@
 
 @layer base {
 	:root {
-		--dawescc: hsl(302, 100%, 50%);
+		--dawescc: var(--color-pink-700);
 		--dawesdesign: hsl(31, 100%, 50%);
 		--primary: var(--dawesdesign);
 	}
