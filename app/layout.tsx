@@ -6,6 +6,7 @@ import { Analytics } from "@vercel/analytics/react";
 import { Theme } from "@/components/theme-provider";
 import MainMenu from "@/components/main-menu";
 import NavMenu from "@/components/nav-menu";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata: Metadata = {
 	title: {
@@ -72,6 +73,7 @@ export default function RootLayout({
 					</main>
 				</Theme>
 				<Analytics />
+				<SpeedInsights />
 			</body>
 		</html>
 	);
