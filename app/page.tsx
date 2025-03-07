@@ -10,7 +10,7 @@ export default function Home() {
 					<DawesDesign className='size-full text-brand-dawesdesign' />
 				</div>
 
-				<h1 className='font-black w-fit text-6xl font-display cursor-default hover:tracking-widest transition-[letter-spacing] timing-spring'>
+				<h1 className='font-black w-fit text-6xl font-display cursor-default tracking-tight hover:tracking-wide transition-[letter-spacing] timing-spring'>
 					ryan dawes
 				</h1>
 			</div>
