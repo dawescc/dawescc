@@ -63,13 +63,9 @@ export default function RootLayout({
 			lang='en'
 			suppressHydrationWarning
 			className={`${font.sans.variable} ${font.serif.variable} ${font.mono.variable} ${font.display.variable}`}>
-			<body className={`font-sans antialiased w-dvw h-dvh overflow-hidden flex`}>
+			<body className={`font-mono antialiased w-dvw h-dvh overflow-hidden flex`}>
 				<Theme>
-					<main className='grow flex flex-col gap-0 px-3 py-4 overflow-hidden'>
-						{/*<div className='flex items-center justify-end pb-2'>
-							<Link href={"/"}>
-								<DawesCC className='size-6' />
-							</Link> */}
+					<main className='grow flex flex-col gap-0 px-2 py-4 overflow-hidden'>
 						<NavMenu />
 						<div className='flex-1 bg-background-100 pt-10 pb-5 px-5 rounded overflow-y-auto border relative'>{children}</div>
 						<MainMenu />

@@ -16,14 +16,14 @@ export default function NavMenu() {
 				<div className='pb-2 px-0 flex justify-end items-center group'>
 					<button
 						aria-label='Expand Menu'
-						className='size-[2rem] relative overflow-clip'>
+						className='size-[1.5rem] relative overflow-clip'>
 						<ImMenu3 className='cursor-pointer size-full absolute inset-0 transition-[scale] timing-spring group-data-[state=open]:opacity-0 group-data-[state=open]:scale-95' />
 						<ImMenu4 className='cursor-pointer size-full absolute inset-0 transition-[scale] timing-spring group-data-[state=closed]:opacity-0 group-data-[state=closed]:scale-95' />
 					</button>
 				</div>
 			</MenuTrigger>
 			<MenuContent>
-				<div className='rounded p-1.5 pb-0 mb-2'>
+				<div className='rounded p-1.5 px-0 pb-0 mb-2'>
 					<div className='flex items-center justify-start flex-wrap gap-3'>
 						<Link
 							href={"/"}

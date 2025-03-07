@@ -63,7 +63,7 @@ export default function MainMenu() {
 				<div className='pt-2 px-0 flex justify-end items-center group'>
 					<button
 						aria-label='Expand Menu'
-						className='size-[1.8rem] relative overflow-clip'>
+						className='size-[1.2rem] relative overflow-clip'>
 						<IoFolderOpen className='cursor-pointer size-full absolute inset-0 transition-[scale] timing-spring group-data-[state=closed]:opacity-0 group-data-[state=closed]:scale-95' />
 						<IoFolder className='cursor-pointer size-full absolute inset-0 transition-[scale] timing-spring group-data-[state=open]:opacity-0 group-data-[state=open]:scale-95' />
 					</button>
