@@ -6,23 +6,27 @@ import formatTitle from "title";
 import { HiLockClosed } from "react-icons/hi2";
 import { HiArchive } from "react-icons/hi";
 import { IoFolderOpen, IoFolder } from "react-icons/io5";
+import Image from "next/image";
 
 const projects = [
+	{ name: "eleanes", url: "https://eleanes.org", bg: "https://avatars.githubusercontent.com/u/202436012?s=250", protected: false, archived: false },
 	{ name: "lab", url: "https://lab.dawes.cc", bg: "text-brand-dawesdesign", protected: false, archived: false },
 	{ name: "design", url: "https://ds.dawes.cc", bg: "text-brand-dawesdesign", protected: false, archived: false },
-	{ name: "mls-gb", url: "https://mls-gb.dawes.cc", bg: "text-brand-dawesdesign", protected: false, archived: false },
+	{ name: "mls-gb", url: "https://mls-gb.dawes.cc", bg: "https://mls-gb.dawes.cc/favicon.ico", protected: false, archived: false },
 	{ name: "ncaaf", url: "https://ncaaf.dawes.cc", bg: "text-brand-dawesdesign", protected: true, archived: false },
 	{ name: "porpo", url: "https://github.com/dawescc/porpo", bg: "text-brand-dawesdesign", protected: false, archived: true },
 	{ name: "emems", url: "https://github.com/dawescc/emems", bg: "text-brand-dawesdesign", protected: false, archived: true },
 ];
 
 export default function MainMenu() {
+	const isUrl = (str: string) => str.startsWith("http") || str.startsWith("/");
+
 	const archiveClasses = "bg-red-100 text-red-500 dark:bg-red-100 dark:text-red-400 border-red-400 hover:border-red-500 active:border-red-600";
 	const protectedClasses = "pointer-events-none bg-gray-100 text-gray-500 dark:bg-gray-100 dark:text-gray-400";
 	return (
 		<Menu>
 			<MenuContent>
-				<div className='border rounded bg-background-100 p-1.5 mt-2'>
+				<div className='py-1.5 mt-2'>
 					<div className='flex items-center justify-start flex-wrap gap-3'>
 						{projects.map((project, index) => {
 							const isDisabled = project.protected || !project.url;
@@ -34,7 +38,17 @@ export default function MainMenu() {
 
 							const content = (
 								<div className={cn("flex items-center gap-2")}>
-									<DawesDesign className={cn("size-6", !isDisabled && !isArchived ? project.bg : null)} />
+									{isUrl(project.bg) ? (
+										<Image
+											src={project.bg}
+											height={250}
+											width={250}
+											alt='Eleanes'
+											className='size-6 rounded'
+										/>
+									) : (
+										<DawesDesign className={cn("size-6", !isDisabled && !isArchived ? project.bg : null)} />
+									)}
 									{formatTitle(project.name)}
 									{isDisabled && <HiLockClosed className='inline -ml-[1px] mb-[1.5px]' />}
 									{isArchived && <HiArchive className='inline -ml-[1px] mb-[0.5px]' />}
