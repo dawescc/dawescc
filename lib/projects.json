@@ -21,7 +21,15 @@
 		"bg": "text-brand-dawescc",
 		"protected": false,
 		"archived": false,
-		"year": 2024
+		"year": 2025
+	},
+	{
+		"name": "sport-graph",
+		"url": "https://sport-graph.vercel.app",
+		"bg": "text-brand-dawescc",
+		"protected": false,
+		"archived": false,
+		"year": 2025
 	},
 	{
 		"name": "mls-gb",
@@ -29,13 +37,22 @@
 		"bg": "https://mls-gb.dawes.cc/favicon.ico",
 		"protected": false,
 		"archived": false,
-		"year": 2023
+		"year": 2025
+	},
+	{
+		"name": "ncaam",
+		"url": "https://ncaam.dawes.cc",
+		"bg": "text-brand-dawesdesign",
+		"protected": false,
+		"archived": false,
+		"year": 2025,
+		"fork": true
 	},
 	{
 		"name": "ncaaf",
 		"url": "https://ncaaf.dawes.cc",
 		"bg": "text-brand-dawesdesign",
-		"protected": true,
+		"protected": false,
 		"archived": false,
 		"year": 2024
 	},
