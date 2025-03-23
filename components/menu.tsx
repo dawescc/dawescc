@@ -3,7 +3,7 @@
 import React, { createContext, useContext, useState, forwardRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Slot } from "@radix-ui/react-slot";
-import { cn } from "@/lib/utils"; // Make sure you have this utility
+import { cn } from "@/lib/utils";
 
 type MenuContextType = {
 	open: boolean;
@@ -124,7 +124,7 @@ export function MenuContent({ children, className }: MenuContentProps) {
 						exit='closed'
 						variants={variants}
 						transition={open ? openSpring : closeSpring}
-						className={cn("overflow-hidden origin-top", className)}
+						className={cn("px-1.5 overflow-hidden origin-top", className)}
 						data-state={open ? "open" : "closed"}>
 						{children}
 					</motion.div>
