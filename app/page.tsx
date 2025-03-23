@@ -1,4 +1,3 @@
-import DawesCC from "@/components/logos/dawescc";
 import DawesDesign from "@/components/logos/dsd";
 import Eleanes from "@/components/logos/eleanes";
 import ProjectsList from "@/components/projects";
@@ -21,7 +20,7 @@ export default function Home() {
 					</Link>
 				</div>
 
-				<h1 className='font-black w-fit text-[size:12cqmin;line-height:1.25em] font-display cursor-default tracking-tight hover:tracking-wide transition-[letter-spacing] timing-spring'>
+				<h1 className='font-black w-fit text-[size:14cqmin;line-height:1.25em] font-display cursor-default tracking-tight hover:tracking-wide transition-[letter-spacing] timing-spring'>
 					ryan dawes
 				</h1>
 			</div>
@@ -44,7 +43,7 @@ export default function Home() {
 					</div>
 					<div className='col-span-2'>&nbsp;</div>
 					<div className='col-span-2 font-bold text-headline'>projects</div>
-					<div className='col-start-2'>
+					<div className='col-span-2'>
 						<ProjectsList />
 					</div>
 				</div>

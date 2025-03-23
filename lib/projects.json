@@ -46,7 +46,8 @@
 		"protected": false,
 		"archived": false,
 		"year": 2025,
-		"fork": true
+		"fork": true,
+		"forkSource": "leerob/ncaam"
 	},
 	{
 		"name": "ncaaf",
