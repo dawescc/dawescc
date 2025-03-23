@@ -58,7 +58,8 @@
 @utility custom-focus {
 	@apply focus-visible:outline-none;
 	&:focus-visible,
-	.cf-hover:hover {
+	.custom-focus-hover:hover,
+	.focused {
 		transition: none;
 		box-shadow: 0 0 0 2px var(--color-gray-1), 0 0 0 4px var(--focus-color);
 	}
