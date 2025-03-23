@@ -3,7 +3,6 @@ import "./globals.css";
 import font from "@/lib/fonts";
 import { Analytics } from "@vercel/analytics/react";
 import { Theme } from "@/components/theme-provider";
-import MainMenu from "@/components/projects";
 import NavMenu from "@/components/nav-menu";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
