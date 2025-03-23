@@ -79,13 +79,18 @@ function ProjectItem({ project, index }: { project: Project; index: number }) {
 			<span>
 				{isFork && project.getForkSource() && (
 					<span className='text-caption-2 text-gray-9 mr-0.5'>
-						<CgGitFork className='inline mb-[4.5px]' />
+						<CgGitFork className='size-[1.15em] inline mb-[4.5px]' />
 						{project.getForkSource()!.repo}
 					</span>
 				)}
 
 				{isProtected && <HiLockClosed className='inline mb-[4.5px]' />}
-				{isArchived && <HiArchive className='inline mb-[2.5px]' />}
+				{isArchived && (
+					<span className='text-caption-2 mr-0.5'>
+						<HiArchive className='size-[1.15em] mr-0.5 inline mb-[2.5px]' />
+						Archive
+					</span>
+				)}
 
 				<span className='not-first:ml-1.5'>
 					{project.getDisplayName()}

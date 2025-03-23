@@ -24,7 +24,7 @@ export default function Home() {
 					ryan dawes
 				</h1>
 			</div>
-			<div className='flex-1 flex flex-col py-4 text-body'>
+			<div className='flex-1 flex flex-col py-4 text-body tracking-tight'>
 				<div className='grid grid-cols-2 font-mono uppercase *:[.col-start-2]:text-right'>
 					<div className='col-span-2 font-bold text-headline'>about</div>
 					<div className='col-start-2'>software developer</div>
