@@ -1,0 +1,76 @@
+[
+	{
+		"name": "eleanes",
+		"url": "https://eleanes.org",
+		"bg": "https://avatars.githubusercontent.com/u/202436012?s=250",
+		"protected": false,
+		"archived": false,
+		"year": 2025
+	},
+	{
+		"name": "lab",
+		"url": "https://lab.dawes.cc",
+		"bg": "text-brand-dawescc",
+		"protected": false,
+		"archived": false,
+		"year": 2025
+	},
+	{
+		"name": "design",
+		"url": "https://ds.dawes.cc",
+		"bg": "text-brand-dawescc",
+		"protected": false,
+		"archived": false,
+		"year": 2025
+	},
+	{
+		"name": "sport-graph",
+		"url": "https://sport-graph.vercel.app",
+		"bg": "text-brand-dawescc",
+		"protected": false,
+		"archived": false,
+		"year": 2025
+	},
+	{
+		"name": "mls-gb",
+		"url": "https://mls-gb.dawes.cc",
+		"bg": "https://mls-gb.dawes.cc/favicon.ico",
+		"protected": false,
+		"archived": false,
+		"year": 2025
+	},
+	{
+		"name": "ncaam",
+		"url": "https://ncaam.dawes.cc",
+		"bg": "text-brand-dawesdesign",
+		"protected": false,
+		"archived": false,
+		"year": 2025,
+		"fork": true,
+		"forkSource": "leerob/ncaam"
+	},
+	{
+		"name": "ncaaf",
+		"url": "https://ncaaf.dawes.cc",
+		"bg": "text-brand-dawesdesign",
+		"protected": false,
+		"archived": false,
+		"year": 2024
+	},
+	{
+		"name": "porpo",
+		"url": "https://github.com/dawescc/porpo",
+		"bg": "text-brand-dawescc",
+		"protected": false,
+		"archived": true,
+		"year": 2022
+	},
+	{
+		"name": "emems",
+		"url": "https://github.com/dawescc/emems",
+		"bg": "text-brand-dawescc",
+		"protected": false,
+		"archived": true,
+		"year": 2022
+	}
+]

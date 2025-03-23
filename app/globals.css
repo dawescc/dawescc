@@ -5,11 +5,16 @@
 
 @layer base {
 	:root {
-		--dawescc: hsl(312.86 99% 88%);
-		--dawesdesign: hsl(31, 100%, 50%);
-		--primary: var(--dawesdesign);
+		--dawesdesign-color: hsl(31, 100%, 50%);
+		--dawescc-color: var(--dawesdesign-color);
+		--eleanes-color: hsl(206, 100%, 50%);
+		--primary-color: var(--dawesdesign-color);
+		--focus-color: currentColor;
 
 		--border-radius: 4.22px;
+	}
+	* {
+		@apply custom-focus;
 	}
 }
 
@@ -27,9 +32,12 @@
 	--spacing-max-content: 1000px;
 	--spacing-header: 64px;
 
-	--color-brand-dawescc: var(--dawescc);
-	--color-brand-dawesdesign: var(--dawesdesign);
-	--color-primary: var(--dawescc);
+	--color-brand-dawescc: var(--dawescc-color);
+	--color-brand-dawesdesign: var(--dawesdesign-color);
+	--color-brand-eleanes: var(--eleanes-color);
+	--color-primary: var(--dawescc-color);
+
+	--radius: var(--border-radius);
 }
 
 @utility timing-spring {
@@ -41,8 +49,17 @@
 	.button {
 		@apply border grid grid-cols-1 place-items-center px-2 py-1.5
 		cursor-pointer rounded select-none
-		bg-gray-100 hover:bg-gray-200 active:bg-gray-300
-		border-gray-400 hover:border-gray-500 active:border-gray-600
+		bg-gray-2 hover:bg-gray-3 active:bg-gray-4
+		border-gray-5 hover:border-gray-6 active:border-gray-7
 		font-medium transition-colors timing-spring;
+	}
+}
+
+@utility custom-focus {
+	@apply focus-visible:outline-none;
+	&:focus-visible,
+	.cf-hover:hover {
+		transition: none;
+		box-shadow: 0 0 0 2px var(--color-gray-1), 0 0 0 4px var(--focus-color);
 	}
 }
