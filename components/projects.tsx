@@ -1,15 +1,14 @@
 import Link from "next/link";
-import DawesDesign from "@/components/logos/dsd";
 import { cn } from "@/lib/utils";
 import formatTitle from "title";
-import { HiLockClosed } from "react-icons/hi2";
-import { HiArchive } from "react-icons/hi";
-import { CgGitFork } from "react-icons/cg";
+import { HiArchive, HiLockClosed } from "react-icons/hi";
 import Image from "next/image";
 import projectList from "@/lib/projects.json";
+import { SiNpm } from "react-icons/si";
+import { BiGitRepoForked } from "react-icons/bi";
 
 class Project {
-	name: string = "Unnamed";
+	name: string = "Project";
 	url: string = "/";
 	bg: string = "/favicon.ico";
 	protected: boolean = false;
@@ -17,6 +16,10 @@ class Project {
 	year: number = 2025;
 	fork: boolean = false;
 	forkSource?: string;
+	package: boolean = false;
+	icon: string = "/dawes.svg";
+	owner: string = "dawescc";
+	technology?: string[] = ["nextjs", "tailwindcss"];
 
 	constructor(init?: Partial<Project>) {
 		Object.assign(this, init);
@@ -49,8 +52,16 @@ class Project {
 		};
 	}
 
-	hasUrlBackground(): boolean {
-		return this.bg.startsWith("http") || this.bg.startsWith("/");
+	isPackage(): boolean {
+		return this.package;
+	}
+
+	getOwner(): string {
+		return this.owner;
+	}
+
+	getIcon(): string {
+		return this.icon;
 	}
 
 	getDisplayName(): string {
@@ -64,9 +75,9 @@ function ProjectItem({ project, index }: { project: Project; index: number }) {
 	const isProtected = project.isProtected();
 	const isArchived = project.isArchived();
 	const isFork = project.isForked();
-	const isUrlBg = project.hasUrlBackground();
+	const isPackage = project.isPackage();
 
-	const defaultClasses = "w-fit rounded group [--focus-color:var(--color-brand-dawescc)] cf-hover";
+	const defaultClasses = "w-fit rounded group [--focus-color:var(--color-brand-dawescc)] custom-focus-hover";
 	const archiveClasses = "text-red-9 [--focus-color:var(--color-red-9)]";
 	const protectedClasses = "pointer-events-none text-gray-9";
 
@@ -74,43 +85,67 @@ function ProjectItem({ project, index }: { project: Project; index: number }) {
 		className: cn(defaultClasses, isProtected ? protectedClasses : isArchived ? archiveClasses : null),
 	};
 
+	const descriptorClasses = "inline-flex items-center gap-1 text-subhead";
+	const descriptorIconClasses = "inline size-[1.1em]";
+
 	const content = (
-		<div className={cn("flex items-center gap-3")}>
-			<span>
-				{isFork && project.getForkSource() && (
-					<span className='text-caption-2 text-gray-9 mr-0.5'>
-						<CgGitFork className='size-[1.15em] inline mb-[4.5px]' />
-						{project.getForkSource()!.repo}
-					</span>
-				)}
-
-				{isProtected && <HiLockClosed className='inline mb-[4.5px]' />}
-				{isArchived && (
-					<span className='text-caption-2 mr-0.5'>
-						<HiArchive className='size-[1.15em] mr-0.5 inline mb-[2.5px]' />
-						Archive
-					</span>
-				)}
-
-				<span className='not-first:ml-1.5'>
-					{project.getDisplayName()}
-					<span className='inline-flex w-0 group-hover:w-[7ch] group-focus:w-[7ch] transition-[width] timing-spring duration-200 overflow-hidden'>
-						&nbsp;/&nbsp;{project.year}
-					</span>
+		<div className={cn("flex items-center")}>
+			{isPackage && (
+				<span className={cn(descriptorClasses, "")}>
+					<SiNpm className={cn(descriptorIconClasses, "text-[#CC3534]")} />
 				</span>
+			)}
+
+			{isFork && project.getForkSource() && (
+				<span className={cn(descriptorClasses, "")}>
+					<BiGitRepoForked className={cn(descriptorIconClasses)} />
+					{project.getForkSource()!.repo}
+				</span>
+			)}
+
+			{isProtected && (
+				<span className={cn(descriptorClasses, "")}>
+					<HiLockClosed className={cn(descriptorIconClasses, "")} />
+					protected
+				</span>
+			)}
+
+			{isArchived && (
+				<span className={cn(descriptorClasses, "")}>
+					<HiArchive className={cn(descriptorIconClasses)} />
+					archived
+				</span>
+			)}
+
+			<span className='not-first:ml-1.5 inline-flex items-center'>
+				<span>{project.getDisplayName()}</span>
+				{!isProtected && (
+					<span className='text-subhead inline-flex items-center w-0 group-hover:w-[5ch] group-focus:w-[5ch] transition-[width] timing-spring duration-200 overflow-hidden'>
+						&nbsp;{project.year}
+					</span>
+				)}
 			</span>
 
-			{isUrlBg ? (
+			<div className='relative size-6 ml-3'>
 				<Image
-					src={project.bg}
-					height={250}
-					width={250}
-					alt='Project thumbnail'
-					className='size-6 rounded'
+					src={project.getIcon()}
+					height={24}
+					width={24}
+					alt={`${project.getOwner()} icon`}
+					className={cn("size-6")}
 				/>
-			) : (
-				<DawesDesign className={cn("size-6", !isProtected && !isArchived ? project.bg : null)} />
-			)}
+				{(isProtected || isArchived) && (
+					<div
+						className={cn("absolute inset-0", isProtected ? "bg-gray-9" : "bg-red-9")}
+						style={{
+							WebkitMaskImage: `url(${project.getIcon()})`,
+							maskImage: `url(${project.getIcon()})`,
+							WebkitMaskSize: "cover",
+							maskSize: "cover",
+						}}
+					/>
+				)}
+			</div>
 		</div>
 	);
 
