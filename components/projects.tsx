@@ -87,9 +87,9 @@ function ProjectItem({ project, index }: { project: Project; index: number }) {
 
 	const descriptorClasses = "text-[10px] ml-0.5 font-medium align-top";
 	const descriptorIconClasses = "inline size-[0.90em]";
-	const stubClasses = "w-0 max-w-fit group-hover:w-20 group-focus:w-20 transition-[width] timing-spring duration-400 overflow-hidden";
-	const stubContentClasses =
-		"-translate-x-full group-hover:translate-x-0 group-focus:translate-x-0 transition-transform timing-spring duration-1000 delay-200";
+
+	const stubClasses = "w-0 max-w-fit group-hover:w-20 group-focus:w-20 transition-[width] timing-spring duration-300 overflow-hidden";
+	const stubContentClasses = "translate-x-1/2 group-hover:translate-x-0 group-focus:translate-x-0 transition-transform ease-in-out duration-250 delay-[50ms]";
 
 	const content = (
 		<div className={cn("flex items-center")}>
@@ -104,7 +104,7 @@ function ProjectItem({ project, index }: { project: Project; index: number }) {
 					<>
 						<BiGitRepoForked className={cn(descriptorIconClasses)} />
 						<div className={cn(descriptorClasses, stubClasses)}>
-							<span className={cn(stubContentClasses)}>{project.getForkSource()!.repo}</span>
+							<div className={cn(stubContentClasses)}>{project.getForkSource()!.repo}</div>
 						</div>
 					</>
 				)}
@@ -112,25 +112,29 @@ function ProjectItem({ project, index }: { project: Project; index: number }) {
 				{isProtected && (
 					<>
 						<HiLockClosed className={cn(descriptorIconClasses, "")} />
-						<span className={cn(descriptorClasses, stubClasses)}>protected</span>
+						<div className={cn(descriptorClasses, stubClasses)}>
+							<div className={cn(stubContentClasses)}>protected</div>
+						</div>
 					</>
 				)}
 
 				{isArchived && (
 					<>
 						<HiArchive className={cn(descriptorIconClasses)} />
-						<span className={cn(descriptorClasses, stubClasses)}>archived</span>
+						<div className={cn(descriptorClasses, stubClasses)}>
+							<div className={cn(stubContentClasses)}>archived</div>
+						</div>
 					</>
 				)}
 
-				<span className='not-first:ml-1.5 inline-flex items-center'>
-					<span>{project.getDisplayName()}</span>
-				</span>
+				<div className='not-first:ml-1.5 inline-flex items-center'>
+					<div>{project.getDisplayName()}</div>
+				</div>
 
 				{!isProtected && (
-					<span className={cn(stubClasses)}>
-						<span className={cn(descriptorClasses)}>&nbsp;{project.year}</span>
-					</span>
+					<div className={cn(descriptorClasses, stubClasses)}>
+						<div className={cn(stubContentClasses, "ml-1")}>{project.year}</div>
+					</div>
 				)}
 			</div>
 
