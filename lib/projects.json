@@ -2,67 +2,47 @@
 	{
 		"name": "eleanes",
 		"url": "https://eleanes.org",
-		"icon": "/eleanes.svg",
-		"protected": false,
-		"archived": false,
-		"year": 2025
+		"year": 2025,
+		"owner": "eleanes"
 	},
 	{
 		"name": "make-biscuits",
 		"url": "https://www.npmjs.com/package/make-biscuits",
-		"icon": "/eleanes.svg",
-		"protected": false,
-		"archived": false,
 		"year": 2025,
-		"package": true
+		"package": true,
+		"owner": "eleanes"
 	},
 	{
 		"name": "@eleanes/biscuits",
 		"url": "https://www.npmjs.com/package/@eleanes/biscuits",
-		"icon": "/eleanes.svg",
-		"protected": false,
-		"archived": false,
 		"year": 2025,
-		"package": true
+		"package": true,
+		"owner": "eleanes"
 	},
 	{
 		"name": "lab",
 		"url": "https://lab.dawes.cc",
-		"icon": "/dawescc.svg",
-		"protected": false,
-		"archived": false,
 		"year": 2025
 	},
 	{
 		"name": "design",
 		"url": "https://ds.dawes.cc",
-		"icon": "/dawescc.svg",
-		"protected": false,
-		"archived": false,
 		"year": 2025
 	},
 	{
 		"name": "sport-graph",
 		"url": "https://sport-graph.vercel.app",
-		"icon": "/dawescc.svg",
-		"protected": false,
-		"archived": false,
-		"year": 2025
+		"year": 2025,
+		"owner": "eleanes"
 	},
 	{
 		"name": "mls-gb",
 		"url": "https://mls-gb.dawes.cc",
-		"icon": "/dawescc.svg",
-		"protected": false,
-		"archived": false,
 		"year": 2025
 	},
 	{
 		"name": "ncaam",
 		"url": "https://ncaam.dawes.cc",
-		"icon": "/dawescc.svg",
-		"protected": false,
-		"archived": false,
 		"year": 2025,
 		"fork": true,
 		"forkSource": "leerob/ncaam"
@@ -70,24 +50,17 @@
 	{
 		"name": "ncaaf",
 		"url": "https://ncaaf.dawes.cc",
-		"icon": "/dawescc.svg",
-		"protected": false,
-		"archived": false,
-		"year": 2024
+		"year": 2025
 	},
 	{
 		"name": "porpo",
 		"url": "https://github.com/dawescc/porpo",
-		"icon": "/dawescc.svg",
-		"protected": false,
 		"archived": true,
 		"year": 2022
 	},
 	{
 		"name": "emems",
 		"url": "https://github.com/dawescc/emems",
-		"icon": "/dawescc.svg",
-		"protected": false,
 		"archived": true,
 		"year": 2022
 	},

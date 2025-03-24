@@ -7,17 +7,23 @@ import projectList from "@/lib/projects.json";
 import { SiNpm } from "react-icons/si";
 import { BiGitRepoForked } from "react-icons/bi";
 
+const VALID_OWNERS = ["eleanes", "dawescc"] as const;
+type ValidOwner = (typeof VALID_OWNERS)[number];
+
 class Project {
 	name: string = "Project";
 	url: string = "/";
-	bg: string = "/favicon.ico";
 	protected: boolean = false;
 	archived: boolean = false;
 	year: number = 2025;
+
 	fork: boolean = false;
 	forkSource?: string;
+
 	package: boolean = false;
-	icon: string = "/dawescc.svg";
+
+	icon?: string;
+
 	owner: string = "dawescc";
 	technology?: string[] = ["nextjs", "tailwindcss"];
 
@@ -61,7 +67,11 @@ class Project {
 	}
 
 	getIcon(): string {
-		return this.icon;
+		const projectOwner = this.owner;
+
+		const isValidOwner = (owner: string): owner is ValidOwner => VALID_OWNERS.some((validOwner) => validOwner === owner);
+
+		return this.icon ? this.icon : isValidOwner(projectOwner) ? `/${projectOwner}.svg` : "/dawescc.svg";
 	}
 
 	getDisplayName(): string {
@@ -88,15 +98,17 @@ function ProjectItem({ project, index }: { project: Project; index: number }) {
 	const descriptorClasses = "text-[10px] ml-0.5 font-medium align-top";
 	const descriptorIconClasses = "inline size-[0.90em]";
 
-	const stubClasses = "w-0 max-w-fit group-hover:w-20 group-focus:w-20 transition-[width] timing-spring duration-300 overflow-hidden";
-	const stubContentClasses = "translate-x-1/2 group-hover:translate-x-0 group-focus:translate-x-0 transition-transform ease-in-out duration-250 delay-[50ms]";
+	const stubClasses =
+		"w-fit sm:w-0 sm:max-w-fit sm:group-hover:w-20 sm:group-focus:w-20 sm:group-[&.focused]:w-20 transition-[width] timing-spring duration-300 overflow-hidden";
+	const stubContentClasses =
+		"sm:translate-x-1/2 sm:group-hover:translate-x-0 sm:group-[&.focused]:translate-x-0 sm:group-focus:translate-x-0 transition-transform ease-in-out duration-250 delay-[50ms]";
 
 	const content = (
 		<div className={cn("flex items-center")}>
 			<div className='flex items-center'>
 				{isPackage && (
 					<>
-						<SiNpm className={cn(descriptorIconClasses, "text-[#CC3534]")} />
+						<SiNpm className={cn(descriptorIconClasses, "text-[#CC3534] ")} />
 					</>
 				)}
 
@@ -112,9 +124,6 @@ function ProjectItem({ project, index }: { project: Project; index: number }) {
 				{isProtected && (
 					<>
 						<HiLockClosed className={cn(descriptorIconClasses, "")} />
-						<div className={cn(descriptorClasses, stubClasses)}>
-							<div className={cn(stubContentClasses)}>protected</div>
-						</div>
 					</>
 				)}
 
