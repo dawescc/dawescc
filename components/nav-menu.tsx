@@ -1,13 +1,12 @@
 import Link from "next/link";
 import { RxGithubLogo, RxHeartFilled } from "react-icons/rx";
-import DawesDesign from "@/components/logos/dsd";
 import Menu, { MenuTrigger, MenuContent } from "@/components/menu";
 import { cn } from "@/lib/utils";
 import formatTitle from "title";
 import { ImMenu3, ImMenu4 } from "react-icons/im";
 import { HiEnvelope } from "react-icons/hi2";
 
-const pages = [{ name: null, url: null, bg: "text-primary", protected: true }];
+const pages = [{ name: null, url: null, bg: "bg-primary", protected: true }];
 
 export default function NavMenu() {
 	return (
@@ -58,7 +57,17 @@ export default function NavMenu() {
 									href={project.url}
 									className='button custom-focus-hover'>
 									<div className={cn("flex items-center gap-2")}>
-										<DawesDesign className={cn("size-6", project.bg)} />
+										<div className='relative size-6'>
+											<div
+												className={cn("absolute inset-0 size-6", project.bg)}
+												style={{
+													WebkitMaskImage: `url('/dawescc.svg')`,
+													maskImage: `url('/dawescc.svg')`,
+													WebkitMaskSize: "cover",
+													maskSize: "cover",
+												}}
+											/>
+										</div>
 										{formatTitle(project.name)}
 									</div>
 								</Link>
