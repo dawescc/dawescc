@@ -17,7 +17,7 @@ class Project {
 	fork: boolean = false;
 	forkSource?: string;
 	package: boolean = false;
-	icon: string = "/dawes.svg";
+	icon: string = "/dawescc.svg";
 	owner: string = "dawescc";
 	technology?: string[] = ["nextjs", "tailwindcss"];
 
@@ -85,56 +85,57 @@ function ProjectItem({ project, index }: { project: Project; index: number }) {
 		className: cn(defaultClasses, isProtected ? protectedClasses : isArchived ? archiveClasses : null),
 	};
 
-	const descriptorClasses = "inline-flex items-center gap-1 text-subhead";
-	const descriptorIconClasses = "inline size-[1.1em]";
+	const descriptorClasses = "text-[10px] ml-0.5 font-medium align-top";
+	const descriptorIconClasses = "inline size-[0.90em]";
+	const stubClasses = "w-0 max-w-fit group-hover:w-20 group-focus:w-20 transition-[width] timing-spring duration-400 overflow-hidden";
+	const stubContentClasses =
+		"-translate-x-full group-hover:translate-x-0 group-focus:translate-x-0 transition-transform timing-spring duration-1000 delay-200";
 
 	const content = (
 		<div className={cn("flex items-center")}>
-			{isPackage && (
-				<span className={cn(descriptorClasses, "")}>
-					<SiNpm className={cn(descriptorIconClasses, "text-[#CC3534]")} />
-				</span>
-			)}
+			<div className='flex items-center'>
+				{isPackage && (
+					<>
+						<SiNpm className={cn(descriptorIconClasses, "text-[#CC3534]")} />
+					</>
+				)}
 
-			{isFork && project.getForkSource() && (
-				<span className={cn(descriptorClasses, "")}>
-					<BiGitRepoForked className={cn(descriptorIconClasses)} />
-					{project.getForkSource()!.repo}
-				</span>
-			)}
+				{isFork && project.getForkSource() && (
+					<>
+						<BiGitRepoForked className={cn(descriptorIconClasses)} />
+						<div className={cn(descriptorClasses, stubClasses)}>
+							<span className={cn(stubContentClasses)}>{project.getForkSource()!.repo}</span>
+						</div>
+					</>
+				)}
 
-			{isProtected && (
-				<span className={cn(descriptorClasses, "")}>
-					<HiLockClosed className={cn(descriptorIconClasses, "")} />
-					protected
-				</span>
-			)}
+				{isProtected && (
+					<>
+						<HiLockClosed className={cn(descriptorIconClasses, "")} />
+						<span className={cn(descriptorClasses, stubClasses)}>protected</span>
+					</>
+				)}
 
-			{isArchived && (
-				<span className={cn(descriptorClasses, "")}>
-					<HiArchive className={cn(descriptorIconClasses)} />
-					archived
-				</span>
-			)}
+				{isArchived && (
+					<>
+						<HiArchive className={cn(descriptorIconClasses)} />
+						<span className={cn(descriptorClasses, stubClasses)}>archived</span>
+					</>
+				)}
 
-			<span className='not-first:ml-1.5 inline-flex items-center'>
-				<span>{project.getDisplayName()}</span>
+				<span className='not-first:ml-1.5 inline-flex items-center'>
+					<span>{project.getDisplayName()}</span>
+				</span>
+
 				{!isProtected && (
-					<span className='text-subhead inline-flex items-center w-0 group-hover:w-[5ch] group-focus:w-[5ch] transition-[width] timing-spring duration-200 overflow-hidden'>
-						&nbsp;{project.year}
+					<span className={cn(stubClasses)}>
+						<span className={cn(descriptorClasses)}>&nbsp;{project.year}</span>
 					</span>
 				)}
-			</span>
+			</div>
 
 			<div className='relative size-6 ml-3'>
-				<Image
-					src={project.getIcon()}
-					height={24}
-					width={24}
-					alt={`${project.getOwner()} icon`}
-					className={cn("size-6")}
-				/>
-				{(isProtected || isArchived) && (
+				{isProtected || isArchived ? (
 					<div
 						className={cn("absolute inset-0", isProtected ? "bg-gray-9" : "bg-red-9")}
 						style={{
@@ -143,6 +144,14 @@ function ProjectItem({ project, index }: { project: Project; index: number }) {
 							WebkitMaskSize: "cover",
 							maskSize: "cover",
 						}}
+					/>
+				) : (
+					<Image
+						src={project.getIcon()}
+						height={24}
+						width={24}
+						alt={`${project.getOwner()} icon`}
+						className={cn("size-6")}
 					/>
 				)}
 			</div>
