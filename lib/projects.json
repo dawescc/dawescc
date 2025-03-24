@@ -79,7 +79,7 @@
 		"name": "porpo",
 		"url": "https://github.com/dawescc/porpo",
 		"icon": "/dawescc.svg",
-		"protected": true,
+		"protected": false,
 		"archived": true,
 		"year": 2022
 	},
@@ -90,5 +90,8 @@
 		"protected": false,
 		"archived": true,
 		"year": 2022
-	}
+	},
+	{ "name": "ies", "protected": true, "year": 2022 },
+	{ "name": "nces", "protected": true, "year": 2022 },
+	{ "name": "eric", "protected": true, "year": 2022 }
 ]
