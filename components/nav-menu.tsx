@@ -1,14 +1,80 @@
 import Link from "next/link";
-import { RxGithubLogo, RxHeartFilled } from "react-icons/rx";
+import { RxGithubLogo } from "react-icons/rx";
 import Menu, { MenuTrigger, MenuContent } from "@/components/menu";
 import { cn } from "@/lib/utils";
 import formatTitle from "title";
 import { ImMenu3, ImMenu4 } from "react-icons/im";
 import { HiEnvelope } from "react-icons/hi2";
 
-const pages = [{ name: null, url: null, bg: "bg-primary", protected: true }];
+const pages = [{ name: null, url: null, bg: "bg-brand-eleanes", protected: true }];
 
-export default function NavMenu() {
+interface NavMenuProps {
+	mini?: boolean;
+}
+
+const MenuContents = ({ mini = false, className }: { mini?: boolean; className?: string }) => {
+	const variantClasses = (): { button: string; icon: string } => {
+		switch (mini) {
+			case true:
+				return { button: "rounded px-1 py-0.5 inline-flex items-center gap-2", icon: "size-[1em]" };
+			default:
+				return { button: "button inline-flex items-center gap-2", icon: "size-6" };
+		}
+	};
+
+	const defaults = "custom-focus-hover [--focus-color:var(--color-primary)] text-body";
+
+	return (
+		<div className={cn("flex items-center justify-start flex-wrap gap-3", className)}>
+			<Link
+				title='Github | dawescc'
+				href={"https://github.com/dawescc"}
+				className={cn(defaults, variantClasses().button, null)}>
+				<RxGithubLogo className={cn(variantClasses().icon, null)} />
+				GitHub
+			</Link>
+			<Link
+				title='Email'
+				href={"mailto:hello@dawes.cc&subject=Hello%20From%Your%20Website!"}
+				className={cn(defaults, variantClasses().button, null)}>
+				<HiEnvelope className={cn(variantClasses().icon, null)} />
+				Email
+			</Link>
+			{pages.map((page, index) =>
+				page.protected || !page.url || !page.name ? null : (
+					<Link
+						key={index}
+						title={page.name}
+						href={page.url}
+						className={cn(defaults, variantClasses().button, null)}>
+						<div className={cn("relative", variantClasses().icon)}>
+							<div
+								className={cn("absolute inset-0 size-full", page.bg)}
+								style={{
+									WebkitMaskImage: `url('/dawescc.svg')`,
+									maskImage: `url('/dawescc.svg')`,
+									WebkitMaskSize: "cover",
+									maskSize: "cover",
+								}}
+							/>
+						</div>
+						{formatTitle(page.name)}
+					</Link>
+				)
+			)}
+		</div>
+	);
+};
+
+export default function NavMenu({ mini = false }: NavMenuProps) {
+	if (mini) {
+		return (
+			<div className='mb-20'>
+				<MenuContents mini />
+			</div>
+		);
+	}
+
 	return (
 		<Menu>
 			<MenuTrigger
@@ -25,55 +91,7 @@ export default function NavMenu() {
 			</MenuTrigger>
 			<MenuContent>
 				<div className='rounded py-3'>
-					<div className='flex items-center justify-start flex-wrap gap-3'>
-						<Link
-							href={"/"}
-							className='button custom-focus-hover'>
-							<div className='flex gap-2'>
-								<RxHeartFilled className='size-6 text-primary' />
-								Home
-							</div>
-						</Link>
-						<Link
-							href={"https://github.com/dawescc"}
-							className='button custom-focus-hover'>
-							<div className='flex gap-2'>
-								<RxGithubLogo className='size-6' />
-								GitHub
-							</div>
-						</Link>
-						<Link
-							href={"mailto:hello@dawes.cc&subject=Hello%20From%Your%20Website!"}
-							className='button custom-focus-hover'>
-							<div className='flex gap-2'>
-								<HiEnvelope className='size-6' />
-								Email
-							</div>
-						</Link>
-						{pages.map((project, index) =>
-							project.protected || !project.url || !project.name ? null : (
-								<Link
-									key={index}
-									href={project.url}
-									className='button custom-focus-hover'>
-									<div className={cn("flex items-center gap-2")}>
-										<div className='relative size-6'>
-											<div
-												className={cn("absolute inset-0 size-6", project.bg)}
-												style={{
-													WebkitMaskImage: `url('/dawescc.svg')`,
-													maskImage: `url('/dawescc.svg')`,
-													WebkitMaskSize: "cover",
-													maskSize: "cover",
-												}}
-											/>
-										</div>
-										{formatTitle(project.name)}
-									</div>
-								</Link>
-							)
-						)}
-					</div>
+					<MenuContents />
 				</div>
 			</MenuContent>
 		</Menu>

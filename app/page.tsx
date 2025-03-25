@@ -1,11 +1,13 @@
 import Dawescc from "@/components/logos/dawescc";
 import Eleanes from "@/components/logos/eleanes";
+import NavMenu from "@/components/nav-menu";
 import ProjectsList, { ProjectListKey } from "@/components/projects";
 import Link from "next/link";
 
 export default function Home() {
 	return (
 		<div className='@container min-h-full max-w-2xl flex flex-col'>
+			<NavMenu mini />
 			<div className='flex-0 shrink-0 flex flex-col justify-center uppercase py-4'>
 				<div className='w-fit grid grid-cols-2 gap-3 mb-20'>
 					<Link
