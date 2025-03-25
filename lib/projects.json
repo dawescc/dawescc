@@ -10,7 +10,8 @@
 		"url": "https://www.npmjs.com/package/make-biscuits",
 		"year": 2025,
 		"package": true,
-		"owner": "eleanes"
+		"owner": "eleanes",
+		"favorite": true
 	},
 	{
 		"name": "@eleanes/biscuits",
@@ -33,12 +34,14 @@
 		"name": "sport-graph",
 		"url": "https://sport-graph.vercel.app",
 		"year": 2025,
-		"owner": "eleanes"
+		"owner": "eleanes",
+		"favorite": true
 	},
 	{
 		"name": "mls-gb",
 		"url": "https://mls-gb.dawes.cc",
-		"year": 2025
+		"year": 2025,
+		"favorite": true
 	},
 	{
 		"name": "ncaam",
