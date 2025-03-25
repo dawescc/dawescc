@@ -100,7 +100,7 @@ const projects = projectList.map((p) => new Project(p));
 
 export function ProjectListKey() {
 	return (
-		<div className='grid grid-cols-2 sm:flex sm:items-center gap-3 text-callout *:inline-flex *:items-center *:gap-1.5'>
+		<div className='grid grid-cols-2 sm:flex sm:items-center sm:justify-between gap-y-5 text-callout *:inline-flex *:items-center *:gap-1.5'>
 			<span className='text-amber-9'>
 				<IoHeartCircle className={cn("size-[1.1em] inline")} />
 				favorite
@@ -252,14 +252,17 @@ export default function ProjectsList() {
 		.sort((a, b) => b - a);
 
 	return (
-		<div className='grid grid-cols-1 gap-3.5 justify-items-end'>
+		<div className='grid grid-cols-1 justify-items-end *:border-b *:pb-5 *:pt-0.5'>
 			{years.flatMap((year) =>
 				projectsByYear[year].map((project, index) => (
-					<ProjectItem
+					<div
 						key={`${year}-${index}`}
-						project={project}
-						index={index}
-					/>
+						className='inline-flex items-center'>
+						<ProjectItem
+							project={project}
+							index={index}
+						/>
+					</div>
 				))
 			)}
 		</div>
