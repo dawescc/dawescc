@@ -43,7 +43,7 @@ export default function Home() {
 					, I am no longer active on the platform
 				</p>
 
-				<div className='flex gap-x-1 gap-y-1.5 flex-wrap'>
+				<div className='flex gap-x-2 gap-y-1.5 flex-wrap'>
 					<ProjectsList />
 				</div>
 			</div>

@@ -103,7 +103,7 @@ function ProjectItem({ project, index }: { project: Project; index: number }) {
 	/* const isPackage = project.isPackage();*/
 	const isFavorite = project.isFavorite();
 
-	const defaultClasses = "w-fit rounded hover:rounded py-0.5 px-1 group/project [--focus-color:var(--color-brand-dawescc)] custom-focus-hover";
+	const defaultClasses = "w-fit rounded group/project [--focus-color:var(--color-brand-dawescc)] custom-focus-hover";
 	const archiveClasses = "text-red-9 [--focus-color:var(--color-red-9)]";
 	const protectedClasses = "text-gray-9 [--focus-color:var(--color-gray-9)] select-none";
 
