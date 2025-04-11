@@ -13,7 +13,7 @@ export default function Home() {
 			<span className='text-brand-dawescc'></span>
 			<div className='flex-1 flex flex-col gap-12 text-title-2 md:text-title-1  tracking-tight'>
 				<div>
-					<span className='text-title-1 md:text-title-large'>I&apos;m Ryan</span>, a design engineer on the East Coast
+					<span className='text-title-1 md:text-title-large'>I&apos;m Ryan</span>, a design engineer on the east coast
 				</div>
 
 				<div className='size-32 md:size-36 overflow-clip'>
