@@ -1,62 +1,45 @@
-import Dawescc from "@/components/logos/dawescc";
-import Eleanes from "@/components/logos/eleanes";
-import NavMenu from "@/components/nav-menu";
-import ProjectsList, { ProjectListKey } from "@/components/projects";
+import ProjectsList from "@/components/projects";
+import { Time, TimeZone } from "@/components/time";
+import { siteConfig } from "@/lib/config";
+import { cn } from "@/lib/utils";
 import Link from "next/link";
+import { HiClock, HiHeart } from "react-icons/hi";
+import { SiDotnet, SiGithub, SiJavascript, SiReact, SiTypescript } from "react-icons/si";
 
 export default function Home() {
+	const iconClasses = "inline mb-[5px]";
 	return (
-		<div className='@container min-h-full max-w-2xl flex flex-col'>
-			<NavMenu mini />
-			<div className='flex-0 shrink-0 flex flex-col justify-center uppercase py-4'>
-				<div className='w-fit grid grid-cols-2 gap-3 mb-20'>
-					<Link
-						href='/'
-						className='rounded [--focus-color:var(--color-brand-dawescc)] text-title-large leading-0'>
-						<Dawescc className='text-brand-dawescc antialiased' />
-					</Link>
-					<Link
-						href='https://eleanes.org'
-						className='rounded [--focus-color:var(--color-brand-eleanes)] text-title-large leading-0'>
-						<Eleanes className='text-brand-eleanes antialiased' />
-					</Link>
+		<div className='@container min-h-full max-w-2xl flex flex-col px-3 pt-10 pb-5'>
+			<div className='flex-1 flex flex-col gap-12 text-title-1 md:text-title-large tracking-tight'>
+				<div>
+					I&apos;m Ryan, a design engineer on the East Coast{" "}
+					<div className='inline group/hero isolate'>
+						<HiClock className={cn(iconClasses, "z-[3]")} />
+						<span className='text-title-3 inline-flex items-center w-0 overflow-clip whitespace-nowrap max-w-fit group-hover/hero:w-[1000px] -translate-y-1 transition-[width] ease-in-out delay-75 duration-300 z-[1]'>
+							<span className='-translate-x-full group-hover/hero:translate-x-0 transition-[translate] ease-in-out delay-50 duration-300 bg-primary px-1.5 rounded'>
+								<span className='tabular-nums'>
+									<Time />
+								</span>
+								&nbsp;
+								<TimeZone />
+							</span>
+						</span>
+					</div>
 				</div>
 
-				<h1 className='font-black w-fit text-[size:14cqmin;line-height:1.25em] font-display cursor-default tracking-tight hover:tracking-wide transition-[letter-spacing] timing-spring'>
-					ryan dawes
-				</h1>
-			</div>
-			<div className='flex-1 flex flex-col py-4 text-title-3 tracking-tight mt-15'>
-				<div
-					className='grid grid-cols-[auto_minmax(fit,1fr)] font-mono uppercase *:[.col-start-2]:text-right
-				*:[.col-start-2]:border-b *:pb-5'>
-					<div className='col-span-2 font-bold text-title-1 mb-10'>about</div>
-					<div className='col-start-2'>software developer</div>
-					<div className='col-start-2'>utc-5</div>
-					<div className='col-span-2 mt-15'>&nbsp;</div>
-					<div className='col-span-2 font-bold text-title-1 mb-10'>proficiencies</div>
-					<div className='col-start-2'>javascript react</div>
-					<div className='col-start-2'>.net / .net core</div>
-					<div className='col-start-2'>nextjs</div>
-					<div className='col-start-2'>astro</div>
-					<div className='col-start-2'>python</div>
-					<div className='col-span-2 mt-15'>&nbsp;</div>
-					<div className='col-span-2 text-justify text-title-2'>
-						I&apos;ve been developing websites for over 10 years, working on a variety of projects, from small business websites to enterprise
-						applications.
-					</div>
-					<div className='col-span-2 text-justify text-title-2 mt-7.5'>
-						Currently contracted with <span className='font-serif font-medium'>the Federal Government of the United States</span>.
-					</div>
-					<div className='col-span-2 mt-15'>&nbsp;</div>
-					<div className='col-span-2 font-bold text-title-1 mb-10'>projects</div>
-					<div className='col-span-2'>
-						<ProjectsList />
-					</div>
-					<div className='col-span-2'>&nbsp;</div>
-					<div className='col-span-2 '>
-						<ProjectListKey />
-					</div>
+				<p>
+					I like <SiJavascript className={cn(iconClasses, "text-[#F0DB4F]")} /> && <SiTypescript className={cn(iconClasses, "text-[#3178c6]")} />
+				</p>
+				<p className='text-title-2 md:text-title-1'>
+					Find me on{" "}
+					<Link
+						href={siteConfig.links.github}
+						className='rounded [--focus-color:var(--color-primary) underline hover:no-underline focus-visible:no-underline'>
+						GitHub
+					</Link>
+				</p>
+				<div className='text-title-2 md:text-title-1'>
+					<ProjectsList />
 				</div>
 			</div>
 		</div>

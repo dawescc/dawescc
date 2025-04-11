@@ -3,14 +3,16 @@ import { VscTriangleLeft } from "react-icons/vsc";
 
 export default function NotFound() {
 	return (
-		<div className='grid grid-cols-1 gap-10'>
-			<div className='mt-20 max-w-lg mx-auto grid grid-cols-1 gap-8 sm:gap-10 text-pretty font-mono uppercase'>
-				<p className='text-9xl font-display font-medium'>404</p>
-				<p className='text-2xl '>page not found</p>
-				<Link href='/'>
-					<VscTriangleLeft className='inline mb-0.5 mr-1' />
-					home
-				</Link>
+		<div className='@container min-h-full max-w-2xl flex flex-col px-3 pt-10 pb-5'>
+			<div className='flex-1 flex flex-col gap-12 text-title-1 md:text-title-large tracking-tight'>
+				<p>Error 404</p>
+				<p>Not Found</p>
+				<p className='text-title-2 md:text-title-1'>
+					<Link href='/'>
+						<VscTriangleLeft className='inline mb-0.5 mr-1' />
+						Go Home
+					</Link>
+				</p>
 			</div>
 		</div>
 	);
