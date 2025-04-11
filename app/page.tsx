@@ -9,6 +9,8 @@ export default function Home() {
 	const iconClasses = "inline mb-[5px]";
 	return (
 		<div className='@container min-h-full max-w-2xl flex flex-col px-3 pt-10 pb-5'>
+			<span className='text-brand-eleanes'></span>
+			<span className='text-brand-dawescc'></span>
 			<div className='flex-1 flex flex-col gap-12 text-title-2 md:text-title-1  tracking-tight'>
 				<div>
 					<span className='text-title-1 md:text-title-large'>I&apos;m Ryan</span>, a design engineer on the East Coast
