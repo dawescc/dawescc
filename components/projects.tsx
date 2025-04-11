@@ -4,8 +4,6 @@ import formatTitle from "title";
 import { HiArchive, HiLockClosed } from "react-icons/hi";
 import Image from "next/image";
 import projectList from "@/lib/projects.json";
-import { SiNpm } from "react-icons/si";
-import { BiGitRepoForked } from "react-icons/bi";
 import { IoHeartCircle } from "react-icons/io5";
 
 const VALID_OWNERS = ["eleanes", "dawescc"] as const;
@@ -101,8 +99,8 @@ const projects = projectList.map((p) => new Project(p));
 function ProjectItem({ project, index }: { project: Project; index: number }) {
 	const isProtected = project.isProtected();
 	const isArchived = project.isArchived();
-	const isFork = project.isForked();
-	const isPackage = project.isPackage();
+	/* const isFork = project.isForked();*/
+	/* const isPackage = project.isPackage();*/
 	const isFavorite = project.isFavorite();
 
 	const defaultClasses = "w-fit rounded hover:rounded py-0.5 px-1 group/project [--focus-color:var(--color-brand-dawescc)] custom-focus-hover";

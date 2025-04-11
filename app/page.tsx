@@ -3,8 +3,8 @@ import { Time, TimeZone } from "@/components/time";
 import { siteConfig } from "@/lib/config";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
-import { HiClock, HiHeart } from "react-icons/hi";
-import { SiDotnet, SiGithub, SiJavascript, SiReact, SiTypescript } from "react-icons/si";
+import { HiClock } from "react-icons/hi";
+import { SiJavascript, SiTypescript } from "react-icons/si";
 
 export default function Home() {
 	const iconClasses = "inline mb-[5px]";
