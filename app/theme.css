@@ -48,7 +48,7 @@
 	::before,
 	::backdrop,
 	::file-selector-button {
-		border-color: var(--color-gray-5, currentColor);
+		border-color: var(--color-gray-6, currentColor);
 	}
 }
 
