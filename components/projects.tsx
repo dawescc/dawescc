@@ -4,8 +4,6 @@ import formatTitle from "title";
 import { HiArchive, HiLockClosed } from "react-icons/hi";
 import Image from "next/image";
 import projectList from "@/lib/projects.json";
-import { SiNpm } from "react-icons/si";
-import { BiGitRepoForked } from "react-icons/bi";
 import { IoHeartCircle } from "react-icons/io5";
 
 const VALID_OWNERS = ["eleanes", "dawescc"] as const;
@@ -98,45 +96,14 @@ class Project {
 
 const projects = projectList.map((p) => new Project(p));
 
-export function ProjectListKey() {
-	return (
-		<div className='grid grid-cols-2 sm:flex sm:items-center sm:justify-between gap-y-5 text-callout *:inline-flex *:items-center *:gap-1.5'>
-			<span className='text-amber-9'>
-				<IoHeartCircle className={cn("size-[1.1em] inline")} />
-				favorite
-			</span>
-
-			<span className=''>
-				<SiNpm className={cn("size-[1.1em] inline", "text-[#CC3534]")} />
-				npm package
-			</span>
-
-			<span className=''>
-				<BiGitRepoForked className={cn("size-[1.1em] inline")} />
-				fork
-			</span>
-
-			<span className='text-red-9'>
-				<HiArchive className={cn("size-[1.1em] inline")} />
-				archived
-			</span>
-
-			<span className='text-gray-9'>
-				<HiLockClosed className={cn("size-[1.1em] inline")} />
-				protected
-			</span>
-		</div>
-	);
-}
-
 function ProjectItem({ project, index }: { project: Project; index: number }) {
 	const isProtected = project.isProtected();
 	const isArchived = project.isArchived();
-	const isFork = project.isForked();
-	const isPackage = project.isPackage();
+	/* const isFork = project.isForked();*/
+	/* const isPackage = project.isPackage();*/
 	const isFavorite = project.isFavorite();
 
-	const defaultClasses = "w-fit rounded hover:rounded py-0.5 px-1 group/project [--focus-color:var(--color-brand-dawescc)] custom-focus-hover";
+	const defaultClasses = "w-fit rounded group/project [--focus-color:var(--color-brand-dawescc)] custom-focus-hover";
 	const archiveClasses = "text-red-9 [--focus-color:var(--color-red-9)]";
 	const protectedClasses = "text-gray-9 [--focus-color:var(--color-gray-9)] select-none";
 
@@ -144,60 +111,11 @@ function ProjectItem({ project, index }: { project: Project; index: number }) {
 		className: cn(defaultClasses, isProtected ? protectedClasses : isArchived ? archiveClasses : null),
 	};
 
-	const descriptorClasses = "font-light align-top not-first:ml-0.5";
 	const descriptorIconClasses = "inline size-[0.90em] not-first:ml-1.5";
 
-	const stubClasses =
-		"w-fit sm:w-0 sm:max-w-fit sm:group-hover/project:w-40 sm:group-focus/project:w-40 sm:group-[&.focused]/project:w-20 transition-[width] timing-spring duration-300 overflow-hidden";
-	const stubContentClasses =
-		"sm:translate-x-1/2 sm:group-hover/project:translate-x-0 sm:group-focus/project:translate-x-0 sm:group-[&.focused]/project:translate-x-0 transition-transform ease-in-out duration-250 delay-[50ms]";
-
 	const content = (
-		<div className={cn("flex items-center")}>
-			<div className='flex items-center'>
-				{isFavorite && (
-					<>
-						<IoHeartCircle className={cn(descriptorIconClasses, "text-amber-9")} />
-					</>
-				)}
-
-				{isPackage && (
-					<>
-						<SiNpm className={cn(descriptorIconClasses, "text-[#CC3534] ")} />
-					</>
-				)}
-
-				{isFork && project.getForkSource() && (
-					<>
-						<BiGitRepoForked className={cn(descriptorIconClasses)} />
-						<div className={cn(descriptorClasses, stubClasses)}>
-							<div className={cn(stubContentClasses)}>{project.getForkSource()!.repo}</div>
-						</div>
-					</>
-				)}
-
-				{isProtected && (
-					<>
-						<HiLockClosed className={cn(descriptorIconClasses, "")} />
-					</>
-				)}
-
-				{isArchived && (
-					<>
-						<HiArchive className={cn(descriptorIconClasses)} />
-					</>
-				)}
-
-				<div className='not-first:ml-1.5 inline-flex items-center font-medium'>{project.getDisplayName()}</div>
-
-				{!isProtected && (
-					<div className={cn(descriptorClasses, stubClasses)}>
-						<div className={cn(!isArchived && project.getBrandColor().text, stubContentClasses, "ml-1")}>{project.year}</div>
-					</div>
-				)}
-			</div>
-
-			<div className='relative size-(--text-title-1) ml-3 group-hover/project:scale-110 group-focus/project:scale-110 transition-[scale] ease-in-out duration-250 delay-[50ms]'>
+		<div className={cn("flex items-center gap-[0.2em] border-2 border-current group-focus/project:border-0 px-2 py-1 rounded")}>
+			<div className='relative size-(--text-title-1)'>
 				{isProtected || isArchived ? (
 					<div
 						className={cn("absolute inset-0", isProtected ? "bg-gray-9" : "bg-red-9")}
@@ -218,6 +136,32 @@ function ProjectItem({ project, index }: { project: Project; index: number }) {
 					/>
 				)}
 			</div>
+
+			<div className='inline-flex items-center font-medium'>{project.getDisplayName()}</div>
+
+			{!isProtected && (
+				<>
+					<div className={cn(!isArchived && project.getBrandColor().text)}>{project.year}</div>
+				</>
+			)}
+
+			{isFavorite && (
+				<>
+					<IoHeartCircle className={cn(descriptorIconClasses, "text-[#CC3534]")} />
+				</>
+			)}
+
+			{isProtected && (
+				<>
+					<HiLockClosed className={cn(descriptorIconClasses)} />
+				</>
+			)}
+
+			{isArchived && (
+				<>
+					<HiArchive className={cn(descriptorIconClasses)} />
+				</>
+			)}
 		</div>
 	);
 
@@ -252,7 +196,7 @@ export default function ProjectsList() {
 		.sort((a, b) => b - a);
 
 	return (
-		<div className='grid grid-cols-1 justify-items-end *:border-b *:pb-5 *:pt-0.5'>
+		<>
 			{years.flatMap((year) =>
 				projectsByYear[year].map((project, index) => (
 					<div
@@ -265,6 +209,6 @@ export default function ProjectsList() {
 					</div>
 				))
 			)}
-		</div>
+		</>
 	);
 }

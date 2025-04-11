@@ -1,6 +1,5 @@
 @import "@eleanes/biscuits/css/";
 
-@variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
 
 @layer base {
 	:root {
@@ -12,6 +11,12 @@
 
 		/* Spacing */
 		--spacing: 0.25rem;
+
+		/* Fonts */
+		--font-sans-custom: 'Geist Variable', sans-serif;
+
+		/* Custom Focus */
+		--focus-color: currentColor;
 	}
 }
 
@@ -24,9 +29,6 @@
 
 	/* Fonts */
 	--font-sans: var(--font-sans-custom);
-	--font-serif: var(--font-serif-custom);
-	--font-display: var(--font-display-custom);
-	--font-mono: var(--font-mono-custom);
 }
 
 @layer base {
@@ -40,11 +42,22 @@
 }
 
 @layer base {
+
 	*,
 	::after,
 	::before,
 	::backdrop,
 	::file-selector-button {
-		border-color: var(--color-gray-5, currentColor);
+		border-color: var(--color-gray-6, currentColor);
+	}
+}
+
+@utility custom-focus {
+	:focus-visible {
+		outline-style: none;
+		transition: none;
+		box-shadow: 0 0 0 2px var(--color-gray-1), 0 0 0 4px var(--focus-color);
+		-webkit-box-shadow: 0 0 0 2px var(--color-gray-1), 0 0 0 4px var(--focus-color);
+		-moz-box-shadow: 0 0 0 2px var(--color-gray-1), 0 0 0 4px var(--focus-color);
 	}
 }

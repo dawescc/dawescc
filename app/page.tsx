@@ -1,62 +1,50 @@
-import Dawescc from "@/components/logos/dawescc";
-import Eleanes from "@/components/logos/eleanes";
-import NavMenu from "@/components/nav-menu";
-import ProjectsList, { ProjectListKey } from "@/components/projects";
+import ProjectsList from "@/components/projects";
+import { TimeDisplay } from "@/components/time";
+import { siteConfig } from "@/lib/config";
+import { cn } from "@/lib/utils";
 import Link from "next/link";
+import { SiJavascript, SiTypescript } from "react-icons/si";
 
 export default function Home() {
+	const iconClasses = "inline mb-[5px]";
 	return (
-		<div className='@container min-h-full max-w-2xl flex flex-col'>
-			<NavMenu mini />
-			<div className='flex-0 shrink-0 flex flex-col justify-center uppercase py-4'>
-				<div className='w-fit grid grid-cols-2 gap-3 mb-20'>
-					<Link
-						href='/'
-						className='rounded [--focus-color:var(--color-brand-dawescc)] text-title-large leading-0'>
-						<Dawescc className='text-brand-dawescc antialiased' />
-					</Link>
-					<Link
-						href='https://eleanes.org'
-						className='rounded [--focus-color:var(--color-brand-eleanes)] text-title-large leading-0'>
-						<Eleanes className='text-brand-eleanes antialiased' />
-					</Link>
+		<div className='@container min-h-full max-w-2xl flex flex-col px-3 pt-10 pb-5'>
+			<span className='text-brand-eleanes'></span>
+			<span className='text-brand-dawescc'></span>
+			<div className='flex-1 flex flex-col gap-12 text-title-2 md:text-title-1  tracking-tight'>
+				<div>
+					<span className='text-title-1 md:text-title-large'>I&apos;m Ryan</span>, a design engineer on the east coast
 				</div>
 
-				<h1 className='font-black w-fit text-[size:14cqmin;line-height:1.25em] font-display cursor-default tracking-tight hover:tracking-wide transition-[letter-spacing] timing-spring'>
-					ryan dawes
-				</h1>
-			</div>
-			<div className='flex-1 flex flex-col py-4 text-title-3 tracking-tight mt-15'>
-				<div
-					className='grid grid-cols-[auto_minmax(fit,1fr)] font-mono uppercase *:[.col-start-2]:text-right
-				*:[.col-start-2]:border-b *:pb-5'>
-					<div className='col-span-2 font-bold text-title-1 mb-10'>about</div>
-					<div className='col-start-2'>software developer</div>
-					<div className='col-start-2'>utc-5</div>
-					<div className='col-span-2 mt-15'>&nbsp;</div>
-					<div className='col-span-2 font-bold text-title-1 mb-10'>proficiencies</div>
-					<div className='col-start-2'>javascript react</div>
-					<div className='col-start-2'>.net / .net core</div>
-					<div className='col-start-2'>nextjs</div>
-					<div className='col-start-2'>astro</div>
-					<div className='col-start-2'>python</div>
-					<div className='col-span-2 mt-15'>&nbsp;</div>
-					<div className='col-span-2 text-justify text-title-2'>
-						I&apos;ve been developing websites for over 10 years, working on a variety of projects, from small business websites to enterprise
-						applications.
-					</div>
-					<div className='col-span-2 text-justify text-title-2 mt-7.5'>
-						Currently contracted with <span className='font-serif font-medium'>the Federal Government of the United States</span>.
-					</div>
-					<div className='col-span-2 mt-15'>&nbsp;</div>
-					<div className='col-span-2 font-bold text-title-1 mb-10'>projects</div>
-					<div className='col-span-2'>
-						<ProjectsList />
-					</div>
-					<div className='col-span-2'>&nbsp;</div>
-					<div className='col-span-2 '>
-						<ProjectListKey />
-					</div>
+				<div className='size-32 md:size-36 overflow-clip'>
+					<TimeDisplay />
+				</div>
+
+				<p>
+					I like <SiJavascript className={cn(iconClasses, "text-[#F0DB4F]")} /> && <SiTypescript className={cn(iconClasses, "text-[#3178c6]")} />
+				</p>
+
+				<p>
+					Find me on{" "}
+					<Link
+						href={siteConfig.links.github}
+						className='rounded [--focus-color:var(--color-primary) underline hover:no-underline focus-visible:no-underline'>
+						GitHub
+					</Link>
+				</p>
+
+				<p>
+					While I do have{" "}
+					<Link
+						href={siteConfig.links.twitter}
+						className='rounded [--focus-color:var(--color-primary) underline hover:no-underline focus-visible:no-underline'>
+						Twitter
+					</Link>
+					, I am no longer active on the platform
+				</p>
+
+				<div className='flex gap-x-2 gap-y-1.5 flex-wrap'>
+					<ProjectsList />
 				</div>
 			</div>
 		</div>
