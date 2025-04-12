@@ -43,7 +43,7 @@ export default function Home() {
 					, I am no longer active on the platform
 				</p>
 
-				<div className='flex gap-x-2 gap-y-1.5 flex-wrap'>
+				<div className='flex gap-x-2 gap-y-1.5 flex-wrap group/projects *:transition-[opacity_500ms_cubic-bezier(0.19,_1,_0.22,_1)] *:group-hover/projects:not-hover:opacity-20 *:group-focus-within/projects:not-focus-within:opacity-20'>
 					<ProjectsList />
 				</div>
 			</div>
