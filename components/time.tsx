@@ -54,7 +54,9 @@ export function TimeDisplay({ zone = "America/New_York" }: TimeProps) {
 	});
 
 	return (
-		<div className='relative w-full aspect-square border border-current bg-gray-2 text-gray-12 rounded-full overflow-hidden'>
+		<div
+			suppressHydrationWarning
+			className='relative w-full aspect-square border border-current bg-gray-2 text-gray-12 rounded-full overflow-hidden'>
 			{/* Markers */}
 			{Array.from({ length: 60 }).map((_, i) => (
 				<div
