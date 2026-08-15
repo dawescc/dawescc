@@ -1,10 +1,11 @@
-# hello
+# ryan
 
-I am ryan, and this is my forgejo instance. 
+## a software engineer in the usa 🇺🇸
 
-all of the data provided in this profile is drawn from 3rd party sources, parsed and served by self-created applications and processes. for more information on a specific one, visit my [repositories](https://forgejo.dawes.cc/ryan?tab=repositories).
+im passionate about projects that help people.
+education, welfare, etc., i want to leave user better than i find them.
 
-## Anime Watch Status
-
-![Anime Status](http://api.dws9.zip/anime-status-mal)
-
+[forgejo profile](https://forgejo.dawes.cc/ryan)
+[github](https://github.com/dawescc)
+[website](https://dawes.cc)
+[email](mailto:hello-profile@dawes.cc)
